@@ -22,7 +22,7 @@ Geforce RTX 3060 **VRAM 12GB** 以上を搭載した Widows PC で簡単に動�
 
 - アバストなどのウィルスチェックソフトが有効だと、インストールに失敗する場合があります。
 - Windows PC の管理者権限がないと、インストールに失敗する場合があります。
-- プロキシ環境などでインストールに失敗する場合は、Python 3.10 系にパスを通して `EasySdxlWebUi/setup/Setup-Venv.bat` のコメントを解除してから `EasySdxlWebUi/setup/Setup-EasySdxlWebUi.bat` で成功する場合があります。
+- プロキシ環境などでインストールに失敗する場合は、[Git for Windows](https://gitforwindows.org/) と [Python 3.10.6](https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe) を[パスを通してインストール](https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/SdWebUiInstall/SdWebUiInstall.md#git-for-windows-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)してから、最初から EasySdxlWebUi をインストールし直してください。
 
 ## 使いかた
 
@@ -89,6 +89,7 @@ Geforce RTX 3060 12GB にて、アップスケールと ADetailer 込みで 25�
 
 ## TIPS
 
+- モデルや LoRA などを別のフォルダにあるものを参照したい場合は、`SdxlWebUi.bat` の `CKPT_DIR` や `LORA_DIR` の値を書き換えます。
 - ControlNet のモデルを追加したい場合は、`SdxlWebUi/ControlNet/Open-SdControlCollection.bat` を実行して、ダウンロードしたモデルを `SdxlWebUi/ControlNet/` に置いてください。
 - `LamaCleaner(C|G)pu.bat` で [画像を手軽に修正できる Lama Cleaner](https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/LamaCleaner/LamaCleaner.md) を利用できます。
 	- 画像を生成しながら使う場合は CPU 版を、単体で使う場合は GPU 版を使用します。
