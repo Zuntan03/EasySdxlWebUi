@@ -2,6 +2,8 @@
 
 <!-- 概要は[こちら](https://twitter.com/Zuntan03/status/1744195658029117523)。 -->
 
+![EasySdxlWebUi](./SdxlWebUi/setup/doc/EasySdxlWebUi.webp)
+
 [ANIMAGINE XL 3.0](https://cagliostrolab.net/posts/animagine-xl-v3-release) ([HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.0)) を [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) で使えるようにする簡単なインストーラーです。  
 bat を実行するだけの簡単インストールで、Python や Git をインストールする必要はありません。  
 一通りの拡張機能とワイルドカードもインストールします。
