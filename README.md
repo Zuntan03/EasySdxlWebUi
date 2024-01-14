@@ -8,7 +8,7 @@ bat を実行するだけの簡単インストールで、Python や Git をイ�
 
 ## インストール
 
-Geforce RTX 3060 **VRAM 12GB** 以上を搭載した Widows PC で簡単に動作します。  
+Geforce RTX 3060 **VRAM 12GB** 以上を搭載した、20GB程度の空きストレージのある Widows PC で簡単に動作します。  
 未成年の方は利用しないでください。
 
 1. [Install-EasySdxlWebUi.bat](https://github.com/Zuntan03/EasySdxlWebUi/raw/main/SdxlWebUi/setup/Install-EasySdxlWebUi.bat) を右クリックから保存して、インストール先のフォルダで実行します。  
