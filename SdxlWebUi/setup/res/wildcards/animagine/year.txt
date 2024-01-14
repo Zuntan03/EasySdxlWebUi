@@ -1,5 +1,0 @@
-oldest
-early
-mid
-late
-newest
