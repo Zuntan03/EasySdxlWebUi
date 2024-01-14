@@ -4,9 +4,9 @@
 
 ![EasySdxlWebUi](./SdxlWebUi/setup/doc/EasySdxlWebUi.webp)
 
-[ANIMAGINE XL 3.0](https://cagliostrolab.net/posts/animagine-xl-v3-release) ([HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.0)) を [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) で使えるようにする簡単なインストーラーです。  
+[ANIMAGINE XL 3.0](https://cagliostrolab.net/posts/animagine-xl-v3-release) ([HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.0)) を [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) で簡単に使えるようにします。。  
 bat を実行するだけの簡単インストールで、Python や Git をインストールする必要はありません。  
-一通りの拡張機能とワイルドカードもインストールします。
+LCM を使ったパラメータも設定済みで、一通りの拡張機能とワイルドカードもインストールします。
 
 ## インストール
 
@@ -32,7 +32,7 @@ Stable Diffusion web UI の基本的な使い方については、Web にある�
 
 ![style](./SdxlWebUi/setup/doc/style.png)
 
-1. 画面右側の `生成ボタン` の下にあるスタイル選択欄で `Animagine Sample:` で始まる Animagine 公式サンプルか、`Animagine SWF Gacha` を選択します。
+1. 画面右側の `生成ボタン` の下にあるスタイル選択欄で `Animagine Sample:` で始まる Animagine 公式サンプルか、`Animagine SFW Gacha` を選択します。
 2. すぐ上の `クリップボードボタン` で左側のプロンプト欄にスタイルが適用されます。
 	- 先にプロンプトを入力していた場合は、`ゴミ箱ボタン` で先にプロンプト欄をクリアしておきます。
 3. `生成ボタン` で画像を生成します。
@@ -64,7 +64,7 @@ Geforce RTX 3060 12GB にて、アップスケールと ADetailer 込みで 25�
 	- SFW のつもりなのに NSFW が出てしまう場合は `rating: general` を追加します。
 	- NSFW の場合は `nsfw` や `rating: sensitive` と共にプロンプト前半に入れてもよいかもしれません。
 - ネガティブプロンプトには `lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name` を指定します。
-	- SWF の場合は先頭に `nsfw` を追加します。
+	- SWF の場合は先頭に `nsfw` や `rating: sensitive` を追加します。
 
 ### パラメータ
 
