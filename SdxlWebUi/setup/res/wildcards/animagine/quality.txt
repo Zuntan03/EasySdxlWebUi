@@ -1,0 +1,6 @@
+masterpiece
+best quality
+high quality
+normal quality
+low quality
+worst quality
