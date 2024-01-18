@@ -118,6 +118,9 @@ if not exist sd-webui-lora-block-weight\ (
 	if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 )
 
+xcopy /DY %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 @REM f8 非対応
 if not exist sd-webui-negpip\ (
 	echo git clone https://github.com/hako-mikan/sd-webui-negpip
