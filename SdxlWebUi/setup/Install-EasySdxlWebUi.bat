@@ -29,6 +29,7 @@ echo https://github.com/Mikubill/sd-webui-controlnet
 echo https://github.com/hnmr293/sd-webui-cutoff
 echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 echo https://github.com/hako-mikan/sd-webui-negpip
+echo https://github.com/hako-mikan/sd-webui-traintrain
 echo https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
 echo https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 echo https://github.com/arenasys/stable-diffusion-webui-model-toolkit
