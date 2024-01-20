@@ -128,6 +128,12 @@ if not exist sd-webui-negpip\ (
 	if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 )
 
+if not exist sd-webui-traintrain\ (
+	echo https://github.com/hako-mikan/sd-webui-traintrain
+	git clone https://github.com/hako-mikan/sd-webui-traintrain
+	if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+)
+
 if not exist Stable-Diffusion-Webui-Civitai-Helper\ (
 	echo git clone https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
 	git clone https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
