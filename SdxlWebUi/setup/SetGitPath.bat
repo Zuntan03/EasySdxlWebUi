@@ -17,7 +17,7 @@ if not exist %PORTABLE_GIT_DIR%\ (
 
 	start "" %PS_CMD% -Command "Start-Sleep -Seconds 2; $title='Portable Git for Windows 64-bit'; $window=Get-Process | Where-Object { $_.MainWindowTitle -eq $title } | Select-Object -First 1; if ($window -ne $null) { [void][System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic'); [Microsoft.VisualBasic.Interaction]::AppActivate($window.Id); Start-Sleep -Seconds 1; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('{ENTER}') }"
 
-	echo 設定を変更せずに、そのままインストールしてください。
+	echo "設定を変更せずに、そのままインストールしてください。"
 	%~dp0lib\PortableGit.7z.exe
 	if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 

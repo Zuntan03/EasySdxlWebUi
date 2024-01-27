@@ -12,6 +12,9 @@ Animagine:
   手 8: __animagine/hand__
   レーティング 5: __animagine/rating__
   クオリティ 6: __animagine/quality__
+Pony:
+  女性キャラ 1491: __pony/female__
+  男性キャラ 203: __pony/male__
 NAI https://rentry.org/NAIwildcards:
   キャラ 888: __nai/character__
   場所 223: __nai/location__

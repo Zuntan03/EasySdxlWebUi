@@ -48,6 +48,7 @@ if not exist SdxlWebUi\setup\lib\ (
 	echo https://rentry.org/NAIwildcards
 	echo https://rentry.co/NAIDv3artisttagtestoverview
 	echo https://civitai.com/models/236447/based68
+	echo https://rentry.org/ponyxl_loras_n_stuff
 	echo よろしいですか？ [y/n]
 	set /p YES_OR_NO=
 	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )

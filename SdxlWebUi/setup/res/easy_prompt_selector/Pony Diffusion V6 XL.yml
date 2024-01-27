@@ -4,3 +4,22 @@
   score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored
 ネガティブ(Ctrl+Click): |-
   censored, mosaic censoring, bar censor, border, worst quality, low quality, simple background, white background, realistic, sketch, muscle, normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits, cropped, greyscale, monochrome, source_furry, source_pony, source_cartoon, comic, source filmmaker, video, 3d
+マスピ: masterpiece
+ベスト: best quality
+AI生成: ai-generated
+score_9_4: score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up
+anime: source_anime
+cartoon: source_cartoon
+pony: source_pony
+furry: source_furry
+explicit: rating_explicit
+questionable: rating_questionable
+safe: rating_safe
+score_9: score_9
+score_8: score_8_up
+score_7: score_7_up
+score_6: score_6_up
+score_5: score_5_up
+score_4: score_4_up
+"[ガチャ] 女性キャラ 1491": __pony/female__
+男性キャラ 203: __pony/male__

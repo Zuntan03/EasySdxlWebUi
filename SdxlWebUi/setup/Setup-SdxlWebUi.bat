@@ -137,6 +137,12 @@ call :CURL_DL sd-dynamic-prompts\wildcards\animagine character.txt ^
 https://huggingface.co/spaces/Linaqruf/animagine-xl/resolve/main/wildcard/character.txt
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call :CURL_DL sd-dynamic-prompts\wildcards\pony female.txt https://files.catbox.moe/oklpz8.txt
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call :CURL_DL sd-dynamic-prompts\wildcards\pony male.txt https://files.catbox.moe/1lptzn.txt
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 setlocal enabledelayedexpansion
 if not exist sd-dynamic-prompts\wildcards\bd\ (
 	echo %CURL_CMD% -Lo %~dp0lib\bd.zip https://downloads.fanbox.cc/files/post/5680274/IUTQ62gtRAYNNIQHMwWtm5Mg.zip
@@ -231,7 +237,7 @@ for /f "tokens=*" %%i in ("%GIT_COP_URL%") do set GIT_COP_DIR=%%~nxi
 
 if exist %GIT_COP_DIR%\ (
 	echo git -C %GIT_COP_DIR% pull
-	git -C %GIT_COP_DIR% pull
+	@REM git -C %GIT_COP_DIR% pull
 ) else (
 	echo git clone %GIT_COP_URL%
 	git clone %GIT_COP_URL%

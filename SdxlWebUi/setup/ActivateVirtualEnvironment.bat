@@ -36,7 +36,7 @@ if not "%PYTHON_VERSION_VAR:~7,4%"=="3.10" (
 		@REM プロキシ環境用コマンド。ただし動作未確認、かつ Python をインストールしたほうが楽そう。
 		@REM %CURL_CMD% -o %PYTHON_DIR%\get-pip.py https://bootstrap.pypa.io/get-pip.py --proxy="PROXY_SERVER:PROXY_PORT"
 		if %errorlevel% neq 0 (
-			echo [Error] プロキシ環境によりインストールに失敗した可能性があります。Python 3.10.6 を手動でパスを通してインストールしてください。
+			echo "[Error] プロキシ環境によりインストールに失敗した可能性があります。Python 3.10.6 を手動でパスを通してインストールしてください。"
 			pause & exit /b %errorlevel%
 		)
 
@@ -53,7 +53,7 @@ if not "%PYTHON_VERSION_VAR:~7,4%"=="3.10" (
 for /f "tokens=*" %%i in ('%PYTHON_CMD% --version 2^>^&1') do set PYTHON_VERSION_VAR=%%i
 if not "%PYTHON_VERSION_VAR:~7,4%"=="3.10" (
 	echo %PYTHON_VERSION_VAR%
-	echo [Error] 何らかの理由で Python をインストールできませんでした。Python 3.10.6 を手動でパスを通してインストールしてください。
+	echo "[Error] 何らかの理由で Python をインストールできませんでした。Python 3.10.6 を手動でパスを通してインストールしてください。"
 	pause & exit /b 1
 )
 
@@ -67,7 +67,7 @@ if not exist venv\ (
 	)
 
 	if not exist venv\ (
-		echo [ERROR] Python 仮想環境を作成できません。Python 3.10.6 を手動でパスを通してインストールしてください。
+		echo "[ERROR] Python 仮想環境を作成できません。Python 3.10.6 を手動でパスを通してインストールしてください。"
 		pause & exit /b 1
 	)
 
