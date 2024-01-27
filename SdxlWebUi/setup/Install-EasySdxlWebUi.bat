@@ -11,7 +11,7 @@ if not exist %CURL_CMD% (
 
 setlocal enabledelayedexpansion
 if not exist SdxlWebUi\setup\lib\ (
-	echo 以下の配布元から関連ファイルをダウンロードして使用します（URL を Ctrl + クリックで開けます）。
+	echo "以下の配布元から関連ファイルをダウンロードして使用します（URL を Ctrl + クリックで開けます）。"
 	echo https://www.python.org
 	echo https://github.com/pypa/get-pip
 	echo https://github.com/git-for-windows
@@ -56,15 +56,15 @@ if not exist SdxlWebUi\setup\lib\ (
 )
 
 if exist SdxlWebUi\venv\ (
-	echo 更新に時間がかかりますが、安全のために SdxlWebUi\venv\ を削除しますか？
-	echo SdxlWebUi\venv\ 削除せずに更新したあとに問題が発生した場合は、再度更新をして SdxlWebUi\venv\ を削除してください。
-	echo SdxlWebUi\venv\ を削除しますか？
+	echo "更新に時間がかかりますが、安全のために SdxlWebUi\venv\ を削除しますか？"
+	echo "SdxlWebUi\venv\ 削除せずに更新したあとに問題が発生した場合は、再度更新をして SdxlWebUi\venv\ を削除してください。"
+	echo "SdxlWebUi\venv\ を削除しますか？ [y/n]"
 	set /p YES_OR_NO=
-	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )
-
-	echo rmdir /SQ SdxlWebUi\venv\
-	rmdir /SQ SdxlWebUi\venv\
-	if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
+	if /i "!YES_OR_NO!" == "y" (
+		echo rmdir /SQ SdxlWebUi\venv\
+		rmdir /SQ SdxlWebUi\venv\
+		if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
+	)
 )
 endlocal
 
