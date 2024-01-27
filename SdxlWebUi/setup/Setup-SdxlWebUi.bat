@@ -139,8 +139,12 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :CURL_DL sd-dynamic-prompts\wildcards\pony female.txt https://files.catbox.moe/oklpz8.txt
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+%PS_CMD% "try { &{(Get-Content 'sd-dynamic-prompts\wildcards\pony\female.txt') -replace '_\(', ' \(' -replace '\)', '\)' | Set-Content 'sd-dynamic-prompts\wildcards\pony\female.txt' } } catch { exit 1 }"
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :CURL_DL sd-dynamic-prompts\wildcards\pony male.txt https://files.catbox.moe/1lptzn.txt
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+%PS_CMD% "try { &{(Get-Content 'sd-dynamic-prompts\wildcards\pony\male.txt') -replace '_\(', ' \(' -replace '\)', '\)' | Set-Content 'sd-dynamic-prompts\wildcards\pony\male.txt' } } catch { exit 1 }"
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 setlocal enabledelayedexpansion
