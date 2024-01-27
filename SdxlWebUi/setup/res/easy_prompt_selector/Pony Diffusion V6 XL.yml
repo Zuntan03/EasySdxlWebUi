@@ -1,0 +1,6 @@
+﻿設定: |-
+  Steps: 25, Sampler: Euler a, CFG scale: 6.0, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 15, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+プロンプト前置き: |-
+  score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored
+ネガティブ(Ctrl+Click): |-
+  censored, mosaic censoring, bar censor, border, worst quality, low quality, simple background, white background, realistic, sketch, muscle, normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits, cropped, greyscale, monochrome, source_furry, source_pony, source_cartoon, comic, source filmmaker, video, 3d

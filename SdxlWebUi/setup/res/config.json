@@ -8,6 +8,7 @@
     "outdir_init_images": "../../output",
     "export_for_4chan": false,
     "lora_preferred_name": "Filename",
+    "lora_show_all": true,
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",

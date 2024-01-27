@@ -1,0 +1,37 @@
+﻿BDさん https://note.com/br_d/:
+  背景 50: "__bd/bg__"
+  ファンタジーコーデ 50: "__bd/fantasy_outfit__"
+  コーデ 50: "__bd/outfit__"
+  感情 50: "__bd/emotion__"
+  エフェクト 154: "__bd/effect__"
+  旅 50: "__bd/journey__"
+Animagine:
+  キャラ 2880: __animagine/character__
+  Based68 画風 667: __animagine/style__
+  年代 5: __animagine/year__
+  手 8: __animagine/hand__
+  レーティング 5: __animagine/rating__
+  クオリティ 6: __animagine/quality__
+NAI https://rentry.org/NAIwildcards:
+  キャラ 888: __nai/character__
+  場所 223: __nai/location__
+  服 326: __nai/clothing__
+  髪型 66: __nai/hair__
+  表情 1134: __nai/face__
+  ポーズ 27: __nai/pose__
+  構図 18: __nai/framing__
+NAI NSFW:
+  Sex 158: __nai/sex_act__
+  体位 23: __nai/sex_position__
+  エロ顔 6: __nai/sex_face__
+  フェチ 95: __nai/fetish__
+  おもちゃ 49: __nai/sex_toy__
+  精液 31: __nai/cum__
+  下着 28: __nai/lingerie__
+  下着状態 32: __nai/lingerie_state__
+  服露出 21: __nai/exposing__
+  裸と服 20: __nai/naked_outfit__
+  公共 17: __nai/publicity__
+  BDSM 17: __nai/bdsm__
+  BDSM アイテム 42: __nai/bdsm_item__
+  BDSM 服 6: __nai/bdsm_outfit__
