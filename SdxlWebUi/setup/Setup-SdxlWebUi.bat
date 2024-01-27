@@ -19,7 +19,8 @@ call :CURL_DL Model\ animagine-xl-3.0.safetensors ^
 https://huggingface.co/cagliostrolab/animagine-xl-3.0/resolve/main/animagine-xl-3.0.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :CURL_DL Model\ ponyDiffusionV6XL_v6StartWithThisOne.safetensors https://civitai.com/api/download/models/290640
+@REM call :CURL_DL Model\ ponyDiffusionV6XL_v6StartWithThisOne.safetensors https://civitai.com/api/download/models/290640
+call :CURL_DL Model\ ponyDiffusionV6XL_v6StartWithThisOne.safetensors https://huggingface.co/AstraliteHeart/pony-diffusion-v6/resolve/main/v6.safetensors?download=true
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Vae
