@@ -231,7 +231,7 @@ for /f "tokens=*" %%i in ("%GIT_COP_URL%") do set GIT_COP_DIR=%%~nxi
 
 if exist %GIT_COP_DIR%\ (
 	echo git -C %GIT_COP_DIR% pull
-	@REM git -C %GIT_COP_DIR% pull
+	git -C %GIT_COP_DIR% pull
 ) else (
 	echo git clone %GIT_COP_URL%
 	git clone %GIT_COP_URL%
