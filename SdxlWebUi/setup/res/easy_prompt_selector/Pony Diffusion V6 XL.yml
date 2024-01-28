@@ -1,5 +1,5 @@
 ﻿設定: |-
-  Steps: 25, Sampler: Euler a, CFG scale: 6.0, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 15, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+  Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 8, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
 プロンプト前置き: |-
   score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored
 ネガティブ(Ctrl+Click): |-
