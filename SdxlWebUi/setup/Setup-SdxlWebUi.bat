@@ -28,9 +28,6 @@ call :CURL_DL Vae\ sdxl_vae.safetensors ^
 https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :CURL_DL Vae\ ponyDiffusionV6XL_vae.safetensors "https://civitai.com/api/download/models/290640?type=VAE"
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
 if not exist Embedding ( mkdir Embedding )
 
 @REM LCM LoRA
