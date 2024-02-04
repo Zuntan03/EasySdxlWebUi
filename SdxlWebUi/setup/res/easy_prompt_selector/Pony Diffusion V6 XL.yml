@@ -1,6 +1,6 @@
 ﻿設定: |-
   source_anime, score_9, 
-  Negative prompt: source_cartoon, source_furry, source_pony, blurry, 
+  Negative prompt: source_furry, source_cartoon, source_pony, blurry, 
   Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
 score_9: score_9
 score_8: score_8_up
@@ -12,15 +12,19 @@ src_furry: source_furry
 rate_explicit: rating_explicit
 rate_questionable: rating_questionable
 rate_safe: rating_safe
+マスピとベスト: masterpiece, best quality
 メガマガ: megami magazine
 AI生成: "(ai-generated: 0.6)"
 無修正: uncensored
 アニメ系: anime coloring, anime screencap
-リアル系: photo, high res, realistic, hyperrealism, source filmmaker
+リアル系: photo, realistic, hyperrealism, source filmmaker
+ハイレゾ: high res
+PVC: pvc figure
 score_6: score_6_up
 score_5: score_5_up
 score_4: score_4_up
-ネガティブ (Ctrl+Click): blurry
+ネガティブクオリティ (Ctrl+Click): worst quality, low quality
+ボカシ: blurry
 vector: vector
 painting: painting
 multiple views: multiple views
