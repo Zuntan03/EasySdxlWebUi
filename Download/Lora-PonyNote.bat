@@ -14,6 +14,11 @@ if exist "%~dp0..\SdxlWebUi\Lora\" (
 set CURL_CMD=C:\Windows\System32\curl.exe
 set PS_CMD=PowerShell -Version 5.1 -ExecutionPolicy Bypass
 
+if not exist %CURL_CMD% (
+	echo [ERROR] %CURL_CMD% が見つかりません。
+	pause & popd & exit /b 1
+)
+
 echo "PonyXL Notes の LoRA 一覧からダウンロードしたい LoRA を選びます。"
 echo "数値による個別指定か「a」の全指定で LoRA を選び、「c」でダウンロードを開始します。"
 echo.
