@@ -1,0 +1,11 @@
+<lora:ponyxl_character_amy_sorel
+<lora:ponyxl_character_maryjane
+<lora:ponyxl_character_matoba_risa
+<lora:ponyxl_character_mayl_sakurai
+<lora:ponyxl_character_momoka
+<lora:ponyxl_character_naoto_shirogane
+<lora:ponyxl_character_neopolitan_rwby
+<lora:ponyxl_character_roll_exe
+<lora:ponyxl_character_scarlet_ff7
+<lora:ponyxl_character_shinobu_jackobs
+<lora:ponyxl_character_tachibana_arisu
