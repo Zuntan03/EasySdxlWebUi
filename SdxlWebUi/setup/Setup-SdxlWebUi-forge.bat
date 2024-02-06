@@ -98,8 +98,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call :GIT_CLONE_OR_PULL https://github.com/hnmr293/sd-webui-cutoff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-lora-block-weight
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-lora-block-weight
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM f8 未対応っぽい
 @REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
@@ -108,6 +108,7 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+@REM venv 壊れる
 @REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -128,8 +129,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM LoraBlockWeight プリセット
-@REM copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM EasyPromptSelector
 xcopy /SQY %~dp0res\easy_prompt_selector\ sdweb-easy-prompt-selector\tags\ > NUL

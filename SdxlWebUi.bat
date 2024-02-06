@@ -6,6 +6,10 @@ if not exist %~dp0SdxlWebUi\stable-diffusion-webui\ (
 	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi.bat
 	if !errorlevel! neq 0 ( exit /b !errorlevel! )
 )
+if not exist %~dp0SdxlWebUi\venv\ (
+	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi.bat
+	if !errorlevel! neq 0 ( exit /b !errorlevel! )
+)
 endlocal
 
 pushd %~dp0SdxlWebUi\stable-diffusion-webui\
