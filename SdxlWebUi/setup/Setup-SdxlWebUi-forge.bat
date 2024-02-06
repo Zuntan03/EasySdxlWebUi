@@ -88,7 +88,6 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call :GIT_CLONE_OR_PULL https://github.com/continue-revolution/sd-webui-animatediff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM f8 未対応っぽい
 call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-cd-tuner
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -101,9 +100,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-lora-block-weight
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM f8 未対応っぽい
-@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

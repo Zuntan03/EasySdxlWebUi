@@ -11,5 +11,6 @@
     "txt2img/Denoising strength/value": 0.55,
     "txt2img/Upscale by/value": 1.5,
     "customscript/!adetailer.py/txt2img/Enable ADetailer/value": true,
-    "customscript/cdtuner.py/txt2img/Active/value": true
+    "customscript/cdtuner.py/txt2img/Active/value": true,
+    "customscript/negpip.py/txt2img/Active/value": true
 }
