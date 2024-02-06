@@ -1,5 +1,5 @@
 {
-    "txt2img/Sampling method/value": "LCM",
+    "txt2img/Sampling method/value": "LCM Karras",
     "txt2img/Sampling steps/value": 6,
     "txt2img/Width/value": 1024,
     "txt2img/Height/value": 1024,
