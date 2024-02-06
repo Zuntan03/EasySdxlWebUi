@@ -118,8 +118,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM call :GIT_CLONE_OR_PULL https://github.com/arenasys/stable-diffusion-webui-model-toolkit
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/arenasys/stable-diffusion-webui-model-toolkit
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :GIT_CLONE_OR_PULL https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
