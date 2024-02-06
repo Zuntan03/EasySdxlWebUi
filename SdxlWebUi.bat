@@ -1,5 +1,13 @@
 @echo off
 chcp 65001 > NUL
+
+setlocal enabledelayedexpansion
+if not exist %~dp0SdxlWebUi\stable-diffusion-webui\ (
+	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi.bat
+	if !errorlevel! neq 0 ( exit /b !errorlevel! )
+)
+endlocal
+
 pushd %~dp0SdxlWebUi\stable-diffusion-webui\
 
 set PYTHON=%~dp0SdxlWebUi\venv\Scripts\python.exe

@@ -10,14 +10,14 @@ if not exist %CURL_CMD% (
 )
 
 setlocal enabledelayedexpansion
-if exist SdxlWebUi\venv\ (
-	echo "更新に時間がかかりますが、安全のために SdxlWebUi\venv\ を削除しますか？"
-	echo "SdxlWebUi\venv\ 削除せずに更新したあとに問題が発生した場合は、再度更新をして SdxlWebUi\venv\ を削除してください。"
-	echo "SdxlWebUi\venv\ を削除しますか？ [y/n]"
+if exist SdxlWebUi\venv-forge\ (
+	echo "更新に時間がかかりますが、安全のために SdxlWebUi\venv-forge\ を削除しますか？"
+	echo "SdxlWebUi\venv-forge\ 削除せずに更新したあとに問題が発生した場合は、再度更新をして SdxlWebUi\venv-forge\ を削除してください。"
+	echo "SdxlWebUi\venv-forge\ を削除しますか？ [y/n]"
 	set /p YES_OR_NO=
 	if /i "!YES_OR_NO!" == "y" (
-		echo rmdir /SQ SdxlWebUi\venv\
-		rmdir /SQ SdxlWebUi\venv\
+		echo rmdir /SQ SdxlWebUi\venv-forge\
+		rmdir /SQ SdxlWebUi\venv-forge\
 		if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 	)
 ) else (
@@ -25,7 +25,7 @@ if exist SdxlWebUi\venv\ (
 	echo https://www.python.org
 	echo https://github.com/pypa/get-pip
 	echo https://github.com/git-for-windows
-	echo https://github.com/AUTOMATIC1111/stable-diffusion-webui
+	echo https://github.com/lllyasviel/stable-diffusion-webui-forge
 	echo.
 	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0
 	echo https://civitai.com/models/257749
@@ -91,11 +91,11 @@ echo copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi-forge.bat .\SdxlWebUi-Updat
 copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi-forge.bat .\SdxlWebUi-Update-forge.bat
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
-call SdxlWebUi\setup\Setup-SdxlWebUi.bat
+call SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-start "" SdxlWebUi.bat
+start "" SdxlWebUi-forge.bat
 
 popd rem %~dp0
 
-if exist %~dp0Install-EasySdxlWebUi.bat ( del %~dp0Install-EasySdxlWebUi.bat )
+if exist %~dp0Install-EasySdxlWebUi-forge.bat ( del %~dp0Install-EasySdxlWebUi-forge.bat )

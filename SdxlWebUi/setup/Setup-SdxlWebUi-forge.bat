@@ -8,10 +8,10 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 pushd %~dp0..
 
-call :GIT_CLONE_OR_PULL https://github.com/AUTOMATIC1111/stable-diffusion-webui
+call :GIT_CLONE_OR_PULL https://github.com/lllyasviel/stable-diffusion-webui-forge
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0ActivateVirtualEnvironment.bat
+call %~dp0ActivateVirtualEnvironment.bat venv-forge
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Model
@@ -58,12 +58,16 @@ https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/ip-adapter_
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM config
-if not exist stable-diffusion-webui\config.json ( copy /Y %~dp0res\config.json stable-diffusion-webui\config.json > NUL )
-if not exist stable-diffusion-webui\ui-config.json ( copy /Y %~dp0res\ui-config.json stable-diffusion-webui\ui-config.json > NUL )
-if not exist stable-diffusion-webui\styles.csv ( copy /Y %~dp0res\styles.csv stable-diffusion-webui\styles.csv > NUL )
+call :UPDATE_JSON setup\res\config-forge.json stable-diffusion-webui-forge\config.json
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call :UPDATE_JSON setup\res\ui-config-forge.json stable-diffusion-webui-forge\ui-config.json
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+if not exist stable-diffusion-webui-forge\styles.csv ( copy /Y %~dp0res\styles.csv stable-diffusion-webui-forge\styles.csv > NUL )
 
 popd rem %~dp0..
-pushd %~dp0..\stable-diffusion-webui\extensions
+pushd %~dp0..\stable-diffusion-webui-forge\extensions
 
 call :GIT_CLONE_OR_PULL https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
@@ -71,8 +75,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/Bing-su/adetailer
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :GIT_CLONE_OR_PULL https://github.com/adieyal/sd-dynamic-prompts
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
@@ -81,31 +85,31 @@ call :GIT_CLONE_OR_PULL https://github.com/blue-pen5805/sdweb-easy-prompt-select
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM dev なら LCM サンプラーがデフォルトで存在するが master にはない
-call :GIT_CLONE_OR_PULL https://github.com/continue-revolution/sd-webui-animatediff
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/continue-revolution/sd-webui-animatediff
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM f8 未対応っぽい
 call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-cd-tuner
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/Mikubill/sd-webui-controlnet
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/Mikubill/sd-webui-controlnet
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/hnmr293/sd-webui-cutoff
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hnmr293/sd-webui-cutoff
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-lora-block-weight
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-lora-block-weight
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM f8 未対応っぽい
-call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :GIT_CLONE_OR_PULL https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
@@ -113,19 +117,19 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :GIT_CLONE_OR_PULL https://github.com/arenasys/stable-diffusion-webui-model-toolkit
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/arenasys/stable-diffusion-webui-model-toolkit
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :GIT_CLONE_OR_PULL https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM dev で起動時エラー
-call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-supermerger
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-supermerger
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM LoraBlockWeight プリセット
-copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM EasyPromptSelector
 xcopy /SQY %~dp0res\easy_prompt_selector\ sdweb-easy-prompt-selector\tags\ > NUL
@@ -251,4 +255,18 @@ if exist %GIT_COP_DIR%\ (
 	git clone %GIT_COP_URL%
 )
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+exit /b 0
+
+:UPDATE_JSON
+set SRC_JSON=%1
+set DST_JSON=%2
+
+if not exist %DST_JSON% (
+	copy /Y %SRC_JSON% %DST_JSON% > NUL
+	exit /b 0
+)
+
+python %~dp0update_json.py %SRC_JSON% %DST_JSON%
+if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+
 exit /b 0

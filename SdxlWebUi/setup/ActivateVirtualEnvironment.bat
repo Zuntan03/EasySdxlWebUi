@@ -57,28 +57,35 @@ if not "%PYTHON_VERSION_VAR:~7,4%"=="3.10" (
 	pause & exit /b 1
 )
 
-if not exist venv\ (
-	echo %PYTHON_CMD% -m venv venv
-	%PYTHON_CMD% -m venv venv
 
-	if not exist venv\ (
-		echo %PYTHON_CMD%  -m virtualenv --copies venv
-		%PYTHON_CMD%  -m virtualenv --copies venv
+if not "%~1"=="" (
+	set VIRTUAL_ENV_DIR=%~1
+) else (
+	set VIRTUAL_ENV_DIR=venv
+)
+
+if not exist %VIRTUAL_ENV_DIR%\ (
+	echo %PYTHON_CMD% -m venv %VIRTUAL_ENV_DIR%
+	%PYTHON_CMD% -m venv %VIRTUAL_ENV_DIR%
+
+	if not exist %VIRTUAL_ENV_DIR%\ (
+		echo %PYTHON_CMD% -m virtualenv --copies %VIRTUAL_ENV_DIR%
+		%PYTHON_CMD% -m virtualenv --copies %VIRTUAL_ENV_DIR%
 	)
 
-	if not exist venv\ (
+	if not exist %VIRTUAL_ENV_DIR%\ (
 		echo "[ERROR] Python 仮想環境を作成できません。Python 3.10.6 を手動でパスを通してインストールしてください。"
 		pause & exit /b 1
 	)
 
-	call venv\Scripts\activate.bat
+	call %VIRTUAL_ENV_DIR%\Scripts\activate.bat
 	if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 
 	echo python -m pip install -q --upgrade pip
 	python -m pip install -q --upgrade pip
 	if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 ) else (
-	call venv\Scripts\activate.bat
+	call %VIRTUAL_ENV_DIR%\Scripts\activate.bat
 	if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 )
 

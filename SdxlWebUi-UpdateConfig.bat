@@ -23,7 +23,10 @@ exit /b 0
 set SRC_JSON=%1
 set DST_JSON=%2
 
-if not exist %DST_JSON% ( copy /Y %SRC_JSON% %DST_JSON% > NUL )
+if not exist %DST_JSON% (
+	copy /Y %SRC_JSON% %DST_JSON% > NUL
+	exit /b 0
+)
 
 python setup\update_json.py %SRC_JSON% %DST_JSON%
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
