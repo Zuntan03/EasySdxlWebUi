@@ -106,10 +106,10 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM venv 壊れる
-@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+@REM https://github.com/axilesoft/Stable-Diffusion-Webui-Civitai-Helper
 call :GIT_CLONE_OR_PULL https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
