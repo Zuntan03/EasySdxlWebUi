@@ -122,9 +122,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM dev で起動時エラー
-@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-supermerger
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-supermerger
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM LoraBlockWeight プリセット
 copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
