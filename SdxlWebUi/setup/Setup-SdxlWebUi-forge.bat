@@ -103,8 +103,8 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-negpip
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-regional-prompter
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :GIT_CLONE_OR_PULL https://github.com/hako-mikan/sd-webui-traintrain
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
