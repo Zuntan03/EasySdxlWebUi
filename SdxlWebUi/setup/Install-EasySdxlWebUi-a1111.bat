@@ -16,8 +16,8 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo "SdxlWebUi\venv-a1111\ を削除しますか？ [y/n]"
 	set /p YES_OR_NO=
 	if /i "!YES_OR_NO!" == "y" (
-		echo rmdir /SQ SdxlWebUi\venv-a1111\
-		rmdir /SQ SdxlWebUi\venv-a1111\
+		echo rmdir /S /Q SdxlWebUi\venv-a1111\
+		rmdir /S /Q SdxlWebUi\venv-a1111\
 		if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 	)
 ) else (

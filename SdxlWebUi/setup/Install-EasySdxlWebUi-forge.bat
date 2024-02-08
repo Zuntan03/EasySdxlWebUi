@@ -16,8 +16,8 @@ if exist SdxlWebUi\venv-forge\ (
 	echo "SdxlWebUi\venv-forge\ を削除しますか？ [y/n]"
 	set /p YES_OR_NO=
 	if /i "!YES_OR_NO!" == "y" (
-		echo rmdir /SQ SdxlWebUi\venv-forge\
-		rmdir /SQ SdxlWebUi\venv-forge\
+		echo rmdir /S /Q SdxlWebUi\venv-forge\
+		rmdir /S /Q SdxlWebUi\venv-forge\
 		if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 	)
 ) else (
