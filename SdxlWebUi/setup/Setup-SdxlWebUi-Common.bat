@@ -80,6 +80,10 @@ call %~dp0Download.bat Upscaler 4x-AnimeSharp.pth ^
 https://huggingface.co/Zuntan/dist/resolve/main/4x-AnimeSharp.pth
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0Download.bat Upscaler 4x_foolhardy_Remacri.pth ^
+https://huggingface.co/Zuntan/dist/resolve/main/4x_foolhardy_Remacri.pth
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 @REM ControlNet
 call %~dp0Link.bat %SD_DIR%\models\ControlNet ControlNet
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
