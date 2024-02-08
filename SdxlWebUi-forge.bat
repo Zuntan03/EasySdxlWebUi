@@ -22,7 +22,7 @@ set GIT=
 where /Q git
 if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe )
 
-set COMMANDLINE_ARGS= %~1
+set COMMANDLINE_ARGS=%~1
 
 call webui.bat
 
