@@ -14,7 +14,7 @@ lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyas
 ## インストール
 
 一昔前のゲーミング PC など、そこそこの GPU を搭載した Widows PC で動作します。  
-20GB程度のストレージ領域が必要です。  
+25GB程度のストレージ領域が必要です。  
 未成年の方は利用しないでください。
 
 1. [Install-EasySdxlWebUi-forge.bat](https://github.com/Zuntan03/EasySdxlWebUi/raw/main/SdxlWebUi/setup/Install-EasySdxlWebUi-forge.bat) を右クリックから保存して、インストール先のフォルダで実行します。  

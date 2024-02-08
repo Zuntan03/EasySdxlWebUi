@@ -46,6 +46,7 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo https://github.com/hako-mikan/sd-webui-cd-tuner
 	echo https://github.com/Mikubill/sd-webui-controlnet
 	echo https://github.com/hnmr293/sd-webui-cutoff
+	echo https://github.com/zanllp/sd-webui-infinite-image-browsing
 	echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 	echo https://github.com/hako-mikan/sd-webui-negpip
 	echo https://github.com/hako-mikan/sd-webui-traintrain

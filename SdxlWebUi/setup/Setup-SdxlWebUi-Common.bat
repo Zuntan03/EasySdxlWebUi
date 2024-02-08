@@ -109,6 +109,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hnmr293/sd-webui-cutoff
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/zanllp/sd-webui-infinite-image-browsing
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-lora-block-weight
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 

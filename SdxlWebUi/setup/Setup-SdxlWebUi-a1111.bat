@@ -11,7 +11,7 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 popd rem %~dp0..
 
-call %~dp0Setup-SdxlWebUi-Common.bat stable-diffusion-webui-forge a1111
+call %~dp0Setup-SdxlWebUi-Common.bat stable-diffusion-webui a1111
 if %errorlevel% neq 0 ( exit /b %errorlevel% )
 
 pushd %~dp0..\stable-diffusion-webui\extensions
