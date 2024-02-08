@@ -28,13 +28,15 @@ set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.75,max_split_size_mb:
 @REM --medvram-sdxl
 
 set COMMANDLINE_ARGS=^
-	--xformers^
-	--opt-channelslast^
-	%~1
+--gradio-allowed-path .. ^
+--xformers ^
+--opt-channelslast ^
+%*
 
 @REM 手元で優位性を確認できず。
 @REM --opt-sdp-no-mem-attention --opt-sdp-attention --opt-channelslast
 
+echo webui.bat %COMMANDLINE_ARGS%
 call webui.bat
 
 popd rem %~dp0SdxlWebUi\stable-diffusion-webui\

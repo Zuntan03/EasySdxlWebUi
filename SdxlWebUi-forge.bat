@@ -22,8 +22,9 @@ set GIT=
 where /Q git
 if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe )
 
-set COMMANDLINE_ARGS=%~1
+set COMMANDLINE_ARGS=--gradio-allowed-path .. %*
 
+echo webui.bat %COMMANDLINE_ARGS%
 call webui.bat
 
 popd rem %~dp0SdxlWebUi\stable-diffusion-webui-forge\

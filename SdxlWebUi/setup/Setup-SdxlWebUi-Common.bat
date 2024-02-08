@@ -9,7 +9,6 @@ pushd %~dp0..
 call :UPDATE_JSON setup\res\config-%SD_NAME%.json %SD_DIR%\config.json
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-echo call :UPDATE_JSON setup\res\ui-config-%SD_NAME%.json %SD_DIR%\ui-config.json
 call :UPDATE_JSON setup\res\ui-config-%SD_NAME%.json %SD_DIR%\ui-config.json
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -142,11 +141,8 @@ copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scr
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 @REM EasyPromptSelector
-@REM call %~dp0Link.bat sdweb-easy-prompt-selector\tags %~dp0..\EasyPromptSelector
-@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
-@REM リンク先のファイルを読めないようなのでとりあえずコピーに戻す
-xcopy /SQY %~dp0..\EasyPromptSelector\ sdweb-easy-prompt-selector\tags\ > NUL
+call %~dp0Link.bat sdweb-easy-prompt-selector\tags %~dp0..\EasyPromptSelector
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Wildcard
 call %~dp0Link.bat sd-dynamic-prompts\wildcards %~dp0..\Wildcard
