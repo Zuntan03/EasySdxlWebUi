@@ -1,24 +1,28 @@
 ﻿# EasySdxlWebUi
 
-<!-- 概要は[こちら](https://twitter.com/Zuntan03/status/1744195658029117523)。 -->
+概要は[こちら](https://twitter.com/Zuntan03/status/1746426606456127804)。
 
 ![EasySdxlWebUi](./SdxlWebUi/setup/doc/EasySdxlWebUi.webp)
 
-[ANIMAGINE XL 3.0](https://cagliostrolab.net/posts/animagine-xl-v3-release) ([HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.0)) を [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) で簡単に使えるようにします。。  
-bat を実行するだけの簡単インストールで、Python や Git をインストールする必要はありません。  
-LCM を使ったパラメータも設定済みで、一通りの拡張機能とワイルドカードもインストールします。
+EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。  
+lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、古いパソコンでも SDXL による画像生成を楽しめるようになりました。
+
+- ワンクリックインストーラーで古いパソコンでも動く [forge 版](https://github.com/lllyasviel/stable-diffusion-webui-forge) と、実績のある [AUTOMATIC1111 版](https://github.com/AUTOMATIC1111/stable-diffusion-webui) の両方が簡単に使えるようになります。
+- 画像の生成にはインストールだけでなく、web UI の設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。
+	- 中身は通常の web UI と同一ですので、経験が後々無駄になることもありません。
 
 ## インストール
 
-Geforce RTX 3060 **VRAM 12GB** 以上を搭載した、20GB程度の空きストレージのある Widows PC で簡単に動作します。  
+一昔前のゲーミング PC など、そこそこの GPU を搭載した Widows PC で動作します。  
+20GB程度のストレージ領域が必要です。  
 未成年の方は利用しないでください。
 
-1. [Install-EasySdxlWebUi.bat](https://github.com/Zuntan03/EasySdxlWebUi/raw/main/SdxlWebUi/setup/Install-EasySdxlWebUi.bat) を右クリックから保存して、インストール先のフォルダで実行します。  
+1. [Install-EasySdxlWebUi-forge.bat](https://github.com/Zuntan03/EasySdxlWebUi/raw/main/SdxlWebUi/setup/Install-EasySdxlWebUi-forge.bat) を右クリックから保存して、インストール先のフォルダで実行します。  
  **インストール先のフォルダは、スペースを含まない英数字のみの浅いパス (`C:\EasySdxlWebUi\` など) にしてください。**
 	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
-2. ファイルの配布元を `Ctrl+Click` で確認して、問題がなければ `y` を入力してください。
+2. ファイルの配布元を `Ctrl+Click` で確認して、問題がなければ `y` を入力します。
 3. しばらく待ってインストールが終わると、Web ブラウザに Stable Diffusion web UI が表示されます。
-	- 次回以降は `SdxlWebUi.bat` で Stable Diffusion web UI を起動できます。
+	- 次回以降は `SdxlWebUi-forge.bat` で Stable Diffusion web UI を起動できます。
 
 ### インストールのトラブル対策
 
@@ -26,7 +30,7 @@ Geforce RTX 3060 **VRAM 12GB** 以上を搭載した、20GB程度の空きスト
 - Windows PC の管理者権限がないと、インストールに失敗する場合があります。
 - プロキシ環境などでインストールに失敗する場合は、[Git for Windows](https://gitforwindows.org/) と [Python 3.10.6](https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe) を[パスを通してインストール](https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/SdWebUiInstall/SdWebUiInstall.md#git-for-windows-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)してから、最初から EasySdxlWebUi をインストールし直してください。
 
-## 使いかた
+<!-- ## 使いかた
 
 Stable Diffusion web UI の基本的な使い方については、Web にある大量の情報から最近更新された記事を参考にしてください。
 
@@ -92,13 +96,10 @@ Geforce RTX 3060 12GB にて、アップスケールと ADetailer 込みで 25�
 
 ## TIPS
 
-- モデルや LoRA などを別のフォルダにあるものを参照したい場合は、`SdxlWebUi.bat` の `CKPT_DIR` や `LORA_DIR` の値を書き換えます。
 - ControlNet のモデルを追加したい場合は、`SdxlWebUi/ControlNet/Open-SdControlCollection.bat` を実行して、ダウンロードしたモデルを `SdxlWebUi/ControlNet/` に置いてください。
 - `LamaCleaner(C|G)pu.bat` で [画像を手軽に修正できる Lama Cleaner](https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/LamaCleaner/LamaCleaner.md) を利用できます。
 	- 画像を生成しながら使う場合は CPU 版を、単体で使う場合は GPU 版を使用します。
 set COMMANDLINE_ARGS=^
-- VRAM が足りなくなった場合は `SdxlWebUi.bat` を書き換えて、`COMMANDLINE_ARGS` に `--medvram-sdxl` を追加すると VRAM 消費が下がります。
-	- 生成が数割遅くなり、メインメモリの消費量も数GB 増えますので、必要になってから指定してください。
 
 ## fp8
 
@@ -111,7 +112,7 @@ Stable Diffusion web UI の dev ブランチで対応されている fp8 対応�
 - VRAM 消費は減りますが、一部の拡張機能がまだ fp8 に未対応で使用できませんでした。
 
 絵の変化度合いと拡張機能の対応状況から、現時点では見送りました。  
-正式リリースされる頃には、VRAM 8GB が実用に足るかもしれません。
+正式リリースされる頃には、VRAM 8GB が実用に足るかもしれません。 -->
 
 ## ライセンス
 

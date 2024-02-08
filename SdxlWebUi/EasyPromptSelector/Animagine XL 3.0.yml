@@ -1,16 +1,19 @@
 ﻿LCM forge 設定: |-
   <lora:lcm-animagine-3:1>
+  Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
   Steps: 10, Sampler: LCM Karras, CFG scale: 1.5, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 5, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
 LCM a1111 設定: |-
   <lora:lcm-animagine-3:1>
+  Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
   Steps: 10, Sampler: LCM, CFG scale: 1.5, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 5, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
-LCM 無し設定: |-
+LCM 無効設定: |-
+  Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
   Steps: 28, Sampler: Euler a, CFG scale: 7, Denoising strength: 0.55, Hires upscale: 1.5, Hires steps: 14, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+ネガティブ(Ctrl+Click): |-
+  lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 1girl: 1girl
 マスピ: masterpiece
 ベスト: best quality
-ネガティブ(Ctrl+Click): |-
-  lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 nsfw: nsfw
 sensitive: "rating: sensitive"
 general: "rating: general"
@@ -21,3 +24,8 @@ late: late
 oldest: oldest
 "[ガチャ] キャラ 2880": __animagine/character__
 画風 667: __animagine/style__
+"[公式サンプル] C.C.": 1girl, c.c., code geass, white shirt, long sleeves, turtleneck, sitting, looking at viewer, eating, pizza, plate, fork, knife, table, chair, table, restaurant, cinematic angle, cinematic lighting, masterpiece, best quality
+Kana: 1girl, arima kana, oshi no ko, solo, idol, idol clothes, one eye closed, red shirt, black skirt, black headwear, gloves, stage light, singing, open mouth, crowd, smile, pointing at viewer, masterpiece, best quality
+Shirou: A boy and a girl, Emiya Shirou and Artoria Pendragon from fate series, having their breakfast in the dining room. Emiya Shirou wears white t-shirt and jacket. Artoria Pendragon wears white dress with blue neck ribbon. Rice, soup, and minced meats are served on the table. They look at each other while smiling happily, masterpiece, best quality
+Riko: 1girl, sakurauchi riko, \(love live\), queen hat, noble coat, red coat, noble shirt, sitting, crossed legs, gentle smile, parted lips, throne, cinematic angle, masterpiece, best quality
+Karyl: 1girl, karyl \(princess connect!\), princess connect!, solo, animal ears, tsundere, panic, waving, indoors, depth of field, looking at viewer, masterpiece, best quality

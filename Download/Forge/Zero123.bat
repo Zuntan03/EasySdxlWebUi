@@ -8,6 +8,6 @@ if not exist %CURL_CMD% (
 	pause & exit /b 1
 )
 
-%CURL_CMD% -Lo %~dp0\..\SdxlWebUi\stable-diffusion-webui-forge\models\z123\stable_zero123.ckpt ^
+%CURL_CMD% -Lo %~dp0\..\..\SdxlWebUi\stable-diffusion-webui-forge\models\z123\stable_zero123.ckpt ^
 https://huggingface.co/stabilityai/stable-zero123/resolve/main/stable_zero123.ckpt
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )

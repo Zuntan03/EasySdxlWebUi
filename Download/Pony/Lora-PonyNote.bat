@@ -3,9 +3,9 @@ chcp 65001 > NUL
 
 set NOTE_URL=https://rentry.org/ponyxl_loras_n_stuff
 set PS1_URL=https://files.catbox.moe/2kiajb.ps1
-set PONY_DIR=..\SdxlWebUi\Lora\pony_note
+set PONY_DIR=..\..\SdxlWebUi\Lora\pony_note
 
-if exist "%~dp0..\SdxlWebUi\Lora\" (
+if exist "%~dp0..\..\SdxlWebUi\Lora\" (
 	if not exist %PONY_DIR%\ ( mkdir %PONY_DIR% )
 ) else (
 	set PONY_DIR=.

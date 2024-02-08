@@ -83,8 +83,8 @@ echo /QSY .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\ .
 xcopy /QSY .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\ .
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
-echo copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi.bat .\SdxlWebUi-Update.bat
-copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi.bat .\SdxlWebUi-Update.bat
+echo copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi-a1111.bat .\SdxlWebUi-Update-a1111.bat
+copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi-a1111.bat .\SdxlWebUi-Update-a1111.bat
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 echo copy /Y .\SdxlWebUi\setup\Install-EasySdxlWebUi-forge.bat .\SdxlWebUi-Update-forge.bat
