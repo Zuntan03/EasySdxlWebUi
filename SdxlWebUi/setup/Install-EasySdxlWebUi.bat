@@ -29,7 +29,9 @@ if exist SdxlWebUi\venv\ (
 	echo.
 	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0
 	echo https://civitai.com/models/257749
-	echo https://huggingface.co/stabilityai/sdxl-vae/
+	echo https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/
+	echo https://civitai.com/models/119032
+	echo https://huggingface.co/gsdf/CounterfeitXL
 	echo https://huggingface.co/furusu/SD-LoRA
 	echo https://huggingface.co/latent-consistency/lcm-lora-sdxl
 	echo https://huggingface.co/2vXpSwA7/iroiro-lora
@@ -59,6 +61,7 @@ if exist SdxlWebUi\venv\ (
 	echo https://rentry.co/NAIDv3artisttagtestoverview
 	echo https://civitai.com/models/236447/based68
 	echo https://rentry.org/ponyxl_loras_n_stuff
+	echo https://huggingface.co/Zuntan/dist
 	echo よろしいですか？ [y/n]
 	set /p YES_OR_NO=
 	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )

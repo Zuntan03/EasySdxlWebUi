@@ -29,7 +29,9 @@ if exist SdxlWebUi\venv-forge\ (
 	echo.
 	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0
 	echo https://civitai.com/models/257749
-	echo https://huggingface.co/stabilityai/sdxl-vae/
+	echo https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/
+	echo https://civitai.com/models/119032
+	echo https://huggingface.co/gsdf/CounterfeitXL
 	echo https://huggingface.co/furusu/SD-LoRA
 	echo https://huggingface.co/latent-consistency/lcm-lora-sdxl
 	echo https://huggingface.co/2vXpSwA7/iroiro-lora
@@ -37,17 +39,14 @@ if exist SdxlWebUi\venv-forge\ (
 	echo.
 	echo https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 	echo https://github.com/Bing-su/adetailer
-	echo https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 	echo https://github.com/adieyal/sd-dynamic-prompts
 	echo https://github.com/blue-pen5805/sdweb-easy-prompt-selector
-	echo https://github.com/continue-revolution/sd-webui-animatediff
 	echo https://github.com/hako-mikan/sd-webui-cd-tuner
-	echo https://github.com/Mikubill/sd-webui-controlnet
 	echo https://github.com/hnmr293/sd-webui-cutoff
 	echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 	echo https://github.com/hako-mikan/sd-webui-negpip
 	echo https://github.com/hako-mikan/sd-webui-traintrain
-	echo https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
+	echo https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
 	echo https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 	echo https://github.com/arenasys/stable-diffusion-webui-model-toolkit
 	echo https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
@@ -59,6 +58,7 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://rentry.co/NAIDv3artisttagtestoverview
 	echo https://civitai.com/models/236447/based68
 	echo https://rentry.org/ponyxl_loras_n_stuff
+	echo https://huggingface.co/Zuntan/dist
 	echo よろしいですか？ [y/n]
 	set /p YES_OR_NO=
 	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )

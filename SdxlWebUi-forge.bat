@@ -20,21 +20,9 @@ set PYTHON=%~dp0SdxlWebUi\venv-forge\Scripts\python.exe
 set VENV_DIR=%~dp0SdxlWebUi\venv-forge
 set GIT=
 where /Q git
-if %ERRORLEVEL% neq 0 (
-	set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe
-)
+if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe )
 
-set CKPT_DIR=../Model
-set VAE_PATH=../Vae
-set EMBEDDINGS_DIR=../Embedding
-set LORA_DIR=../Lora
-
-set COMMANDLINE_ARGS=^
-	--ckpt-dir %CKPT_DIR%^
-	--vae-dir %VAE_PATH%^
-	--embeddings-dir %EMBEDDINGS_DIR%^
-	--lora-dir %LORA_DIR%^
-	%~1
+set COMMANDLINE_ARGS= %~1
 
 call webui.bat
 

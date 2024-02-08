@@ -27,8 +27,8 @@ if not "%PYTHON_VERSION_VAR:~7,4%"=="3.10" (
 		del %~dp0lib\python.zip
 		if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 
-		echo %PS_CMD% "&{(Get-Content '%PYTHON_DIR%/python310._pth') -creplace '#import site', 'import site' | Set-Content '%PYTHON_DIR%/python310._pth' }"
-		%PS_CMD% "&{(Get-Content '%PYTHON_DIR%/python310._pth') -creplace '#import site', 'import site' | Set-Content '%PYTHON_DIR%/python310._pth' }"
+		echo %PS_CMD% "try { &{(Get-Content '%PYTHON_DIR%/python310._pth') -creplace '#import site', 'import site' | Set-Content '%PYTHON_DIR%/python310._pth' } } catch { exit 1 }"
+		%PS_CMD% "try { &{(Get-Content '%PYTHON_DIR%/python310._pth') -creplace '#import site', 'import site' | Set-Content '%PYTHON_DIR%/python310._pth' } } catch { exit 1 }"
 		if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 
 		echo %CURL_CMD% -o %PYTHON_DIR%\get-pip.py https://bootstrap.pypa.io/get-pip.py

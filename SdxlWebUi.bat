@@ -28,6 +28,7 @@ set CKPT_DIR=../Model
 set VAE_PATH=../Vae
 set EMBEDDINGS_DIR=../Embedding
 set LORA_DIR=../Lora
+set ESRGAN_DIR=../Upscaler
 
 @REM VRAM が足りない場合に以下を COMMANDLINE_ARGS 追加。生成が数割遅くなり、メインメモリの消費量も数GB増える。
 @REM --medvram-sdxl
@@ -37,6 +38,7 @@ set COMMANDLINE_ARGS=^
 	--vae-dir %VAE_PATH%^
 	--embeddings-dir %EMBEDDINGS_DIR%^
 	--lora-dir %LORA_DIR%^
+	--esrgan-models-path %ESRGAN_DIR%^
 	--xformers^
 	--opt-channelslast^
 	%~1

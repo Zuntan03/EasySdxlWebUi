@@ -9,10 +9,11 @@
     "export_for_4chan": false,
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
+    "extra_networks_tree_view_default_enabled": true,
+    "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",
         "sd_vae"
-    ],
-    "control_net_models_path": "../ControlNet"
+    ]
 }
