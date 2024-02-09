@@ -122,6 +122,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-negpip
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-prevent-artifact
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-regional-prompter
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 

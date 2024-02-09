@@ -18,6 +18,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、[古いパソコンでも SDXL による画像生成を楽しめるようになりました](https://twitter.com/Zuntan03/status/1755898971195900249)。
 	- forge 対応に合わせてドキュメントを整備し直しました。
+- hakomikan 氏による [sd-webui-prevent-artifact](https://github.com/hako-mikan/sd-webui-prevent-artifact) の導入と有効化に対応しました。
+	- 詳細な解説は[こちら](https://note.com/hakomikan/n/nb6dd68a1bd9e)。
 
 ## ドキュメント
 

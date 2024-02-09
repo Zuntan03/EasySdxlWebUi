@@ -14,5 +14,6 @@
     "quicksettings_list": [
         "sd_model_checkpoint",
         "sd_vae"
-    ]
+    ],
+    "disable_mean_in_calclate_cond": true
 }
