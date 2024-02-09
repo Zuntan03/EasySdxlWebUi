@@ -17,6 +17,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/02/09
 
 - lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、古いパソコンでも SDXL による画像生成を楽しめるようになりました。
+	- forge 対応に合わせてドキュメントを整備し直しました。
 
 ## ドキュメント
 
@@ -27,6 +28,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	インストールのトラブルシューティングもこちら。
 - [Animagine で最初の画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E6%9C%80%E5%88%9D%E3%81%AE%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)
 	- インストール後に Animagine XL 3.0 最初の画像を生成する手順です。
+
+### Animagine
+- [Animagine のルール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB)
+	- Animagine XL 3.0 を SdxlWebUi で利用する際の、プロンプトや設定のルールです。
 
 ## ライセンス
 
