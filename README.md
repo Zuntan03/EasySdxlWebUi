@@ -16,7 +16,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/02/09
 
-- lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、古いパソコンでも SDXL による画像生成を楽しめるようになりました。
+- lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、[古いパソコンでも SDXL による画像生成を楽しめるようになりました](https://twitter.com/Zuntan03/status/1755898971195900249)。
 	- forge 対応に合わせてドキュメントを整備し直しました。
 
 ## ドキュメント
