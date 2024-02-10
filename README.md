@@ -6,7 +6,8 @@
 
 EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。  
 
-- ワンクリックインストーラーで古いパソコンでも動作する [forge 版](https://github.com/lllyasviel/stable-diffusion-webui-forge) と、実績のある [AUTOMATIC1111 版](https://github.com/AUTOMATIC1111/stable-diffusion-webui) の両方を、簡単に使い始められます。
+- ワンクリックインストーラーで古いパソコンでも動作する [forge 版](https://github.com/lllyasviel/stable-diffusion-webui-forge) と、実績のある [AUTOMATIC1111 版(a1111)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) に両対応しており、簡単に使い始められます。
+	- forge と a1111 で多くの設定を共有しており、気軽に両方を使い分けられます。
 - 画像の生成にはインストールだけでなく、web UI の設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。
 	- 中身は通常の web UI と同一ですので、経験が後々無駄になることもありません。
 

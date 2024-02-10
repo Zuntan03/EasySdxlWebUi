@@ -10,18 +10,19 @@ repo_id = sys.argv[2]
 allow_patterns = ["*"]
 if len(sys.argv) > 3:
     allow_patterns = sys.argv[3:]
-local_dir_use_symlinks = False
+# 差分ダウンロード時に再ダウンロードを防ぐため、シンボリックリンクを使用する
+# local_dir_use_symlinks = False
 
 print("huggingface_hub.snapshot_download(")
 print(f'    local_dir="{local_dir}",')
 print(f'    repo_id="{repo_id}",')
 print(f"    allow_patterns={allow_patterns},")
-print(f"    local_dir_use_symlinks={local_dir_use_symlinks},")
+# print(f"    local_dir_use_symlinks={local_dir_use_symlinks},")
 print(")")
 
 path = snapshot_download(
     local_dir=local_dir,
     repo_id=repo_id,
     allow_patterns=allow_patterns,
-    local_dir_use_symlinks=local_dir_use_symlinks,
+    # local_dir_use_symlinks=local_dir_use_symlinks,
 )
