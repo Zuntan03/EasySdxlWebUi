@@ -14,6 +14,14 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/10
+
+- huggingface_hub で HuggingFace のファイルを一括ダウンロードする機能を追加しました。
+	- `Download/ControlNet/lllyasviel-sd_control_collection.bat` で [lllyasviel/sd_control_collection](https://huggingface.co/lllyasviel/sd_control_collection) の XL 用 ControlNet モデルを一括ダウンロードします。
+		- forge で ip-adapter_xl が動作しないようです。
+	- `Download/Lora/2vXpSwA7-iroiro-lora.bat` で [2vXpSwA7/iroiro-lora](https://note.com/2vxpswa7/n/n046c3e928f1e) の XL 用 LoRA を一括ダウンロードします。
+	- HuggingFace 一括ダウンロードのおすすめがありましたら、お知らせください。
+
 ### 2024/02/09
 
 - lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、[古いパソコンでも SDXL による画像生成を楽しめるようになりました](https://twitter.com/Zuntan03/status/1755898971195900249)。

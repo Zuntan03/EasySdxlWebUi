@@ -16,5 +16,6 @@
         "sd_model_checkpoint",
         "sd_vae"
     ],
+    "dp_wildcard_manager_no_sort": true,
     "disable_mean_in_calclate_cond": true
 }

@@ -56,16 +56,8 @@ https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lor
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Detail LoRA
-call %~dp0Download.bat Lora\detail sdxl-flat.safetensors ^
+call %~dp0Download.bat Lora\iroiro sdxl-flat.safetensors ^
 https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/sdxl/sdxl-flat.safetensors
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
-call %~dp0Download.bat Lora\detail sdxl-hairdetailer_01.safetensors ^
-https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/sdxl/sdxl-hairdetailer_01.safetensors
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
-call %~dp0Download.bat Lora\detail sdxl-hairdetailer_02.safetensors ^
-https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/sdxl/sdxl-hairdetailer_02.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Upscaler
