@@ -7,6 +7,7 @@
     "outdir_save": "../../output",
     "outdir_init_images": "../../output",
     "export_for_4chan": false,
+    "CLIP_stop_at_last_layers": 2,
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
