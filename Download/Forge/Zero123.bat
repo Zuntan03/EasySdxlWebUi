@@ -1,13 +1,11 @@
 @echo off
 chcp 65001 > NUL
+set DL_CMD=%~dp0..\..\SdxlWebUi\setup\Download.bat
 
-set CURL_CMD=C:\Windows\System32\curl.exe
+start "" https://huggingface.co/stabilityai/stable-zero123
 
-if not exist %CURL_CMD% (
-	echo [ERROR] %CURL_CMD% が見つかりません。
-	pause & exit /b 1
-)
-
-%CURL_CMD% -Lo %~dp0\..\..\SdxlWebUi\stable-diffusion-webui-forge\models\z123\stable_zero123.ckpt ^
+pushd %~dp0..\..\SdxlWebUi\stable-diffusion-webui-forge\models\z123
+call %DL_CMD% . stable_zero123.ckpt ^
 https://huggingface.co/stabilityai/stable-zero123/resolve/main/stable_zero123.ckpt
-if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+popd
