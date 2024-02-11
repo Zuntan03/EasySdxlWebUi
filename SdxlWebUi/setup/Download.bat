@@ -23,7 +23,7 @@ if not exist %DOWNLOAD_DIR%\ ( mkdir %DOWNLOAD_DIR% )
 set ARIA_VER=1.37.0
 set ARIA_NAME=aria2-%ARIA_VER%-win-64bit-build1
 set ARIA_EXE=%~dp0lib\%ARIA_NAME%\aria2c.exe
-set ARIA_CMD=%ARIA_EXE% --console-log-level=warn --file-allocation=none -x5
+set ARIA_CMD=%ARIA_EXE% --console-log-level=warn --file-allocation=none -x2
 
 if not exist %ARIA_EXE% (
 	echo %CURL_CMD% -Lo %~dp0lib\aria2.zip https://github.com/aria2/aria2/releases/download/release-%ARIA_VER%/%ARIA_NAME%.zip
