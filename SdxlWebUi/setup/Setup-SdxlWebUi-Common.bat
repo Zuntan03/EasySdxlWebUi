@@ -6,6 +6,9 @@ set SD_NAME=%~2
 pushd %~dp0..
 
 @REM config
+if not exist config.json ( copy /Y %~dp0res\config.json config.json > NUL )
+if not exist ui-config.json ( copy /Y %~dp0res\ui-config.json ui-config.json > NUL )
+
 call :UPDATE_JSON setup\res\config-%SD_NAME%.json %SD_DIR%\config.json
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
