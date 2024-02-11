@@ -15,6 +15,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/12
+
+- 「サンプル画像が生成できても、次に何をしたらよいかわからない」な方へ「[先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)」を用意しました。
+
 ### 2024/02/11
 
 - `Download` に `Model` や `Lora` をダウンロードする bat を追加しました。
@@ -47,6 +51,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	インストールのトラブルシューティングもこちら。
 - [Animagine で最初の画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E6%9C%80%E5%88%9D%E3%81%AE%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)
 	- インストール後に Animagine XL 3.0 最初の画像を生成する手順です。
+- [先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)
+	- まずは真似をしつつ少しずつプロンプトを変えてみるところから始めましょう。
 
 ### Animagine
 - [Animagine のルール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB)
