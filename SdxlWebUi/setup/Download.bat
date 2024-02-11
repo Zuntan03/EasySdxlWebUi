@@ -14,8 +14,33 @@ if exist %DOWNLOAD_DIR%\%DOWNLOAD_FILE% (
 
 if not exist %DOWNLOAD_DIR%\ ( mkdir %DOWNLOAD_DIR% )
 
-echo %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
-%CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+@REM echo %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+@REM %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+@REM if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+@REM endlocal
+@REM exit /b 0
+
+set ARIA_VER=1.37.0
+set ARIA_NAME=aria2-%ARIA_VER%-win-64bit-build1
+set ARIA_EXE=%~dp0lib\%ARIA_NAME%\aria2c.exe
+set ARIA_CMD=%ARIA_EXE% --console-log-level=warn --file-allocation=none -x2
+
+if not exist %ARIA_EXE% (
+	echo %CURL_CMD% -Lo %~dp0lib\aria2.zip https://github.com/aria2/aria2/releases/download/release-%ARIA_VER%/%ARIA_NAME%.zip
+	%CURL_CMD% -Lo %~dp0lib\aria2.zip https://github.com/aria2/aria2/releases/download/release-%ARIA_VER%/%ARIA_NAME%.zip
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+
+	echo 	%PS_CMD% "try { Expand-Archive -Path %~dp0lib\aria2.zip  -DestinationPath %~dp0lib\ -Force } catch { exit 1 }"
+	%PS_CMD% "try { Expand-Archive -Path %~dp0lib\aria2.zip  -DestinationPath %~dp0lib\ -Force } catch { exit 1 }"
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+
+	echo del /Q aria2.zip
+	del /Q aria2.zip
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+)
+
+echo %ARIA_CMD% -o %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+%ARIA_CMD% -o %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+
 endlocal
-exit /b 0
