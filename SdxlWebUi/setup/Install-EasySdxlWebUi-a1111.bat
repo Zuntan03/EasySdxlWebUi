@@ -25,6 +25,7 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo https://www.python.org
 	echo https://github.com/pypa/get-pip
 	echo https://github.com/git-for-windows
+	echo https://github.com/aria2/aria2
 	echo https://github.com/AUTOMATIC1111/stable-diffusion-webui
 	echo.
 	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0

@@ -25,6 +25,7 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://www.python.org
 	echo https://github.com/pypa/get-pip
 	echo https://github.com/git-for-windows
+	echo https://github.com/aria2/aria2
 	echo https://github.com/lllyasviel/stable-diffusion-webui-forge
 	echo.
 	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0
