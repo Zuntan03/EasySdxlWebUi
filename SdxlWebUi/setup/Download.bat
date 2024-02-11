@@ -14,11 +14,11 @@ if exist %DOWNLOAD_DIR%\%DOWNLOAD_FILE% (
 
 if not exist %DOWNLOAD_DIR%\ ( mkdir %DOWNLOAD_DIR% )
 
-@REM echo %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
-@REM %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
-@REM if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
-@REM endlocal
-@REM exit /b 0
+echo %CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+%CURL_CMD% -Lo %DOWNLOAD_DIR%\%DOWNLOAD_FILE% %DOWNLOAD_URL%
+if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+endlocal
+exit /b 0
 
 set ARIA_VER=1.37.0
 set ARIA_NAME=aria2-%ARIA_VER%-win-64bit-build1
