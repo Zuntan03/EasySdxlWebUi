@@ -24,6 +24,12 @@ if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe
 
 set COMMANDLINE_ARGS=--gradio-allowed-path .. %*
 
+%PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\config.json config.json
+if %errorlevel% neq 0 ( pause popd & exit /b %errorlevel% )
+
+%PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\ui-config.json ui-config.json
+if %errorlevel% neq 0 ( pause popd & exit /b %errorlevel% )
+
 echo webui.bat %COMMANDLINE_ARGS%
 call webui.bat
 
