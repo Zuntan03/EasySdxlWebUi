@@ -17,7 +17,6 @@
         "sd_vae"
     ],
     "ch_dl_lyco_to_lora": true,
-    "ch_always_display": true,
     "dp_wildcard_manager_no_sort": true,
     "disable_mean_in_calclate_cond": false
 }
