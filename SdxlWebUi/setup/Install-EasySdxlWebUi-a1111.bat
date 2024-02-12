@@ -99,6 +99,11 @@ if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 call SdxlWebUi\setup\Setup-SdxlWebUi-a1111.bat
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+if exist %~dp0Install-EasySdxlWebUi-a1111.bat ( 
+	call SdxlWebUi\setup\Setup-SdxlWebUi-Resource.bat
+	if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+)
+
 start "" SdxlWebUi-a1111.bat
 
 popd rem %~dp0

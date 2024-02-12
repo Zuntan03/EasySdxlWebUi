@@ -96,6 +96,11 @@ if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 call SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+if exist %~dp0Install-EasySdxlWebUi-forge.bat ( 
+	call SdxlWebUi\setup\Setup-SdxlWebUi-Resource.bat
+	if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+)
+
 start "" SdxlWebUi-forge.bat
 
 popd rem %~dp0

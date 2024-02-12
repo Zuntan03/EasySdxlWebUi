@@ -10,6 +10,7 @@
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
+    "emphasis": "No norm",
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",
@@ -18,5 +19,5 @@
     "ch_dl_lyco_to_lora": true,
     "ch_always_display": true,
     "dp_wildcard_manager_no_sort": true,
-    "disable_mean_in_calclate_cond": true
+    "disable_mean_in_calclate_cond": false
 }
