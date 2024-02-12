@@ -47,12 +47,12 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://github.com/zanllp/sd-webui-infinite-image-browsing
 	echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 	echo https://github.com/hako-mikan/sd-webui-negpip
+	echo https://github.com/hako-mikan/sd-webui-supermerger
 	echo https://github.com/hako-mikan/sd-webui-traintrain
-	echo https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
+	echo https://github.com/blue-pen5805/Stable-Diffusion-Webui-Civitai-Helper
 	echo https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 	echo https://github.com/arenasys/stable-diffusion-webui-model-toolkit
 	echo https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
-	echo https://github.com/hako-mikan/sd-webui-supermerger
 	echo.
 	echo https://huggingface.co/spaces/Linaqruf/animagine-xl
 	echo https://br-d.fanbox.cc/posts/5680274
