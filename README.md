@@ -15,11 +15,18 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/13
+- [sdweb-easy-generate-forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) 拡張機能の追加。
+- [`LECO_LessMuscularityXL_forPony.safetensors`](https://huggingface.co/MayonakaManic/LoRA) のダウンロードを `Download/Lora/MayonakaManic-LessMuscularityXL.bat` に追加。
+- [`ebara_pony_1.safetensors`](https://huggingface.co/tsukihara/xl_model) をダウンロードする `Download/Model/ebara_pony.bat` を追加。
+- [`rumblexl_v11.safetensors`](https://civitai.com/models/296650) をダウンロードする `Download/Model/rumblexl.bat` を追加。
+
 ### 2024/02/12
 
 - 「サンプル画像が生成できても、次に何をしたらよいかわからない」な方へ「[先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)」を用意しました。
 - Civitai Helper を[ぶるぺんさんの fork 版](https://github.com/blue-pen5805)に変更しました。
 	- forge で Civitai Helper の便利なボタンが表示されます。
+- forge 版に `sd-webui-prevent-artifact` が取り込まれたことへの対処。
 
 ### 2024/02/11
 

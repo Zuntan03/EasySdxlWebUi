@@ -51,6 +51,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/adieyal/sd-dynamic-prompts
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/sdweb-easy-generate-forever
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/sdweb-easy-prompt-selector
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
