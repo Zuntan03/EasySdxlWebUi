@@ -18,6 +18,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/02/12
 
 - 「サンプル画像が生成できても、次に何をしたらよいかわからない」な方へ「[先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)」を用意しました。
+- Civitai Helper を[ぶるぺんさんの fork 版](https://github.com/blue-pen5805)に変更しました。
+	- forge で Civitai Helper の便利なボタンが表示されます。
 
 ### 2024/02/11
 

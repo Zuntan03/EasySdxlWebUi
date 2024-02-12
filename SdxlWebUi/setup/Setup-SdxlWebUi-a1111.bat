@@ -26,7 +26,4 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/Mikubill/sd-webui-controlnet
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
 popd rem %~dp0..\stable-diffusion-webui\extensions

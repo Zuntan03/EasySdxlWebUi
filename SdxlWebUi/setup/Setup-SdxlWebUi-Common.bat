@@ -123,7 +123,13 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-regional-prompter
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-supermerger
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-traintrain
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/Stable-Diffusion-Webui-Civitai-Helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
@@ -133,9 +139,6 @@ call %~dp0GitCloneOrPull.bat https://github.com/arenasys/stable-diffusion-webui-
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
-call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-supermerger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM LoraBlockWeight プリセット

@@ -19,9 +19,4 @@ pushd %~dp0..\stable-diffusion-webui-forge\extensions
 @REM call %~dp0GitCloneOrPull.bat https://github.com/continue-revolution/sd-forge-animatediff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM call %~dp0GitCloneOrPull.bat https://github.com/axilesoft/Stable-Diffusion-Webui-Civitai-Helper
-@REM call %~dp0GitCloneOrPull.bat https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
-call %~dp0GitCloneOrPull.bat https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
 popd rem %~dp0..\stable-diffusion-webui-forge\extensions

@@ -7,12 +7,23 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 set GIT_CLONE_OR_PULL_URL=%~1
 for /f "tokens=*" %%i in ("%GIT_CLONE_OR_PULL_URL%") do set GIT_CLONE_OR_PULL_DIR=%%~nxi
 
-if exist %GIT_CLONE_OR_PULL_DIR%\ (
-	echo git -C %GIT_CLONE_OR_PULL_DIR% pull
-	git -C %GIT_CLONE_OR_PULL_DIR% pull
+for /f "delims=" %%i in ('git -C %GIT_CLONE_OR_PULL_DIR% config --get remote.origin.url') do set "REMOTE_ORIGIN_URL=%%i"
 
-) else (
-	echo git clone %GIT_CLONE_OR_PULL_URL%
-	git clone %GIT_CLONE_OR_PULL_URL%
+setlocal enabledelayedexpansion
+if exist %GIT_CLONE_OR_PULL_DIR%\ (
+	if "%GIT_CLONE_OR_PULL_URL%"=="%REMOTE_ORIGIN_URL%" (
+		echo git -C %GIT_CLONE_OR_PULL_DIR% pull
+		git -C %GIT_CLONE_OR_PULL_DIR% pull
+		if !errorlevel! neq 0 ( pause & endlocal & exit /b 1 )
+		endlocal & exit /b 0
+	) else (
+		echo rmdir /S /Q %GIT_CLONE_OR_PULL_DIR%
+		rmdir /S /Q %GIT_CLONE_OR_PULL_DIR%
+		if !errorlevel! neq 0 ( pause & endlocal & exit /b 1 )
+	)
 )
+endlocal
+
+echo git clone %GIT_CLONE_OR_PULL_URL%
+git clone %GIT_CLONE_OR_PULL_URL%
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
