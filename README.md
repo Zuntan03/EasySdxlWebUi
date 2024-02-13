@@ -15,7 +15,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/14
+
+- 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ「[EasySdxlWebUi のしくみ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF)」を用意しました。
+- forge と a1111 の間で `style.csv` の同期に対応しました。
+
 ### 2024/02/13
+
 - [sdweb-easy-generate-forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) 拡張機能の追加。
 - [`LECO_LessMuscularityXL_forPony.safetensors`](https://huggingface.co/MayonakaManic/LoRA) のダウンロードを `Download/Lora/MayonakaManic-LessMuscularityXL.bat` に追加。
 - [`ebara_pony_1.safetensors`](https://huggingface.co/tsukihara/xl_model) をダウンロードする `Download/Model/ebara_pony.bat` を追加。
@@ -63,7 +69,14 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - [先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)
 	- まずは先人の真似をしつつ、少しずつプロンプトを変えてみるところから始めましょう。
 
+
+### EasySdxlWebUi
+
+- [EasySdxlWebUi のしくみ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF)
+	- 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ。
+
 ### Animagine
+
 - [Animagine のルール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB)
 	- Animagine XL 3.0 を SdxlWebUi で利用する際の、プロンプトや設定のルールです。
 

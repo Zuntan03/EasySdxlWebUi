@@ -28,8 +28,8 @@ if not exist %ARIA_EXE% (
 	%PS_CMD% "try { Expand-Archive -Path %~dp0lib\aria2.zip  -DestinationPath %~dp0lib\ -Force } catch { exit 1 }"
 	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
 
-	echo del /Q aria2.zip
-	del /Q aria2.zip
+	echo del /Q %~dp0lib\aria2.zip
+	del /Q %~dp0lib\aria2.zip
 	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
 )
 
