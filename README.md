@@ -1,6 +1,6 @@
 ﻿# EasySdxlWebUi
 
-概要は [こちら](https://twitter.com/Zuntan03/status/1746426606456127804)。
+概要: [PC Watch (2/14)](https://twitter.com/Zuntan03/status/1757707024958464163), [forge (2/9)](https://twitter.com/Zuntan03/status/1755898971195900249), [AUTOMATIC1111 (1/14)](https://twitter.com/Zuntan03/status/1746=426606456127804)
 
 ![EasySdxlWebUi](./SdxlWebUi/setup/doc/EasySdxlWebUi.webp)
 
