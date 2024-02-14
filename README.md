@@ -17,6 +17,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/02/14
 
+- 「[EasySdxlWebUi のインストール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)」に「[すでにご利用中の Stable Diffusion Web UI からモデルや LoRA などを共有する](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB#%E3%81%99%E3%81%A7%E3%81%AB%E3%81%94%E5%88%A9%E7%94%A8%E4%B8%AD%E3%81%AE-stable-diffusion-web-ui-%E3%81%8B%E3%82%89%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-lora-%E3%81%AA%E3%81%A9%E3%82%92%E5%85%B1%E6%9C%89%E3%81%99%E3%82%8B)」を追記しました。
 - 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ「[EasySdxlWebUi のしくみ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF)」を用意しました。
 - forge と a1111 の間で `style.csv` の同期に対応しました。
 
