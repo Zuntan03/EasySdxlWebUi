@@ -18,6 +18,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/02/15
 
 -  [拡張機能のひとこと紹介](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E7%B4%B9%E4%BB%8B) を追加しました。
+- `Download/Lora/MayonakaManic-LoRA.bat` に `LECO_LessMonsterGirlsXL.safetensors` と `LECO_LessChibiAndDollsXL.safetensors` を追加しました。
 
 ### 2024/02/14
 

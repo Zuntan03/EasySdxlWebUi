@@ -12,4 +12,14 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessMuscularityXL_forPony.safetensors ^
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessMuscularityXL_forPony.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessMonsterGirlsXL.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessMonsterGirls/LECO_LessMonsterGirlsXL.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessChibiAndDollsXL.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessChibiAndDolls/LECO_LessChibiAndDollsXL.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 popd
+
