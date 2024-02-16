@@ -24,9 +24,11 @@ if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe
 
 set COMMANDLINE_ARGS=--gradio-allowed-path .. %*
 
+if not exist config.json ( copy /Y %~dp0SdxlWebUi\setup\res\config-forge.json config.json )
 %PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\config.json config.json
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
+if not exist ui-config.json ( copy /Y %~dp0SdxlWebUi\setup\res\ui-config-forge.json ui-config.json )
 %PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\ui-config.json ui-config.json
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
