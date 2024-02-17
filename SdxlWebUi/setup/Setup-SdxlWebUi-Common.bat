@@ -5,6 +5,9 @@ set SD_DIR=%~1
 set SD_NAME=%~2
 pushd %~dp0..
 
+@REM e621-v3-20221117-sgd-e32
+pip -qq install tensorflow_io
+
 @REM config
 if not exist config.json ( copy /Y %~dp0res\config.json config.json > NUL )
 if not exist ui-config.json ( copy /Y %~dp0res\ui-config.json ui-config.json > NUL )
@@ -37,6 +40,15 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM ControlNet
 call %~dp0Link.bat %SD_DIR%\models\ControlNet ControlNet
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+@REM Tagger
+if not exist TaggerDeepDanboooru\ ( mkdir TaggerDeepDanboooru )
+call %~dp0Link.bat %SD_DIR%\models\deepdanbooru TaggerDeepDanboooru
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+if not exist TaggerOnnx\ ( mkdir TaggerOnnx )
+call %~dp0Link.bat %SD_DIR%\models\TaggerOnnx TaggerOnnx
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 popd rem %~dp0..

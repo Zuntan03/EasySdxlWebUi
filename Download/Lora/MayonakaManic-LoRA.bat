@@ -21,5 +21,5 @@ call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessChibiAndDollsXL.saf
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessChibiAndDolls/LECO_LessChibiAndDollsXL.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-popd
+popd rem %SDXL_WEB_UI%\Lora
 
