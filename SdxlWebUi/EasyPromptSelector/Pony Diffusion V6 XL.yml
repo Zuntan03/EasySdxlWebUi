@@ -2,6 +2,16 @@
   source_anime, score_9, 
   Negative prompt: source_furry, source_cartoon, source_pony, blurry, 
   Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+1024x1024: "\n
+Size: 1024x1024, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+896x1152: "\n
+Size: 896x1152, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+832x1216: "\n
+Size: 832x1216, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+768x1344: "\n
+Size: 768x1344, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+640x1536: "\n
+Size: 640x1536, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
 flat: <lora:sdxl-flat:-1>
 score_9: score_9
 score_8: score_8_up

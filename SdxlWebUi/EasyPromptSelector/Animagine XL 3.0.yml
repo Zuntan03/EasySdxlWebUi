@@ -9,6 +9,16 @@ LCM a1111 設定: |-
 LCM 無効設定: |-
   Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
   Steps: 28, Sampler: Euler a, CFG scale: 7, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 14, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+1024x1024: "\n
+Size: 1024x1024, Model hash: 1449e5b0b9, Model: animagine-xl-3.0"
+896x1152: "\n
+Size: 896x1152, Model hash: 1449e5b0b9, Model: animagine-xl-3.0"
+832x1216: "\n
+Size: 832x1216, Model hash: 1449e5b0b9, Model: animagine-xl-3.0"
+768x1344: "\n
+Size: 768x1344, Model hash: 1449e5b0b9, Model: animagine-xl-3.0"
+640x1536: "\n
+Size: 640x1536, Model hash: 1449e5b0b9, Model: animagine-xl-3.0"
 ネガティブ(Ctrl+Click): |-
   lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 flat: <lora:sdxl-flat:-1>
