@@ -18,10 +18,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/02/17
 
 - `Easy Prompt Selector` の `Animagine XL 3.0.yml` と `Pony Diffusion V6 XL.yml` に、SDXL 用画像サイズを指定するボタンを追加しました。
-	- `896x1152` などのサイズ指定ボタンのあとに `生成` ボタン左下の矢印ボタンで適用します。
+	- `896x1152` などのサイズ指定ボタンのあとに `生成` ボタン左下の矢印ボタンで適用します。  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/SetSize.png)
 - e621 のタグ付けに対応しました。
 	- `Download/Tagger` の bat ファイルでモデルをダウンロードした後に、`タグ付け` タブの `インタロゲーター` で選択できます。
-- ダウンロードできるモデル `Download/Model/` の更新と追加をしました。
 - forge と a1111 の `style.csv` 同期に不具合があったため無効化しました。
 
 ### 2024/02/15
