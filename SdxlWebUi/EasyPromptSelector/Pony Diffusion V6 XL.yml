@@ -1,13 +1,13 @@
 ﻿1024x1024: "\n
-Size: 1024x1024, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+Size: 1024x1024, Denoising strength: 0.6, Emphasis: No norm"
 896x1152: "\n
-Size: 896x1152, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+Size: 896x1152, Denoising strength: 0.6, Emphasis: No norm"
 832x1216: "\n
-Size: 832x1216, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+Size: 832x1216, Denoising strength: 0.6, Emphasis: No norm"
 768x1344: "\n
-Size: 768x1344, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+Size: 768x1344, Denoising strength: 0.6, Emphasis: No norm"
 640x1536: "\n
-Size: 640x1536, Model hash: 67ab2fd8ec, Model: ponyDiffusionV6XL_v6StartWithThisOne"
+Size: 640x1536, Denoising strength: 0.6, Emphasis: No norm"
 設定: |-
   source_anime, score_9, 
   Negative prompt: source_furry, source_cartoon, source_pony, blurry, 
