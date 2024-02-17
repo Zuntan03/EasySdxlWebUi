@@ -57,20 +57,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- `SdxlWebUi/config.json` や `SdxlWebUi/ui-config.json` に設定を書き加えると、起動時に forge と a1111 の両方に設定を適用します。
 - ダウンロードを高速化しました。
 
-### 2024/02/10
-
-- huggingface_hub で HuggingFace のファイルを一括ダウンロードする機能を追加しました。
-	- `Download/ControlNet/lllyasviel-sd_control_collection.bat` で [lllyasviel/sd_control_collection](https://huggingface.co/lllyasviel/sd_control_collection) の XL 用 ControlNet モデルを一括ダウンロードします。
-		- forge で ip-adapter_xl が動作しないようです。
-	- `Download/Lora/2vXpSwA7-iroiro-lora.bat` で [2vXpSwA7/iroiro-lora](https://note.com/2vxpswa7/n/n046c3e928f1e) の XL 用 LoRA を一括ダウンロードします。
-	- HuggingFace 一括ダウンロードのおすすめがありましたら、お知らせください。
-
-### 2024/02/09
-
-- lllyasviel 氏による [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) により、[古いパソコンでも SDXL による画像生成を楽しめるようになりました](https://twitter.com/Zuntan03/status/1755898971195900249)。
-	- forge 対応に合わせてドキュメントを整備し直しました。
-- hakomikan 氏による [sd-webui-prevent-artifact](https://github.com/hako-mikan/sd-webui-prevent-artifact) の導入と有効化に対応しました。
-	- 詳細な解説は[こちら](https://note.com/hakomikan/n/nb6dd68a1bd9e)。
+[過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 
 ## ドキュメント
 
