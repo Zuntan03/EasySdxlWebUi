@@ -57,14 +57,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- forge で Civitai Helper の便利なボタンが表示されます。
 - forge 版に `sd-webui-prevent-artifact` が取り込まれたことへの対処。
 
-### 2024/02/11
-
-- `Download` に `Model` や `Lora` をダウンロードする bat を追加しました。
-	- Civitai でログインしないとダウンロードできないコンテンツが増えていますので、bat でのダウンロードをどんどん増やすのは難しそうです。
-- `config.json` と `ui-config.json` の上書き設定に対応しました。
-	- `SdxlWebUi/config.json` や `SdxlWebUi/ui-config.json` に設定を書き加えると、起動時に forge と a1111 の両方に設定を適用します。
-- ダウンロードを高速化しました。
-
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 
 ## ドキュメント
