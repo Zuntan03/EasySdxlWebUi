@@ -17,6 +17,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/02/18
 
+- ドキュメントに『[EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)』を追加しました。
+	- Web UI 起動時の初期パラメータを変更したり、自分用のボタン入力を追加したりできます。
 - スタイルファイルを `SdxlWebUi/styles.csv` を参照するように変更しました。
 	- すでに forge や a1111 で `styles.csv` を利用していた場合は、`SdxlWebUi/stable-diffusion-webui-forge/styles.csv` や `SdxlWebUi/stable-diffusion-webui/styles.csv` を `SdxlWebUi/styles.csv` にコピーしてください。
 
@@ -78,6 +80,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### EasySdxlWebUi
 
+- [EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
+	- Web UI 起動時の初期パラメータを変更したり、自分用のボタン入力を追加したりできます。
 - [EasySdxlWebUi のしくみ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF)
 	- 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ。
 -  [拡張機能のひとこと紹介](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E7%B4%B9%E4%BB%8B)
