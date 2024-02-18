@@ -15,6 +15,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/18
+
+- スタイルファイルを `SdxlWebUi/styles.csv` を参照するように変更しました。
+	- すでに forge や a1111 で `styles.csv` を利用していた場合は、`SdxlWebUi/stable-diffusion-webui-forge/styles.csv` や `SdxlWebUi/stable-diffusion-webui/styles.csv` を `SdxlWebUi/styles.csv` にコピーしてください。
+
 ### 2024/02/17
 
 - `Easy Prompt Selector` の `Animagine XL 3.0.yml` と `Pony Diffusion V6 XL.yml` に、SDXL 用画像サイズを指定するボタンを追加しました。
@@ -65,13 +70,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### セットアップ
 
 - [EasySdxlWebUi のインストール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
-	- EasySdxlWebUi のインストール方法の説明です。  
-	インストールのトラブルシューティングもこちら。
+	- EasySdxlWebUi のインストール方法の説明とトラブルシューティングです。  
 - [Animagine で最初の画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E6%9C%80%E5%88%9D%E3%81%AE%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)
 	- インストール後に Animagine XL 3.0 最初の画像を生成する手順です。
 - [先人の知見を参考にする](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E5%8F%82%E8%80%83%E3%81%AB%E3%81%99%E3%82%8B)
 	- まずは先人の真似をしつつ、少しずつプロンプトを変えてみるところから始めましょう。
-
 
 ### EasySdxlWebUi
 
@@ -79,6 +82,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ。
 -  [拡張機能のひとこと紹介](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E7%B4%B9%E4%BB%8B)
 	- EasySdxlWebUi が自動的にインストールする数々の拡張機能についてのひとこと紹介です。
+- [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
+	- 過去の更新履歴です。
 
 ### Animagine
 
