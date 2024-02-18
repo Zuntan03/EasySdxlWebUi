@@ -8,9 +8,18 @@ pushd %~dp0..
 @REM e621-v3-20221117-sgd-e32
 pip -qq install tensorflow_io
 
+copy /Y setup\Install-EasySdxlWebUi-a1111.bat ..\SdxlWebUi-Update-a1111.bat > NUL
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
+copy /Y setup\Install-EasySdxlWebUi-forge.bat ..\SdxlWebUi-Update-forge.bat > NUL
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 @REM config
 if not exist config.json ( copy /Y %~dp0res\config.json config.json > NUL )
+
 copy /Y "%~dp0res\config Diff.bat" "config Diff.bat" > NUL
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 if not exist ui-config.json ( copy /Y %~dp0res\ui-config.json ui-config.json > NUL )
 if not exist styles.csv ( copy /Y %~dp0res\styles.csv styles.csv > NUL )
 
