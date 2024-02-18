@@ -28,6 +28,7 @@ set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.75,max_split_size_mb:
 @REM --medvram-sdxl
 
 set COMMANDLINE_ARGS=^
+--styles-file ../styles.csv ^
 --gradio-allowed-path .. ^
 --xformers ^
 --opt-channelslast ^

@@ -10,7 +10,9 @@ pip -qq install tensorflow_io
 
 @REM config
 if not exist config.json ( copy /Y %~dp0res\config.json config.json > NUL )
+copy /Y "%~dp0res\config Diff.bat" "config Diff.bat" > NUL
 if not exist ui-config.json ( copy /Y %~dp0res\ui-config.json ui-config.json > NUL )
+if not exist styles.csv ( copy /Y %~dp0res\styles.csv styles.csv > NUL )
 
 call :UPDATE_JSON setup\res\config-%SD_NAME%.json %SD_DIR%\config.json
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

@@ -22,7 +22,10 @@ set GIT=
 where /Q git
 if %ERRORLEVEL% neq 0 ( set GIT=%~dp0SdxlWebUi\setup\lib\PortableGit\bin\git.exe )
 
-set COMMANDLINE_ARGS=--gradio-allowed-path .. %*
+set COMMANDLINE_ARGS=^
+--styles-file ../styles.csv ^
+--gradio-allowed-path .. ^
+%*
 
 if not exist config.json ( copy /Y %~dp0SdxlWebUi\setup\res\config-forge.json config.json )
 %PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\config.json config.json

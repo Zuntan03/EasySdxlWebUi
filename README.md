@@ -22,6 +22,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/SetSize.png)
 - e621 のタグ付けに対応しました。
 	- `Download/Tagger` の bat ファイルでモデルをダウンロードした後に、`タグ付け` タブの `インタロゲーター` で選択できます。
+- `Download/Model/` のモデルバージョンを更新しました。
 - forge と a1111 の `style.csv` 同期に不具合があったため無効化しました。
 
 ### 2024/02/15
