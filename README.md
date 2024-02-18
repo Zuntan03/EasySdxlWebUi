@@ -18,7 +18,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/02/18
 
 - forge 対応時あたりから EasySdxlWebUi を利用していた場合に、正常に更新できない不具合を修正しました。
-	- `SdxlWebUi-Update-a1111.bat` や `SdxlWebUi-Update-forge.bat` がなく、`SdxlWebUi-Update.bat` で更新されている方が不具合の対象です。
+	- インストール先に `SdxlWebUi-Update-a1111.bat` がなく、`SdxlWebUi-Update.bat` で更新されている方が不具合の対象です。
 	- 以降は `SdxlWebUi-Update.bat` で正常に更新され、`SdxlWebUi-Update-a1111.bat` や `SdxlWebUi-Update-forge.bat` で更新できるようになります。
 		- `SdxlWebUi-Update-a1111.bat` や `SdxlWebUi-Update-forge.bat` による更新で、不要となった `SdxlWebUi-Update.bat` や `SdxlWebUi.bat` を削除します。
 - ドキュメントに『[モデルや LoRA の追加](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0)』を追加しました。
