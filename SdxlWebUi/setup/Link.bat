@@ -11,12 +11,6 @@ for /f "delims=" %%A in ('dir /aL /b "%LINK_DST_DIR%" 2^>NUL') do (
 	if /i "%%~A"=="%LINK_DST_NAME%" ( exit /b 0 )
 )
 
-@REM リンク済みでない DST があればバックアップ、言語ロケールの影響に注意が必要
-@REM set "DATE_TIME=%DATE:/=-%_%TIME::=-%"
-@REM set "DATE_TIME=%DATE_TIME: =0%"
-@REM set "DATE_TIME=%DATE_TIME:~0,-3%"
-@REM set "NEW_NAME=%LINK_DST_NAME%_%DATE_TIME%"
-
 @REM リンク済みでない DST があればリネームで保護
 set NEW_NAME=%LINK_DST_NAME%
 :FIND_NAME

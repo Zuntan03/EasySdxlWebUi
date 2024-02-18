@@ -45,38 +45,6 @@ if not exist ui-config.json ( copy /Y %~dp0SdxlWebUi\setup\res\ui-config-a1111.j
 %PYTHON% %~dp0SdxlWebUi\setup\update_json.py %~dp0SdxlWebUi\ui-config.json ui-config.json
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
-@REM style.csv の同期
-@REM set SRC_STYLE_PATH=..\stable-diffusion-webui-forge\styles.csv
-@REM for %%i in ("%SRC_STYLE_PATH%") do set "SRC_STYLE_DATE=%%~ti"
-
-@REM set DST_STYLE_PATH=styles.csv
-@REM for %%i in ("%DST_STYLE_PATH%") do set "DST_STYLE_DATE=%%~ti"
-
-@REM set "DATE_TIME=%DATE:/=-%_%TIME::=-%"
-@REM set "DATE_TIME=%DATE_TIME: =0%"
-@REM set "DATE_TIME=%DATE_TIME:~0,-3%"
-@REM set DST_STYLE_BACKUP_PATH=styles_%DATE_TIME%.csv
-
-@REM setlocal enabledelayedexpansion
-@REM if exist %SRC_STYLE_PATH% (
-@REM 	if exist %DST_STYLE_PATH% (
-@REM 		if "%SRC_STYLE_DATE%" gtr "%DST_STYLE_DATE%" (
-@REM 			echo move %DST_STYLE_PATH% %DST_STYLE_BACKUP_PATH%
-@REM 			move %DST_STYLE_PATH% %DST_STYLE_BACKUP_PATH%
-@REM 			if !errorlevel! neq 0 ( pause & endlocal & popd & exit /b 1 )
-
-@REM 			echo copy %SRC_STYLE_PATH% %DST_STYLE_PATH%
-@REM 			copy %SRC_STYLE_PATH% %DST_STYLE_PATH%
-@REM 			if !errorlevel! neq 0 ( pause & endlocal & popd & exit /b 1 )
-@REM 		)
-@REM 	) else (
-@REM 		echo copy %SRC_STYLE_PATH% %DST_STYLE_PATH%
-@REM 		copy %SRC_STYLE_PATH% %DST_STYLE_PATH%
-@REM 		if !errorlevel! neq 0 ( pause & endlocal & popd & exit /b 1 )
-@REM 	)
-@REM )
-@REM endlocal
-
 echo webui.bat %COMMANDLINE_ARGS%
 call webui.bat
 
