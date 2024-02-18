@@ -101,4 +101,6 @@ start "" SdxlWebUi-a1111.bat
 
 popd rem %~dp0
 
+if exist %~dp0SdxlWebUi.bat ( del %~dp0SdxlWebUi.bat )
+if exist %~dp0SdxlWebUi-Update.bat ( del %~dp0SdxlWebUi-Update.bat )
 if exist %~dp0Install-EasySdxlWebUi-a1111.bat ( del %~dp0Install-EasySdxlWebUi-a1111.bat )
