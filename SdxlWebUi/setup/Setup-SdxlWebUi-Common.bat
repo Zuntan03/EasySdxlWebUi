@@ -133,6 +133,7 @@ pushd %~dp0..\Wildcard
 
 call %~dp0Setup-Wildcard.bat
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 popd rem %~dp0..\Wildcard
 exit /b 0
 

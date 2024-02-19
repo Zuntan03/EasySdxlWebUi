@@ -56,6 +56,9 @@ if exist SdxlWebUi\venv-forge\ (
 	echo.
 	echo https://huggingface.co/spaces/Linaqruf/animagine-xl
 	echo https://br-d.fanbox.cc/posts/5680274
+	echo https://br-d.fanbox.cc/posts/5736236
+	echo https://br-d.fanbox.cc/posts/5754786
+	echo https://br-d.fanbox.cc/posts/5822703
 	echo https://rentry.org/NAIwildcards
 	echo https://rentry.co/NAIDv3artisttagtestoverview
 	echo https://civitai.com/models/236447/based68

@@ -15,6 +15,15 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/19
+
+- ワイルドカードに [BD さん](https://note.com/br_d/) の『[リニューアル ファンタジーコーデ！](https://br-d.fanbox.cc/posts/5822703)』**`__bd/new_fantasy_outfit__`** と『[シチュエーション30選 Part.1](https://br-d.fanbox.cc/posts/5736236) & [Part.2](https://br-d.fanbox.cc/posts/5754786)』**`__bd/situation__`** を追加しました。
+- Easy Prompt Selector の設定系ボタンに、SDXL ノイズ画像対策の `Emphasis: No norm` を追加しました。
+
+|`__bd/new_fantasy_outfit__` |`__bd/situation__`|
+|:--:|:--:|
+|![__bd/new_fantasy_outfit__](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/bd-new_fantasy_outfit.webp)|![__bd/situation__](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/bd-situation.webp)|
+
 ### 2024/02/18
 
 - forge 対応時あたりから EasySdxlWebUi を利用していた場合に、正常に更新できない不具合を修正しました。

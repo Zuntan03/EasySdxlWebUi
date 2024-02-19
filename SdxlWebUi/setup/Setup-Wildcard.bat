@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 > NUL
+set CURL_CMD=C:\Windows\System32\curl.exe
 set PS_CMD=PowerShell -Version 5.1 -ExecutionPolicy Bypass
 
 xcopy /SQY %~dp0res\wildcards\ . > NUL
@@ -47,6 +48,34 @@ if not exist bd\ (
 	move /Y %~dp0lib\bd\感情.txt bd\emotion.txt
 	move /Y %~dp0lib\bd\旅.txt bd\journey.txt
 	move /Y %~dp0lib\bd\bg.txt bd\bg.txt
+)
+
+if not exist bd\situation.txt (
+	echo %CURL_CMD% -Lo %~dp0lib\bd_situ.zip https://downloads.fanbox.cc/files/post/5754786/IT4TSnDvgWu21nis0hxY0Vkm.zip
+	%CURL_CMD% -Lo %~dp0lib\bd_situ.zip https://downloads.fanbox.cc/files/post/5754786/IT4TSnDvgWu21nis0hxY0Vkm.zip
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+
+	echo %PS_CMD% "try { Expand-Archive -Path %~dp0lib\bd_situ.zip  -DestinationPath %~dp0lib\bd\ -Force } catch { exit 1 }"
+	%PS_CMD% "try { Expand-Archive -Path %~dp0lib\bd_situ.zip  -DestinationPath %~dp0lib\bd\ -Force } catch { exit 1 }"
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+	del /q %~dp0lib\bd_situ.zip
+
+	%PS_CMD% -File %~dp0EpsCategory2Wildcard.ps1 %~dp0lib\bd\BD_シチュエーション.yml
+	move /Y %~dp0lib\bd\シチュエーション.txt bd\situation.txt
+)
+
+if not exist bd\new_fantasy_outfit.txt (
+	echo %CURL_CMD% -Lo %~dp0lib\bd_nfo.zip https://downloads.fanbox.cc/files/post/5822703/VhuspaHInNLgrra6qhQWKtNC.zip
+	%CURL_CMD% -Lo %~dp0lib\bd_nfo.zip https://downloads.fanbox.cc/files/post/5822703/VhuspaHInNLgrra6qhQWKtNC.zip
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+
+	echo %PS_CMD% "try { Expand-Archive -Path %~dp0lib\bd_nfo.zip  -DestinationPath %~dp0lib\bd\ -Force } catch { exit 1 }"
+	%PS_CMD% "try { Expand-Archive -Path %~dp0lib\bd_nfo.zip  -DestinationPath %~dp0lib\bd\ -Force } catch { exit 1 }"
+	if !errorlevel! neq 0 ( pause & exit /b !errorlevel! )
+	del /q %~dp0lib\bd_nfo.zip
+
+	%PS_CMD% -File %~dp0EpsCategory2Wildcard.ps1 %~dp0lib\bd\BD_Newファンタジーコーデ.yml
+	move /Y %~dp0lib\bd\Newファンタジーコーデ.txt bd\new_fantasy_outfit.txt
 )
 endlocal
 
