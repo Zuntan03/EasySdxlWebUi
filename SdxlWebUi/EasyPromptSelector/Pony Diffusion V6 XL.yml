@@ -8,10 +8,10 @@ Size: 832x1216, Denoising strength: 0.6, Emphasis: No norm"
 Size: 768x1344, Denoising strength: 0.6, Emphasis: No norm"
 640x1536: "\n
 Size: 640x1536, Denoising strength: 0.6, Emphasis: No norm"
-設定: |-
-  source_anime, score_9, 
-  Negative prompt: source_furry, source_cartoon, source_pony, blurry, 
-  Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用
+設定: "\n
+  source_anime, score_9, \n
+  Negative prompt: source_furry, source_cartoon, source_pony, blurry, \n
+  Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), # 生成ボタン左下の矢印ボタンで適用"
 flat: <lora:sdxl-flat:-1>
 score_9: score_9
 score_8: score_8_up
