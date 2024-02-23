@@ -15,6 +15,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/23
+
+- パラメータを適用した際に `設定を上書き` に `Emphasis: Original` が表示された場合は、ノイズ画像が生成されるのを防ぐために `☓` で削除してください。  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/SNGN/EmphasisOriginal.png)
+- [モデルと LoRA 作者の Civitai リンク](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0#%E3%83%A2%E3%83%87%E3%83%AB%E3%81%A8-lora-%E4%BD%9C%E8%80%85%E3%81%AE-civitai-%E3%83%AA%E3%83%B3%E3%82%AF) にリンクを追加しました。
+- `Download/Lora/MayonakaManic-LoRA.bat` に `LECO_LessHarshEmotionsXL.safetensors` を追加しました。
+
 ### 2024/02/19
 
 - ワイルドカードに [BD さん](https://note.com/br_d/) の『[リニューアル ファンタジーコーデ！](https://br-d.fanbox.cc/posts/5822703)』**`__bd/new_fantasy_outfit__`** と『[シチュエーション30選 Part.1](https://br-d.fanbox.cc/posts/5736236) & [Part.2](https://br-d.fanbox.cc/posts/5754786)』**`__bd/situation__`** を追加しました。
