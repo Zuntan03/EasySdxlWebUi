@@ -23,6 +23,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/SNGN/EmphasisOriginal.png)
 - [モデルと LoRA 作者の Civitai リンク](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0#%E3%83%A2%E3%83%87%E3%83%AB%E3%81%A8-lora-%E4%BD%9C%E8%80%85%E3%81%AE-civitai-%E3%83%AA%E3%83%B3%E3%82%AF) にリンクを追加しました。
 - `Download/Lora/MayonakaManic-LoRA.bat` に `LECO_LessHarshEmotionsXL.safetensors` を追加しました。
+- forge版の ADetailer を [Bing-su 版](https://github.com/Bing-su/adetailer)から [hinablue 版](https://github.com/hinablue/adetailer) に変更しました。
 
 ### 2024/02/19
 

@@ -68,8 +68,8 @@ pushd %~dp0..\%SD_DIR%\extensions
 call %~dp0GitCloneOrPull.bat https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/Bing-su/adetailer
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call %~dp0GitCloneOrPull.bat https://github.com/Bing-su/adetailer
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/adieyal/sd-dynamic-prompts
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
