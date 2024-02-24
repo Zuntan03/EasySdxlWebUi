@@ -14,6 +14,8 @@
     "txt2img/Denoising strength/value": 0.6,
     "txt2img/Upscale by/value": 1.5,
     "customscript/!adetailer.py/txt2img/Enable ADetailer/value": true,
+    "customscript/dart_upsampler.py/txt2img/Seed for upsampling tags/value": -1,
+    "customscript/dart_upsampler.py/img2img/Seed for upsampling tags/value": -1,
     "customscript/cdtuner.py/txt2img/Active/value": true,
     "customscript/negpip.py/txt2img/Active/value": true
 }

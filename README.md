@@ -15,6 +15,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/24
+
+- [Platさん](https://twitter.com/p1atdev_art)の [`sd-danbooru-tags-upsampler`](https://github.com/p1atdev/sd-danbooru-tags-upsampler) に対応しました。
+	- NSFW では Easy Prompt Selector の `TagUpsample NSFW` ボタンで `rating:explicit, uncensored` をプロンプトに入力します。
+
 ### 2024/02/23
 
 - [Platさん](https://twitter.com/p1atdev_art)の『[プロンプトは考えたくないけど画像生成がしたい！](https://zenn.dev/platina/articles/ea6a60f0ad69d0)』を利用した、ワイルドカードの生成に対応しました。
