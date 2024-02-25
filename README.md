@@ -17,6 +17,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/02/24
 
+- [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) の LoRA をダウンロードする `Download/LoRA/SDXL-Lightning.bat` を追加しました。
+
+### 2024/02/24
+
 - [Danbooru Tags Upsampler でかんたん高品質プロンプトガチャ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Danbooru-Tags-Upsampler-%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%AB%98%E5%93%81%E8%B3%AA%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%AC%E3%83%81%E3%83%A3) を追加しました。
 	- [Platさん](https://twitter.com/p1atdev_art) の [Danbooru Tags Upsampler](https://github.com/p1atdev/sd-danbooru-tags-upsampler) はプロンプト生成専用の言語モデルにより、とても簡単に高品質なプロンプトでガチャれます。
 - [Platさん](https://twitter.com/p1atdev_art)の [`sd-danbooru-tags-upsampler`](https://github.com/p1atdev/sd-danbooru-tags-upsampler) に対応しました。
