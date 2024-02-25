@@ -12,6 +12,10 @@ Size: 640x1536, Denoising strength: 0.6, Emphasis: No norm"
   source_anime, score_9, \n
   Negative prompt: source_furry, source_cartoon, source_pony, blurry, \n
   Steps: 16, Sampler: Euler a, CFG scale: 7.0, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+Lightning 設定: "\n
+  source_anime, score_9, \n
+  Negative prompt: source_furry, source_cartoon, source_pony, blurry, \n
+  Steps: 8, Sampler: Euler SGMUniform, CFG scale: 1.4, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 5, Hires upscaler: Latent (nearest-exact), Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 TagUpsample NSFW: "rating:explicit, uncensored"
 flat: <lora:sdxl-flat:-1>
 score_9: score_9

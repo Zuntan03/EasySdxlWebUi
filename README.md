@@ -17,7 +17,22 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/02/25
 
+- **EasyPromptSelector の Pony 用ボタンに `Lightning 設定` を追加しました。**
+	- 下記 [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) を試したい場合にご利用ください。
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningButton.png)
 - [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) の LoRA をダウンロードする `Download/LoRA/SDXL-Lightning.bat` を追加しました。
+	- 手元で試した範囲では、次の設定で Pony Diffusion のステップ数を半減 (8 + Hires 5)できました。
+		- `サンプリング方法`: `Euler SGMUniform`, `CFG スケール`: `1.4`(モデルにより要微調整)
+	- Pony 派生系モデルで使いやすく、モデルに合わせて各ステップ数や `CFGスケール` を調整すると良さそうです。
+	- `サンプリング方法` は `Euler A Turbo`, `DPM++ 2M SDE Turbo`, `DPM++ 2M SDE SGMUniform` あたりも使えそうでした。
+
+**Lightning Pony 系ステップ半減設定**  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningSettings.png)
+
+**Lightning 生成画像**  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningImage.webp)
+
+プロンプトは `<lora:sdxl_lightning_2step_lora:1>, source_anime, score_9, anime coloring, anime screencap, 1girl, scenery, ` からアップサンプルしています。
 
 ### 2024/02/24
 
