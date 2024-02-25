@@ -18,6 +18,10 @@ call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessMonsterGirlsXL.safe
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessMonsterGirls/LECO_LessMonsterGirlsXL.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessSimpleBackgroundXL.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessSimpleBackground/LECO_LessSimpleBackgroundXL.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessTraditionsAndCulturesXL.safetensors ^
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessTraditionsAndCultures/LECO_LessTraditionsAndCulturesXL.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
