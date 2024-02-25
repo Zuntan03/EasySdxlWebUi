@@ -15,7 +15,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
-### 2024/02/24
+### 2024/02/25
 
 - [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) の LoRA をダウンロードする `Download/LoRA/SDXL-Lightning.bat` を追加しました。
 
