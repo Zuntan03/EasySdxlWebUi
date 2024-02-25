@@ -20,7 +20,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - **EasyPromptSelector の Pony 用ボタンに `Lightning 設定` を追加しました。**
 	- `Download/LoRA/SDXL-Lightning.bat` で LoRA をダウンロードしてからご利用ください。
 	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningButton.png)
-	- 2step でなく 8step LoRA の `CFG スケール`: `3.0`(モデルにより要微調整) の `Lightning 設定2` を追加しました。こちらだけで良いかもしれません。
+	- 2step でなく 8step LoRA で `CFG スケール`: `3.0`(モデルにより 2.5～3.5 あたりで調整) の `Lightning 設定2` を追加しました。こちらだけで良いかもしれません。
 - [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) の LoRA をダウンロードする `Download/LoRA/SDXL-Lightning.bat` を追加しました。
 	- 手元で試した範囲では、次の設定で Pony Diffusion のステップ数を半減 (8 + Hires 5)できました。
 		- `サンプリング方法`: `Euler SGMUniform`, `CFG スケール`: `1.4`(モデルにより要微調整)
