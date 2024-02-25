@@ -44,6 +44,10 @@ call %~dp0Download.bat Lora\SDXL-Lightning sdxl_lightning_2step_lora.safetensors
 https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_2step_lora.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0Download.bat Lora\SDXL-Lightning sdxl_lightning_8step_lora.safetensors ^
+https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_8step_lora.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 @REM Upscaler
 call %~dp0Download.bat Upscaler 4x-UltraSharp.pth ^
 https://huggingface.co/Zuntan/dist/resolve/main/4x-UltraSharp.pth
