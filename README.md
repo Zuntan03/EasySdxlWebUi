@@ -15,6 +15,15 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/02/26
+
+- 利用者の環境によっては問題が起こり得る設定を見直しました。
+	- `高解像度補助`(Hires-Fix) をデフォルトで無効にしました。
+	- `ADetailer` をデフォルトで無効にしました。
+	- 影響はあるが効果を手元で確認できなかった `sd-webui-cutoff` をインストール対象から外しました。
+	- `sd-webui-supermerger` と役割が被っている `stable-diffusion-webui-model-toolkit` をインストール対象から外しました。
+	- 手元の環境では起動時にリロードを必要とする `sd-webui-traintrain` を無効化しました。`拡張機能` タブから有効にできます。
+
 ### 2024/02/25
 
 - **EasyPromptSelector の Pony 用ボタンに `Lightning 設定` を追加しました。**

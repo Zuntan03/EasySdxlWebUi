@@ -16,6 +16,11 @@
         "sd_model_checkpoint",
         "sd_vae"
     ],
+    "disabled_extensions": [
+        "sd-webui-cutoff",
+        "sd-webui-traintrain",
+        "stable-diffusion-webui-model-toolkit"
+    ],
     "ch_dl_lyco_to_lora": true,
     "dp_wildcard_manager_no_sort": true,
     "disable_mean_in_calclate_cond": false

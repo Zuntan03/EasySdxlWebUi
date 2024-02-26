@@ -68,6 +68,7 @@ pushd %~dp0..\%SD_DIR%\extensions
 call %~dp0GitCloneOrPull.bat https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+@REM Fork 版を使用
 @REM call %~dp0GitCloneOrPull.bat https://github.com/Bing-su/adetailer
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -86,8 +87,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-cd-tuner
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/hnmr293/sd-webui-cutoff
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM SDXL で影響はあるが効果が確認できない
+@REM call %~dp0GitCloneOrPull.bat https://github.com/hnmr293/sd-webui-cutoff
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/zanllp/sd-webui-infinite-image-browsing
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
@@ -113,8 +115,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/arenasys/stable-diffusion-webui-model-toolkit
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM Super Mergier と機能が被っている
+@REM call %~dp0GitCloneOrPull.bat https://github.com/arenasys/stable-diffusion-webui-model-toolkit
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

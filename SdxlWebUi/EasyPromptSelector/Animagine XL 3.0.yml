@@ -1,24 +1,28 @@
-﻿1024x1024: "\n
-Size: 1024x1024, Denoising strength: 0.6, Emphasis: No norm"
+﻿1024x1280: "\n
+Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
+1024x1152: "\n
+Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
+1024x1024: "\n
+Size: 1024x1024, Model hash: 1449e5b0b9, Emphasis: No norm"
 896x1152: "\n
-Size: 896x1152, Denoising strength: 0.6, Emphasis: No norm"
+Size: 896x1152, Model hash: 1449e5b0b9, Emphasis: No norm"
 832x1216: "\n
-Size: 832x1216, Denoising strength: 0.6, Emphasis: No norm"
+Size: 832x1216, Model hash: 1449e5b0b9, Emphasis: No norm"
 768x1344: "\n
-Size: 768x1344, Denoising strength: 0.6, Emphasis: No norm"
+Size: 768x1344, Model hash: 1449e5b0b9, Emphasis: No norm"
 640x1536: "\n
-Size: 640x1536, Denoising strength: 0.6, Emphasis: No norm"
+Size: 640x1536, Model hash: 1449e5b0b9, Emphasis: No norm"
 LCM forge 設定: "\n
   <lora:lcm-animagine-3:1>\n
   Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name\n
-  Steps: 7, Sampler: LCM Karras, CFG scale: 1.65, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+  Steps: 7, Sampler: LCM Karras, CFG scale: 1.65, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 LCM a1111 設定: "\n
   <lora:lcm-animagine-3:1>\n
   Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name\n
-  Steps: 7, Sampler: LCM, CFG scale: 1.65, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+  Steps: 7, Sampler: LCM, CFG scale: 1.65, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 LCM 無効設定: "\n
   Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name\n
-  Steps: 28, Sampler: Euler a, CFG scale: 7, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 14, Hires upscaler: Latent (nearest-exact), Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+  Steps: 28, Sampler: Euler a, CFG scale: 7, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 TagUpsample NSFW: "rating:explicit, uncensored"
 ネガティブ(Ctrl+Click): |-
   lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
