@@ -19,7 +19,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - すべてをダウンロードしようとする `DownloadAll.bat` を用意しました。
 	- 大量のストレージを消費しますので、ご注意ください。
-	- この対応に伴い Animagine 系モデルを `Model/Anmg` に、Pony 系モデルを `Model/Pony/` に保存するようにしました。  
+	- この対応に伴い Animagine 系モデルを `Model/Anmg/` に、Pony 系モデルを `Model/Pony/` に保存するようにしました。  
 	`Model/` にある重複したモデルは削除するか、`Model/Anmg/` や `Model/Pony/` に移動してください。
 - [bdsqlsz/qinglong_controlnet-lllite](https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite) の ControlNet モデルをダウンロードする `Download/ControlNet/bdsqlsz-qinglong_controlnet-lllite.bat` を追加しました。
 
