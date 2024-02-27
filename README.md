@@ -7,13 +7,21 @@
 EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。  
 
 - ワンクリックインストーラーで古いパソコンでも動作する [forge 版](https://github.com/lllyasviel/stable-diffusion-webui-forge) と、実績のある [AUTOMATIC1111 版(a1111)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) に両対応しており、簡単に使い始められます。
-	- forge と a1111 で多くの設定を共有しており、気軽に両方を使い分けられます。
+	- **forge と a1111 で多くの設定を共有しており、気軽に両方を使い分けられます。**
 - 画像の生成にはインストールだけでなく、web UI の設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。
-	- 中身は通常の web UI と同一ですので、経験が後々無駄になることもありません。
+	- **web UI の本体は通常の web UI と完全に同一ですので、経験が後々無駄になることもありません。**
 
 **インストール方法は [こちら](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)**
 
 ## 最近の主な更新
+
+### 2024/02/27
+
+- すべてをダウンロードしようとする `DownloadAll.bat` を用意しました。
+	- 大量のストレージを消費しますので、ご注意ください。
+	- この対応に伴い Animagine 系モデルを `Model/Anmg` に、Pony 系モデルを `Model/Pony/` に保存するようにしました。  
+	`Model/` にある重複したモデルは削除するか、`Model/Anmg/` や `Model/Pony/` に移動してください。
+- [bdsqlsz/qinglong_controlnet-lllite](https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite) の ControlNet モデルをダウンロードする `Download/ControlNet/bdsqlsz-qinglong_controlnet-lllite.bat` を追加しました。
 
 ### 2024/02/26
 
@@ -60,29 +68,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - [モデルと LoRA 作者の Civitai リンク](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0#%E3%83%A2%E3%83%87%E3%83%AB%E3%81%A8-lora-%E4%BD%9C%E8%80%85%E3%81%AE-civitai-%E3%83%AA%E3%83%B3%E3%82%AF) にリンクを追加しました。
 - `Download/Lora/MayonakaManic-LoRA.bat` に `LECO_LessHarshEmotionsXL.safetensors` を追加しました。
 - forge版の ADetailer を [Bing-su 版](https://github.com/Bing-su/adetailer)から [hinablue 版](https://github.com/hinablue/adetailer) に変更しました。
-
-### 2024/02/19
-
-- ワイルドカードに [BD さん](https://note.com/br_d/) の『[リニューアル ファンタジーコーデ！](https://br-d.fanbox.cc/posts/5822703)』**`__bd/new_fantasy_outfit__`** と『[シチュエーション30選 Part.1](https://br-d.fanbox.cc/posts/5736236) & [Part.2](https://br-d.fanbox.cc/posts/5754786)』**`__bd/situation__`** を追加しました。
-- Easy Prompt Selector の設定系ボタンに、SDXL ノイズ画像対策の `Emphasis: No norm` を追加しました。
-
-|`__bd/new_fantasy_outfit__` |`__bd/situation__`|
-|:--:|:--:|
-|![__bd/new_fantasy_outfit__](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/bd-new_fantasy_outfit.webp)|![__bd/situation__](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/bd-situation.webp)|
-
-### 2024/02/18
-
-- forge 対応時あたりから EasySdxlWebUi を利用していた場合に、正常に更新できない不具合を修正しました。
-	- インストール先に `SdxlWebUi-Update-a1111.bat` がなく、`SdxlWebUi-Update.bat` で更新されている方が不具合の対象です。
-	- 以降は `SdxlWebUi-Update.bat` で正常に更新され、`SdxlWebUi-Update-a1111.bat` や `SdxlWebUi-Update-forge.bat` で更新できるようになります。
-		- `SdxlWebUi-Update-a1111.bat` や `SdxlWebUi-Update-forge.bat` による更新で、不要となった `SdxlWebUi-Update.bat` や `SdxlWebUi.bat` を削除します。
-- ドキュメントに『[モデルや LoRA の追加](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0)』を追加しました。
-	- Civitai Helper の API キーを登録していますか？ファイルコピーだけじゃないモデルや LoRA の追加方法です。
-- ドキュメントに『[EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)』を追加しました。
-	- Web UI 起動時の初期パラメータを変更したり、自分用のボタン入力を追加したりできます。
-- スタイルファイルを `SdxlWebUi/styles.csv` を参照するように変更しました。
-	- すでに forge や a1111 で `styles.csv` を利用していた場合は、`SdxlWebUi/stable-diffusion-webui-forge/styles.csv` や `SdxlWebUi/stable-diffusion-webui/styles.csv` を `SdxlWebUi/styles.csv` にコピーしてください。
-
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 ## ドキュメント

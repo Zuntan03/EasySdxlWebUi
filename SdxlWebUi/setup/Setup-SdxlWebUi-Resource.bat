@@ -3,11 +3,11 @@ chcp 65001 > NUL
 pushd %~dp0..
 
 @REM Model
-call %~dp0Download.bat Model animagine-xl-3.0.safetensors ^
+call %~dp0Download.bat Model\Anmg animagine-xl-3.0.safetensors ^
 https://huggingface.co/cagliostrolab/animagine-xl-3.0/resolve/main/animagine-xl-3.0.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0Download.bat Model ponyDiffusionV6XL_v6StartWithThisOne.safetensors ^
+call %~dp0Download.bat Model\Pony ponyDiffusionV6XL_v6StartWithThisOne.safetensors ^
 https://huggingface.co/Zuntan/dist/resolve/main/ponyDiffusionV6XL_v6StartWithThisOne.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 

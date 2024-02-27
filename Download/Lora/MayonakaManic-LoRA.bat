@@ -10,6 +10,10 @@ call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessChibiAndDollsXL.saf
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessChibiAndDolls/LECO_LessChibiAndDollsXL.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessGoreAndAnatomyXL.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessGoreAndAnatomy/LECO_LessGoreAndAnatomyXL.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessHarshEmotionsXL.safetensors ^
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessHarshEmotions/LECO_LessHarshEmotionsXL.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
