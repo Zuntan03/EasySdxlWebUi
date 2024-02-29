@@ -10,7 +10,7 @@
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
-    "sd_checkpoints_limit": 2,
+    "sd_checkpoints_limit": 1,
     "emphasis": "No norm",
     "localization": "ja_JP",
     "quicksettings_list": [
