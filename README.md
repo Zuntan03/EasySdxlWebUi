@@ -15,6 +15,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/01
+
+- 拡張機能に [Weight Helper](https://github.com/nihedon/sd-webui-weight-helper) を追加しました。
+	- プロンプト入力欄の `<lora:lora_name:1>` といった表記を右クリックすると、GUI で LoRA のパラメータを調整できます。
+	- `show extra options` で `Start` や `Stop` も調整できます。  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/WeightHelper.png)
+
 ### 2024/02/27
 
 - すべてをダウンロードしようとする `DownloadAll.bat` を用意しました。
@@ -32,42 +39,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- `sd-webui-supermerger` と役割が被っている `stable-diffusion-webui-model-toolkit` をインストール対象から外しました。
 	- 手元の環境では起動時にリロードを必要とする `sd-webui-traintrain` を無効化しました。`拡張機能` タブから有効にできます。
 
-### 2024/02/25
-
-- **EasyPromptSelector の Pony 用ボタンに `Lightning 設定` を追加しました。**
-	- `Download/LoRA/SDXL-Lightning.bat` で LoRA をダウンロードしてからご利用ください。
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningButton.png)
-	- 2step でなく 8step LoRA で `CFG スケール`: `3.0`(モデルにより 2.5～3.5 あたりで調整) の `Lightning 設定2` を追加しました。こちらだけで良いかもしれません。
-- [SDXL-Lightning](https://huggingface.co/ByteDance/SDXL-Lightning) の LoRA をダウンロードする `Download/LoRA/SDXL-Lightning.bat` を追加しました。
-	- 手元で試した範囲では、次の設定で Pony Diffusion のステップ数を半減 (8 + Hires 5)できました。
-		- `サンプリング方法`: `Euler SGMUniform`, `CFG スケール`: `1.4`(モデルにより要微調整)
-	- Pony 派生系モデルで使いやすく、モデルに合わせて各ステップ数や `CFGスケール` を調整すると良さそうです。
-	- `サンプリング方法` は `Euler A Turbo`, `DPM++ 2M SDE Turbo`, `DPM++ 2M SDE SGMUniform` あたりも使えそうでした。
-
-**Lightning Pony 系ステップ半減設定**  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningSettings.png)
-
-**Lightning 生成画像**  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LightningImage.webp)
-
-プロンプトは `<lora:sdxl_lightning_2step_lora:1>, source_anime, score_9, anime coloring, anime screencap, 1girl, scenery, ` からアップサンプルしています。
-
-### 2024/02/24
-
-- [Danbooru Tags Upsampler でかんたん高品質プロンプトガチャ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Danbooru-Tags-Upsampler-%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%AB%98%E5%93%81%E8%B3%AA%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%AC%E3%83%81%E3%83%A3) を追加しました。
-	- [Platさん](https://twitter.com/p1atdev_art) の [Danbooru Tags Upsampler](https://github.com/p1atdev/sd-danbooru-tags-upsampler) はプロンプト生成専用の言語モデルにより、とても簡単に高品質なプロンプトでガチャれます。
-- [Platさん](https://twitter.com/p1atdev_art)の [`sd-danbooru-tags-upsampler`](https://github.com/p1atdev/sd-danbooru-tags-upsampler) に対応しました。
-	- NSFW では Easy Prompt Selector の `TagUpsample NSFW` ボタンで `rating:explicit, uncensored` をプロンプトに入力します。
-
-### 2024/02/23
-
-- [Platさん](https://twitter.com/p1atdev_art)の『[プロンプトは考えたくないけど画像生成がしたい！](https://zenn.dev/platina/articles/ea6a60f0ad69d0)』を利用した、ワイルドカードの生成に対応しました。
-	- `SdxlWebUi/Wildcard/GenerateDartWildcard.bat` を実行して、SFW/NSFW指定と生成するプロンプトの数と元となるプロンプトを入力するとワイルドカードを生成します。
-- パラメータを適用した際に `設定を上書き` に `Emphasis: Original` が表示された場合は、ノイズ画像が生成されるのを防ぐために `☓` で削除してください。  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/SNGN/EmphasisOriginal.png)
-- [モデルと LoRA 作者の Civitai リンク](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0#%E3%83%A2%E3%83%87%E3%83%AB%E3%81%A8-lora-%E4%BD%9C%E8%80%85%E3%81%AE-civitai-%E3%83%AA%E3%83%B3%E3%82%AF) にリンクを追加しました。
-- `Download/Lora/MayonakaManic-LoRA.bat` に `LECO_LessHarshEmotionsXL.safetensors` を追加しました。
-- forge版の ADetailer を [Bing-su 版](https://github.com/Bing-su/adetailer)から [hinablue 版](https://github.com/hinablue/adetailer) に変更しました。
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 ## ドキュメント

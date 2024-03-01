@@ -109,6 +109,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-traintrain
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/nihedon/sd-webui-weight-helper
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/Stable-Diffusion-Webui-Civitai-Helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 

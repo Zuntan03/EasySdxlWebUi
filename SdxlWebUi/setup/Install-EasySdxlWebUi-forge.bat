@@ -39,19 +39,18 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://huggingface.co/lllyasviel/sd_control_collection
 	echo.
 	echo https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
-	echo https://github.com/Bing-su/adetailer
+	echo https://github.com/hinablue/adetailer
 	echo https://github.com/adieyal/sd-dynamic-prompts
 	echo https://github.com/blue-pen5805/sdweb-easy-prompt-selector
 	echo https://github.com/hako-mikan/sd-webui-cd-tuner
-	echo https://github.com/hnmr293/sd-webui-cutoff
 	echo https://github.com/zanllp/sd-webui-infinite-image-browsing
 	echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 	echo https://github.com/hako-mikan/sd-webui-negpip
 	echo https://github.com/hako-mikan/sd-webui-supermerger
 	echo https://github.com/hako-mikan/sd-webui-traintrain
+	echo https://github.com/nihedon/sd-webui-weight-helper
 	echo https://github.com/blue-pen5805/Stable-Diffusion-Webui-Civitai-Helper
 	echo https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
-	echo https://github.com/arenasys/stable-diffusion-webui-model-toolkit
 	echo https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 	echo.
 	echo https://huggingface.co/spaces/Linaqruf/animagine-xl
