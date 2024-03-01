@@ -7,11 +7,15 @@ setlocal enabledelayedexpansion
 if exist venv\ (
 	call %~dp0ActivateVirtualEnvironment.bat
 	if !errorlevel! neq 0 ( popd & exit /b !errorlevel! )
+
+	@REM 一番最初のvenv対策
+	pip install -q huggingface_hub
+	if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 ) else (
 	call %~dp0ActivateVirtualEnvironment.bat
 	if !errorlevel! neq 0 ( popd & exit /b !errorlevel! )
 
-	pip install huggingface_hub
+	pip install -q huggingface_hub
 	if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 )
 endlocal
