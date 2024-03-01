@@ -15,6 +15,15 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/02
+
+- forge 版の拡張機能に [sd-forge-layerdiffusion](https://github.com/layerdiffusion/sd-forge-layerdiffusion) を追加しました。
+	- Animagine + LCM や Pony + Lightning でも正常動作しています。
+
+|Animagine + LCM<br>C.C. サンプルから背景抜き|Animagine + LCM<br>[写真背景素材](https://www.pexels.com/ja-jp/photo/1916816/)の上に<br>カナサンプルを生成|Pony + Lightning<br>gyaru からプロンプトを<br>アップサンプル|
+|:--:|:--:|:--:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerAnimagineLCM.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPhotoBG.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPonyLightning.png)|
+
 ### 2024/03/01
 
 - 拡張機能に [Weight Helper](https://github.com/nihedon/sd-webui-weight-helper) を追加しました。
