@@ -102,4 +102,6 @@ popd rem %~dp0
 
 if exist %~dp0SdxlWebUi.bat ( del %~dp0SdxlWebUi.bat )
 if exist %~dp0SdxlWebUi-Update.bat ( del %~dp0SdxlWebUi-Update.bat )
+if exist %~dp0SdxlWebUi-ResetConfig.bat ( del %~dp0SdxlWebUi-ResetConfig.bat )
+if exist %~dp0SdxlWebUi-UpdateConfig.bat ( del %~dp0SdxlWebUi-UpdateConfig.bat )
 if exist %~dp0Install-EasySdxlWebUi-forge.bat ( del %~dp0Install-EasySdxlWebUi-forge.bat )
