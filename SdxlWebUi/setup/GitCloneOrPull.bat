@@ -26,4 +26,6 @@ endlocal
 
 echo git clone %GIT_CLONE_OR_PULL_URL%
 git clone %GIT_CLONE_OR_PULL_URL%
-if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+@REM Ignore GitHub LFS Error
+@REM if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
+cd > NUL
