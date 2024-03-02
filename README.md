@@ -28,13 +28,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerAnimagineLCM.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPhotoBG.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPonyLightning.png)|
 
 - a1111 版でバージョン 1.8.0 に対応しました。
-	- **！！注意事項！！**
-		- **更新する際に venv `SdxlWebUi/venv-a1111/` を削除してください。**
+	- **注意事項**
+		- **更新する際に venv(`SdxlWebUi/venv-a1111/`) を削除してください。**
 		- **LCM LoRA用の `LCM Karras`、Lightning LoRA用の `(Euler|Euler A|DPM++ 2M|DPM++ 2M SDE) SGMUniform` のサンプラーは a1111 にはありません。これらを利用したい場合は forge 版をご利用ください。**
 		- **fp8 と fp8 利用時に LoRA の効果を維持する（代わりにメインメモリを消費）オプションを有効にしています。**
 			- fp8 を無効にするには `SdxlWebUi/config.json` に `"fp8_storage": "Disable",` と `"cache_fp16_weight": false,` を加えてください。
-	- `LCM` サンプラーのために導入していた sd-webui-animatediff 拡張をインストールしないようにしました。
-	- 更新で不要になった sd-webui-prevent-artifact 拡張をインストールしないようにしました。
+	- `LCM` サンプラーのために導入していた `sd-webui-animatediff` 拡張をインストールしないようにしました。
+	- 更新で不要になった `sd-webui-prevent-artifact` 拡張をインストールしないようにしました。
 
 ### 2024/03/01
 
