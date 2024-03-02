@@ -22,6 +22,7 @@
         "sd-webui-animatediff",
         "sd-webui-cutoff",
         "sd-webui-prevent-artifact",
+        "sd-webui-traintrain",
         "stable-diffusion-webui-model-toolkit"
     ],
     "ch_dl_lyco_to_lora": true,
