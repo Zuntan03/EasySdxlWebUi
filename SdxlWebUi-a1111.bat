@@ -28,8 +28,13 @@ set COMMANDLINE_ARGS=^
 --styles-file ../styles.csv ^
 --gradio-allowed-path .. ^
 --xformers ^
---opt-channelslast ^
-%*
+--opt-channelslast
+
+if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
+	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
+)
+
+set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% %*
 
 @REM 手元で優位性を確認できず。
 @REM --opt-sdp-no-mem-attention --opt-sdp-attention --opt-channelslast
