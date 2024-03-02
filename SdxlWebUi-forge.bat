@@ -1,18 +1,17 @@
 @echo off
 chcp 65001 > NUL
 
-setlocal enabledelayedexpansion
+
 if not exist %~dp0SdxlWebUi\stable-diffusion-webui-forge\ (
 	echo call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
 	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
-	if !errorlevel! neq 0 ( endlocal & exit /b !errorlevel! )
+
 )
 if not exist %~dp0SdxlWebUi\venv-forge\ (
 	echo call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
 	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-forge.bat
-	if !errorlevel! neq 0 ( endlocal & exit /b !errorlevel! )
 )
-endlocal
+if %errorlevel% neq 0 ( exit /b %errorlevel% )
 
 pushd %~dp0SdxlWebUi\stable-diffusion-webui-forge\
 

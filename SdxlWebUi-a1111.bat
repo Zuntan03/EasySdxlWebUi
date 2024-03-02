@@ -1,16 +1,13 @@
 @echo off
 chcp 65001 > NUL
 
-setlocal enabledelayedexpansion
 if not exist %~dp0SdxlWebUi\stable-diffusion-webui\ (
 	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-a1111.bat
-	if !errorlevel! neq 0 ( endlocal & exit /b !errorlevel! )
 )
 if not exist %~dp0SdxlWebUi\venv-a1111\ (
 	call %~dp0SdxlWebUi\setup\Setup-SdxlWebUi-a1111.bat
-	if !errorlevel! neq 0 ( endlocal & exit /b !errorlevel! )
 )
-endlocal
+if %errorlevel% neq 0 ( exit /b %errorlevel% )
 
 pushd %~dp0SdxlWebUi\stable-diffusion-webui\
 

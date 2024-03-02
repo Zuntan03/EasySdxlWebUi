@@ -43,13 +43,11 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 	echo https://github.com/adieyal/sd-dynamic-prompts
 	echo https://github.com/blue-pen5805/sdweb-easy-prompt-selector
-	echo https://github.com/continue-revolution/sd-webui-animatediff
 	echo https://github.com/hako-mikan/sd-webui-cd-tuner
 	echo https://github.com/Mikubill/sd-webui-controlnet
 	echo https://github.com/zanllp/sd-webui-infinite-image-browsing
 	echo https://github.com/hako-mikan/sd-webui-lora-block-weight
 	echo https://github.com/hako-mikan/sd-webui-negpip
-	echo https://github.com/hako-mikan/sd-webui-prevent-artifact
 	echo https://github.com/hako-mikan/sd-webui-supermerger
 	echo https://github.com/hako-mikan/sd-webui-traintrain
 	echo https://github.com/nihedon/sd-webui-weight-helper

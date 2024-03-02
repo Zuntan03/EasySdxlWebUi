@@ -10,6 +10,8 @@
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
+    "fp8_storage": "Enable for SDXL",
+    "cache_fp16_weight": true,
     "emphasis": "No norm",
     "localization": "ja_JP",
     "quicksettings_list": [
@@ -17,7 +19,9 @@
         "sd_vae"
     ],
     "disabled_extensions": [
+        "sd-webui-animatediff",
         "sd-webui-cutoff",
+        "sd-webui-prevent-artifact",
         "sd-webui-traintrain",
         "stable-diffusion-webui-model-toolkit"
     ],
