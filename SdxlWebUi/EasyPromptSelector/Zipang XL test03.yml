@@ -1,0 +1,24 @@
+﻿1024x1280: "\n
+Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
+1024x1152: "\n
+Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
+1024x1024: "\n
+Size: 1024x1024, Model hash: 8a9978e263, Emphasis: No norm"
+896x1152: "\n
+Size: 896x1152, Model hash: 8a9978e263, Emphasis: No norm"
+768x1024: "\n
+Size: 768x1024, Model hash: 8a9978e263, Emphasis: No norm"
+Lightning 設定: "\n
+  <lora:sdxl_lightning_8step_lora:1>\n
+  Negative prompt: bad anatomy, worst quality, low quality\n
+  Steps: 8, Sampler: DPM++ 2M SGMUniform, CFG scale: 1.3, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+設定: "\n
+  Negative prompt: bad anatomy, worst quality, low quality\n
+  Steps: 28, Sampler: DPM++ 2M SDE Heun Karras, CFG scale: 3, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+1girl_ja: 18yo, 1girl, cute, japanese, masterpiece, best quality, realistic
+1girl_eu: 18yo, 1girl, cute, european, masterpiece, best quality, realistic
+TagUpsample NSFW: "rating:explicit, uncensored"
+ネガティブ(Ctrl+Click): bad anatomy, worst quality, low quality
+myjs: <lora:myjs_XL_zipang_test03:1> myjs
+myjc: <lora:myjc_v1_XL:1> myjc
+flat: <lora:sdxl-flat:-1>

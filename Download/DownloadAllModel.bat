@@ -6,4 +6,5 @@ call ebara_pony.bat
 call gnomePower.bat
 call SwampMachine.bat
 call rumblexl.bat
+call Zipang.bat
 popd rem %~dp0Model
