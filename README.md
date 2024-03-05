@@ -15,6 +15,17 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/06
+
+- [Animagine で Tile アップスケール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7-Tile-%E3%82%A2%E3%83%83%E3%83%97%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)
+	- SD1.5 の 『[高コスパ！簡単ゴージャスアップスケール！](https://twitter.com/Zuntan03/status/1665553153654411265)』のように、Animagine で生成した画像を `高解像度補助`(Hires fix) と ControlNet の Tile でアップスケールします。
+	- 4K 超えの画像を 2分程度でアップスケールできています（forge、Geforce RTX 3060 12GB）。  
+		- SDXL なのに SD1.5 当時より 3倍速く、技術の進化を感じます。
+
+|[キャラ imgsli 比較](https://imgsli.com/MjQ0OTM5)|[背景 imgsli 比較](https://imgsli.com/MjQ0OTQx)|
+|:--:|:--:|
+|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/char_upscale.webp)](https://imgsli.com/MjQ0OTM5)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/bg_upscale.webp)](https://imgsli.com/MjQ0OTQx)|
+
 ### 2024/03/05
 
 - [sd-forge-layerdiffuse](https://github.com/layerdiffusion/sd-forge-layerdiffuse) の名称変更に対応しました。
@@ -41,31 +52,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 			- fp8 を無効にするには `SdxlWebUi/config.json` に `"fp8_storage": "Disable",` と `"cache_fp16_weight": false,` を加えてください。
 	- `LCM` サンプラーのために導入していた `sd-webui-animatediff` 拡張をインストールしないようにしました。
 	- 更新で不要になった `sd-webui-prevent-artifact` 拡張をインストールしないようにしました。
-
-### 2024/03/01
-
-- 拡張機能に [Weight Helper](https://github.com/nihedon/sd-webui-weight-helper) を追加しました。
-	- プロンプト入力欄の `<lora:lora_name:1>` といった表記を右クリックすると、GUI で LoRA のパラメータを調整できます。
-	- `show extra options` で `Start` や `Stop` も調整できます。  
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/WeightHelper.png)
-
-### 2024/02/27
-
-- すべてをダウンロードしようとする `DownloadAll.bat` を用意しました。
-	- 大量のストレージを消費しますので、ご注意ください（数百GB オーダー）。
-	- この対応に伴い Animagine 系モデルを `Model/Anmg/` に、Pony 系モデルを `Model/Pony/` に保存するようにしました。  
-	`Model/` にある重複したモデルは削除するか、`Model/Anmg/` や `Model/Pony/` に移動してください。
-- [bdsqlsz/qinglong_controlnet-lllite](https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite) の ControlNet モデルをダウンロードする `Download/ControlNet/bdsqlsz-qinglong_controlnet-lllite.bat` を追加しました。
-
-### 2024/02/26
-
-- 利用者の環境によっては問題が起こり得る設定を見直しました。
-	- `高解像度補助`(Hires-Fix) をデフォルトで無効にしました。
-	- `ADetailer` をデフォルトで無効にしました。
-	- 影響はあるが効果を手元で確認できなかった `sd-webui-cutoff` をインストール対象から外しました。
-	- `sd-webui-supermerger` と役割が被っている `stable-diffusion-webui-model-toolkit` をインストール対象から外しました。
-	- 手元の環境では起動時にリロードを必要とする `sd-webui-traintrain` を無効化しました。`拡張機能` タブから有効にできます。
-
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 ## ドキュメント
@@ -98,6 +84,9 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - [Animagine のルール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB)
 	- Animagine XL 3.0 を SdxlWebUi で利用する際の、プロンプトや設定のルールです。
+- [Animagine で Tile アップスケール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7-Tile-%E3%82%A2%E3%83%83%E3%83%97%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)
+	- SD1.5 の 『[高コスパ！簡単ゴージャスアップスケール！](https://twitter.com/Zuntan03/status/1665553153654411265)』のように、Animagine で生成した画像を `高解像度補助`(Hires fix) と ControlNet の Tile でアップスケールします。
+
 
 ## ライセンス
 
