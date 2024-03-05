@@ -25,9 +25,9 @@ set COMMANDLINE_ARGS=^
 --styles-file ../styles.csv ^
 --gradio-allowed-path ..
 
-if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
-	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
-)
+@REM if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
+@REM 	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
+@REM )
 
 set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% %*
 
