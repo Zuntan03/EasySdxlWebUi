@@ -15,6 +15,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/05
+
+- [sd-forge-layerdiffuse](https://github.com/layerdiffusion/sd-forge-layerdiffuse) の名称変更に対応しました。
+- `Download/Model/Zipang.bat` を追加しました。
+- `Download/ControlNet/TTPlanet-TTPLanet_SDXL_Controlnet_Tile_Realistic_V1` を追加しました。
+
 ### 2024/03/02
 
 - forge 版の拡張機能に [sd-forge-layerdiffusion](https://github.com/layerdiffusion/sd-forge-layerdiffusion) を追加しました。

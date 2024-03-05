@@ -16,7 +16,8 @@
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",
-        "sd_vae"
+        "sd_vae",
+        "img2img_extra_noise"
     ],
     "disabled_extensions": [
         "sd-webui-animatediff",

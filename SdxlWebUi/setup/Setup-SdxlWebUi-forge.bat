@@ -19,8 +19,10 @@ pushd %~dp0..\stable-diffusion-webui-forge\extensions
 call %~dp0GitCloneOrPull.bat https://github.com/hinablue/adetailer
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/layerdiffusion/sd-forge-layerdiffusion
+call %~dp0GitCloneOrPull.bat https://github.com/layerdiffusion/sd-forge-layerdiffuse
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+if exist sd-forge-layerdiffusion\ ( rmdir /S /Q sd-forge-layerdiffusion\ )
 
 @REM call %~dp0GitCloneOrPull.bat https://github.com/continue-revolution/sd-forge-animatediff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
