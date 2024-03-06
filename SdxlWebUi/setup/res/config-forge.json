@@ -12,6 +12,8 @@
     "extra_networks_tree_view_default_enabled": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
     "emphasis": "No norm",
+    "hires_fix_show_sampler": true,
+    "hires_fix_show_prompts": true,
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",

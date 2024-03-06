@@ -15,6 +15,14 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/07
+
+- `高解像度補助` でモデルやプロンプトなどを設定する UI をデフォルトで表示するようにしました。
+	- 無効にしたい場合は `SdxlWebUi/config.json` に `"hires_fix_show_sampler": false,` と `"hires_fix_show_prompts": false,` を追加します。
+- [EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA#%E8%A8%AD%E5%AE%9A-%E3%82%BF%E3%83%96%E3%81%AE%E5%A4%89%E6%9B%B4%E3%82%92%E6%AE%8B%E3%81%99) にブラウザの自動起動を無効にする設定の説明を追加しました。
+	- `SdxlWebUi/config.json` に `"auto_launch_browser": "Disable",` を追加します。
+		- `http://127.0.0.1:7860/` をブックマークしてご利用ください。
+
 ### 2024/03/06
 
 - [Animagine で Tile アップスケール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7-Tile-%E3%82%A2%E3%83%83%E3%83%97%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)

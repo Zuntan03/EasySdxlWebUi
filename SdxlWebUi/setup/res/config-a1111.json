@@ -13,6 +13,8 @@
     "fp8_storage": "Enable for SDXL",
     "cache_fp16_weight": true,
     "emphasis": "No norm",
+    "hires_fix_show_sampler": true,
+    "hires_fix_show_prompts": true,
     "localization": "ja_JP",
     "quicksettings_list": [
         "sd_model_checkpoint",
