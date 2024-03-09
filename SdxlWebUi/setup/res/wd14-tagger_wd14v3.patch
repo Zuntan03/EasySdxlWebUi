@@ -1,0 +1,23 @@
+diff --git a/stable-diffusion-webui-wd14-tagger/tagger/utils.py b/stable-diffusion-webui-wd14-tagger/tagger/utils.py
+index e30101c..ab8fa32 100644
+--- a/stable-diffusion-webui-wd14-tagger/tagger/utils.py
++++ b/stable-diffusion-webui-wd14-tagger/tagger/utils.py
+@@ -57,6 +57,18 @@ interrogators: Dict[str, Interrogator] = {
+         repo_id='deepghs/ml-danbooru-onnx',
+         model_path='TResnet-D-FLq_ema_6-30000.onnx'
+     ),
++    'wd14-vit.v3': WaifuDiffusionInterrogator(
++        'WD14 ViT v3',
++        repo_id='SmilingWolf/wd-vit-tagger-v3',
++    ),
++    'wd14-convnext.v3': WaifuDiffusionInterrogator(
++        'WD14 ConvNeXT v3',
++        repo_id='SmilingWolf/wd-convnext-tagger-v3',
++    ),
++    'wd14-swinv2-v3': WaifuDiffusionInterrogator(
++        'WD14 SwinV2 v3',
++        repo_id='SmilingWolf/wd-swinv2-tagger-v3',
++    ),
+ }
+ 
+ 

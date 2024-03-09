@@ -15,6 +15,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/09
+
+- `タグ付け` の `インタロゲーター` に、新しい `WD14 ConvNeXT v3`, `WD14 SwinV2 v3`, `WD14 ViT v3` を追加しました。
+- 更新時に `sd-danbooru-tags-upsampler` でエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/sd-danbooru-tags-upsampler/` を削除して再更新してください。
+
 ### 2024/03/07
 
 - `高解像度補助` でモデルやプロンプトなどを設定する UI をデフォルトで表示するようにしました。

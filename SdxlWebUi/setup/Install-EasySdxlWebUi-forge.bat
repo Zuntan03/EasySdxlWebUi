@@ -35,6 +35,7 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://huggingface.co/gsdf/CounterfeitXL
 	echo https://huggingface.co/furusu/SD-LoRA
 	echo https://huggingface.co/latent-consistency/lcm-lora-sdxl
+	echo https://huggingface.co/latent-consistency/lcm-lora-sdv1-5
 	echo https://huggingface.co/2vXpSwA7/iroiro-lora
 	echo https://huggingface.co/lllyasviel/sd_control_collection
 	echo.

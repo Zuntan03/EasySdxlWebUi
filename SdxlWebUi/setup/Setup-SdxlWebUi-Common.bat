@@ -122,8 +122,10 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call %~dp0GitCloneOrPull.bat https://github.com/arenasys/stable-diffusion-webui-model-toolkit
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0Unpatch.bat %~dp0res\wd14-tagger_wd14v3.patch
 call %~dp0GitCloneOrPull.bat https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call %~dp0Patch.bat %~dp0res\wd14-tagger_wd14v3.patch
 
 @REM LoraBlockWeight プリセット
 copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
