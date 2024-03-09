@@ -20,6 +20,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - **更新時に `sd-danbooru-tags-upsampler` でエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/sd-danbooru-tags-upsampler/` を削除して再更新してください。**
 - `タグ付け` の `インタロゲーター` に、新しい `WD14 ConvNeXT v3`, `WD14 SwinV2 v3`, `WD14 ViT v3` を追加しました。  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Wd14TaggerV3.png)
+- ドキュメントに 『[モデルに VAE を焼き込む](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB-VAE-%E3%82%92%E7%84%BC%E3%81%8D%E8%BE%BC%E3%82%80)』を追加しました。
+	- SDXL と SD1.5 を組み合わせる場合などに焼き込みます。
 
 ### 2024/03/07
 
@@ -91,6 +93,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- 「EasySdxlWebUi のインストールや設定の自動化って、何か変なことをしていないか心配…」な方へ。
 -  [拡張機能のひとこと紹介](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E7%B4%B9%E4%BB%8B)
 	- EasySdxlWebUi が自動的にインストールする数々の拡張機能についてのひとこと紹介です。
+- [モデルに VAE を焼き込む](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB-VAE-%E3%82%92%E7%84%BC%E3%81%8D%E8%BE%BC%E3%82%80)
+	- モデルに VAE を焼き込む手順です。SDXL と SD1.5 を組み合わせる場合などに焼き込みます。
 - [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 	- 過去の更新履歴です。
 
