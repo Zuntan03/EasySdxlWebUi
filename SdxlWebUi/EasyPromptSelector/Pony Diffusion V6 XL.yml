@@ -23,7 +23,7 @@ Lightning 設定: "\n
 Lightning 設定2: "\n
   <lora:sdxl_lightning_8step_lora:1>, source_anime, score_9, \n
   Negative prompt: source_furry, source_cartoon, source_pony, blurry, \n
-  Steps: 8, Sampler: Euler SGMUniform, CFG scale: 3.0, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+  Steps: 12, Sampler: Euler SGMUniform, CFG scale: 3.0, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 TagUpsample NSFW: "rating:explicit, uncensored"
 flat: <lora:sdxl-flat:-1>
 score_9: score_9
@@ -55,7 +55,9 @@ painting: painting
 multiple views: multiple views
 アメコミネガティブ: |-
   the_simpsons, adventure_time, the_grim_adventures_of_billy_&_mandy, steven_universe, the_loud_house, kim_possible_\(series\), dexter's_laboratory
+gpo: gpo
 "[ガチャ] 女性キャラ 1491": __pony/female__
 男性キャラ 203: __pony/male__
 Note キャラ LoRA (要 :1> 付与) 11: __pony/note_char_lora__
 Note スタイル LoRA (要 :1> 付与) 102: __pony/note_style_lora__
+XXX スタイル 158: __pony/note_xxx_style__
