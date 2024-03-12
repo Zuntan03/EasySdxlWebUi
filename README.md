@@ -15,7 +15,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
-- **更新時に `sd-danbooru-tags-upsampler` でエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/sd-danbooru-tags-upsampler/` を削除して再更新してください。**
+- **拡張機能の更新時にエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/` にある拡張機能のフォルダを削除して再更新してください。**
 
 ### 2024/03/10
 
