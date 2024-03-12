@@ -12,6 +12,9 @@ patch = PatchSet.from_filename(sys.argv[1], encoding="utf-8-sig")
 
 for patched_file in patch:
     print(f"Patching {os.path.abspath(patched_file.path)}")
+    if not os.path.exists(patched_file.path):
+        print(f"Skip: {patched_file.path} does not exist")
+        continue
 
     with open(patched_file.path, "rb") as f:
         raw = f.read(4)
