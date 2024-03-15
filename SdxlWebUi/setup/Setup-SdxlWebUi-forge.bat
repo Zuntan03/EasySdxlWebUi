@@ -3,7 +3,12 @@ chcp 65001 > NUL
 
 pushd %~dp0..
 
-call %~dp0GitCloneOrPull.bat https://github.com/lllyasviel/stable-diffusion-webui-forge
+call %~dp0GitCloneOrPull.bat https://github.com/lllyasviel/stable-diffusion-webui-forge main
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+@REM  forge b9705c5
+echo git -C stable-diffusion-webui-forge checkout b9705c5
+git -C stable-diffusion-webui-forge checkout b9705c5 2>NUL
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0ActivateVirtualEnvironment.bat venv-forge
