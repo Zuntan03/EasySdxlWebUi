@@ -19,7 +19,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/03/15
 
-- [NegPiP が動作しない問題](https://github.com/hako-mikan/sd-webui-negpip/issues/36#issuecomment-1995255830) への対処のために、forgeのバージョンを b9705c5 にしています。
+- [NegPiP が動作しない問題](https://github.com/hako-mikan/sd-webui-negpip/issues/36#issuecomment-1995255830) への対処のために、forgeのバージョンを `b9705c5` にする対処を入れました。
 
 ### 2024/03/10
 
