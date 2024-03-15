@@ -13,13 +13,14 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 **インストール方法は [こちら](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)**
 
-## 最近の主な更新
-
 - **拡張機能の更新時にエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/` にある拡張機能のフォルダを削除して再更新してください。**
+
+## 最近の主な更新
 
 ### 2024/03/15
 
 - [NegPiP が動作しない問題](https://github.com/hako-mikan/sd-webui-negpip/issues/36#issuecomment-1995255830) への対処のために、forgeのバージョンを `b9705c5` にする対処を入れました。
+	- [Regional Prompter の問題](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/515#issuecomment-1986967238) も治るかもしれません。
 
 ### 2024/03/10
 
