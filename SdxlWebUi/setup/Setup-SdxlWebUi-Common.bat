@@ -6,7 +6,14 @@ set SD_NAME=%~2
 pushd %~dp0..
 
 @REM e621-v3-20221117-sgd-e32
+echo pip -qq install tensorflow_io
 pip -qq install tensorflow_io
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
+@REM ModuleNotFoundError: No module named 'keras.__internal__'
+echo pip -qq install -U "keras>=2.15.0" "transformers>=4.30.2"
+pip -qq install -U "keras>=2.15.0" "transformers>=4.30.2"
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 copy /Y setup\Install-EasySdxlWebUi-a1111.bat ..\SdxlWebUi-Update-a1111.bat > NUL
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )

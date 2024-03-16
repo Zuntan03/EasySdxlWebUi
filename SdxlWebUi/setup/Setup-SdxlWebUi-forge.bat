@@ -14,6 +14,10 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0ActivateVirtualEnvironment.bat venv-forge
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+echo python -m pip install -qq --upgrade pip
+python -m pip install -qq --upgrade pip
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 popd rem %~dp0..
 
 call %~dp0Setup-SdxlWebUi-Common.bat stable-diffusion-webui-forge forge
