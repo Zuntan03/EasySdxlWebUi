@@ -11,11 +11,19 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - 画像の生成にはインストールだけでなく、web UI の設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。
 	- **web UI の本体は通常の web UI と完全に同一ですので、経験が後々無駄になることもありません。**
 
-**インストール方法は [こちら](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)**
+**インストール方法は [こちら](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)。**
+
+## **[トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)**
+
+ホットな事案
 
 - **拡張機能の更新時にエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/` にある拡張機能のフォルダを削除して再更新してください。**
 
 ## 最近の主な更新
+
+### 2024/03/16
+
+- ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0) 』を用意しました。
 
 ### 2024/03/15
 
@@ -59,33 +67,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 |:--:|:--:|
 |[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/char_upscale.webp)](https://imgsli.com/MjQ0OTM5)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/bg_upscale.webp)](https://imgsli.com/MjQ0OTQx)|
 
-### 2024/03/05
-
-- [sd-forge-layerdiffuse](https://github.com/layerdiffusion/sd-forge-layerdiffuse) の名称変更に対応しました。
-- `Download/Model/Zipang.bat` を追加しました。
-- `Download/ControlNet/TTPlanet-TTPLanet_SDXL_Controlnet_Tile_Realistic_V1` を追加しました。
-
-### 2024/03/02
-
-- forge 版の拡張機能に [sd-forge-layerdiffusion](https://github.com/layerdiffusion/sd-forge-layerdiffusion) を追加しました。
-	- Animagine + LCM や Pony + Lightning でも正常動作しています。
-	- [基本機能: `Layer Diffusion` つぶやき](https://twitter.com/Zuntan03/status/1763585228763984108)
-	- [背景書き足し: `Layer Diffusion` の `From Foreground to Blending` つぶやき](https://twitter.com/Zuntan03/status/1763614528695374112)
-	- [キャラ入れ替え: `Layer Diffusion` の `From Foreground and Blending to Background` つぶやき](https://twitter.com/Zuntan03/status/1763643060238610448)
-
-|Animagine + LCM<br>C.C. サンプルから背景抜き|Animagine + LCM<br>[写真背景素材](https://www.pexels.com/ja-jp/photo/1916816/)の上に<br>カナサンプルを生成|Pony + Lightning<br>gyaru からプロンプトを<br>アップサンプル|
-|:--:|:--:|:--:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerAnimagineLCM.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPhotoBG.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/LayerPonyLightning.png)|
-
-- a1111 版でバージョン 1.8.0 に対応しました。
-	- **注意事項**
-		- **更新する際に venv(`SdxlWebUi/venv-a1111/`) を削除してください。**
-		- **LCM LoRA用の `LCM Karras`、Lightning LoRA用の `(Euler|Euler A|DPM++ 2M|DPM++ 2M SDE) SGMUniform` のサンプラーは a1111 にはありません。これらを利用したい場合は forge 版をご利用ください。**
-		- **fp8 と fp8 利用時に LoRA の効果を維持する（代わりにメインメモリを消費）オプションを有効にしています。**
-			- fp8 を無効にするには `SdxlWebUi/config.json` に `"fp8_storage": "Disable",` と `"cache_fp16_weight": false,` を加えてください。
-	- `LCM` サンプラーのために導入していた `sd-webui-animatediff` 拡張をインストールしないようにしました。
-	- 更新で不要になった `sd-webui-prevent-artifact` 拡張をインストールしないようにしました。
-
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 ## ドキュメント
 
@@ -101,6 +82,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- Civitai Helper の API キーを登録していますか？ファイルコピーだけじゃないモデルや LoRA の追加方法です。
 - [Danbooru Tags Upsampler でかんたん高品質プロンプトガチャ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Danbooru-Tags-Upsampler-%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%AB%98%E5%93%81%E8%B3%AA%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%AC%E3%83%81%E3%83%A3)
 	- [Platさん](https://twitter.com/p1atdev_art) の [Danbooru Tags Upsampler](https://github.com/p1atdev/sd-danbooru-tags-upsampler) はプロンプト生成専用の言語モデルにより、とても簡単に高品質なプロンプトでガチャれます。
+- [トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
+	- インストールやアップデートや利用中の、よくあるトラブルへの対処集です。
 
 ### EasySdxlWebUi
 
