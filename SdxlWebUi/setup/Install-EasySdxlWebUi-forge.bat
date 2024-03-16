@@ -10,6 +10,14 @@ if not exist %CURL_CMD% (
 )
 
 setlocal enabledelayedexpansion
+
+set "CURRENT_PATH=%CD%"
+if "!CURRENT_PATH: =!" neq "%CURRENT_PATH%" (
+	echo [ERROR] 現在のフォルダパスにスペースが含まれています。"%CURRENT_PATH%"
+	echo スペースを含まないフォルダパスに bat ファイルを移動して、再実行してください。
+	pause & popd & exit /b 1
+)
+
 if exist SdxlWebUi\venv-forge\ (
 	echo "更新に時間がかかりますが、安全のために SdxlWebUi\venv-forge\ を削除しますか？"
 	echo "SdxlWebUi\venv-forge\ 削除せずに更新したあとに問題が発生した場合は、再度更新をして SdxlWebUi\venv-forge\ を削除してください。"
@@ -21,7 +29,6 @@ if exist SdxlWebUi\venv-forge\ (
 		if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 	)
 ) else (
-	echo "以下の配布元から関連ファイルをダウンロードして使用します（URL を Ctrl + クリックで開けます）。"
 	echo https://www.python.org
 	echo https://github.com/pypa/get-pip
 	echo https://github.com/git-for-windows
@@ -65,6 +72,7 @@ if exist SdxlWebUi\venv-forge\ (
 	echo https://civitai.com/models/236447/based68
 	echo https://rentry.org/ponyxl_loras_n_stuff
 	echo https://huggingface.co/Zuntan/dist
+	echo "以上の配布元から関連ファイルをダウンロードして使用します（URL を Ctrl + クリックで開けます）。"
 	echo よろしいですか？ [y/n]
 	set /p YES_OR_NO=
 	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )
