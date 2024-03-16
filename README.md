@@ -27,6 +27,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- [PonyXL Notes](https://rentry.org/ponyxl_loras_n_stuff) で共有されている画風プロンプトを、Dynamic Prompts の組み合わせ生成で全種類一括生成します。
 - ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0) 』を追加しました。
 	- インストールやアップデートや利用中の、よくあるトラブルへの対処集です。
+- [起動時に sd-danbooru-tags-upsampler のエラーが発生する問題](https://github.com/p1atdev/sd-danbooru-tags-upsampler/issues/21) に対処しました。
 
 ### 2024/03/15
 
