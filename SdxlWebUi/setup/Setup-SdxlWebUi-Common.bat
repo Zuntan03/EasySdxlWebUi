@@ -149,12 +149,10 @@ call %~dp0Link.bat sd-dynamic-prompts\wildcards %~dp0..\Wildcard
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 popd rem %~dp0..\%SD_DIR%\extensions
-pushd %~dp0..\Wildcard
 
 call %~dp0Setup-Wildcard.bat
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-popd rem %~dp0..\Wildcard
 exit /b 0
 
 :UPDATE_JSON

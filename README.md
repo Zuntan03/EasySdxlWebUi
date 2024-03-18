@@ -26,6 +26,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - Animagine XL 3.1 をダウンロードする `Download/Model/animagine-xl-3.1.bat` を追加しました。
 	- [公式ブログ](https://cagliostrolab.net/posts/animagine-xl-v31-release) 
 	- [HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.1) 
+	- デフォルトでインストールするモデルも Animagine XL 3.0 から 3.1 に変更しました。
+- Animagine XL 3.1 のキャラクターワイルドカードを追加しました。
+	- `__anmg31/char_full__` は全 4971 キャラのワイルドカードです。
+	- `__anmg31/char_add__` は Animagine 3.0 に無く、3.1 で追加された 2126 キャラのワイルドカードです。
+	- 『[Pony 系モデルの画風めぐり（Dynamic Prompts 組み合わせ生成）](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Pony-%E7%B3%BB%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E7%94%BB%E9%A2%A8%E3%82%81%E3%81%90%E3%82%8A%EF%BC%88Dynamic-Prompts-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E7%94%9F%E6%88%90%EF%BC%89) 』と同様の手順で全キャラの画像を生成できます。
 
 ### 2024/03/16
 

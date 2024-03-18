@@ -35,7 +35,7 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo https://github.com/aria2/aria2
 	echo https://github.com/AUTOMATIC1111/stable-diffusion-webui
 	echo.
-	echo https://huggingface.co/cagliostrolab/animagine-xl-3.0
+	echo https://huggingface.co/cagliostrolab/animagine-xl-3.1
 	echo https://civitai.com/models/257749
 	echo https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/
 	echo https://civitai.com/models/119032
