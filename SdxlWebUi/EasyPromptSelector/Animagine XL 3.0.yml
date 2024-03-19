@@ -1,17 +1,17 @@
 ﻿1024x1280: "\n
-Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
 1024x1152: "\n
-Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 1024x1280, Model hash: 1449e5b0b9, Emphasis: No norm"
 1024x1024: "\n
-Size: 1024x1024, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 1024x1024, Model hash: 1449e5b0b9, Emphasis: No norm"
 896x1152: "\n
-Size: 896x1152, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 896x1152, Model hash: 1449e5b0b9, Emphasis: No norm"
 832x1216: "\n
-Size: 832x1216, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 832x1216, Model hash: 1449e5b0b9, Emphasis: No norm"
 768x1344: "\n
-Size: 768x1344, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 768x1344, Model hash: 1449e5b0b9, Emphasis: No norm"
 640x1536: "\n
-Size: 640x1536, Model hash: 1449e5b0b9, Emphasis: No norm"
+  Size: 640x1536, Model hash: 1449e5b0b9, Emphasis: No norm"
 LCM forge 設定: "\n
   <lora:lcm-animagine-3:1>\n
   Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name\n

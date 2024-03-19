@@ -1,13 +1,13 @@
 ﻿1024x1280: "\n
-Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
+  Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
 1024x1152: "\n
-Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
+  Size: 1024x1280, Model hash: 8a9978e263, Emphasis: No norm"
 1024x1024: "\n
-Size: 1024x1024, Model hash: 8a9978e263, Emphasis: No norm"
+  Size: 1024x1024, Model hash: 8a9978e263, Emphasis: No norm"
 896x1152: "\n
-Size: 896x1152, Model hash: 8a9978e263, Emphasis: No norm"
+  Size: 896x1152, Model hash: 8a9978e263, Emphasis: No norm"
 768x1024: "\n
-Size: 768x1024, Model hash: 8a9978e263, Emphasis: No norm"
+  Size: 768x1024, Model hash: 8a9978e263, Emphasis: No norm"
 Lightning 設定: "\n
   <lora:sdxl_lightning_8step_lora:1>\n
   Negative prompt: bad anatomy, worst quality, low quality\n

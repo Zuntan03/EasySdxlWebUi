@@ -8,7 +8,7 @@
     "txt2img/Hires. fix/value": false,
     "txt2img/Upscaler/value": "Latent (nearest-exact)",
     "txt2img/Hires steps/value": 6,
-    "txt2img/Denoising strength/value": 0.6,
+    "txt2img/Denoising strength/value": 0.54,
     "txt2img/Upscale by/value": 1.5,
     "img2img/Denoising strength/value": 0.54,
     "img2img/Scale/value": 1.5,

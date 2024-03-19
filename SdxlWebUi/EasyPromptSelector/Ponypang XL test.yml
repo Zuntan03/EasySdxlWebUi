@@ -1,13 +1,13 @@
 ﻿1024x1280: "\n
-Size: 1024x1280, Model hash: ee82fbfa99, Emphasis: No norm"
+  Size: 1024x1280, Model hash: ee82fbfa99, Emphasis: No norm"
 1024x1152: "\n
-Size: 1024x1280, Model hash: ee82fbfa99, Emphasis: No norm"
+  Size: 1024x1280, Model hash: ee82fbfa99, Emphasis: No norm"
 1024x1024: "\n
-Size: 1024x1024, Model hash: ee82fbfa99, Emphasis: No norm"
+  Size: 1024x1024, Model hash: ee82fbfa99, Emphasis: No norm"
 896x1152: "\n
-Size: 896x1152, Model hash: ee82fbfa99, Emphasis: No norm"
+  Size: 896x1152, Model hash: ee82fbfa99, Emphasis: No norm"
 768x1024: "\n
-Size: 768x1024, Model hash: ee82fbfa99, Emphasis: No norm"
+  Size: 768x1024, Model hash: ee82fbfa99, Emphasis: No norm"
 Lightning 設定: "\n
   <lora:sdxl_lightning_8step_lora:1>\n
   Negative prompt: worst quality, low quality, normal quality, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, source_furry, source_pony, source_cartoon, comic, source filmmaker, 3d\n

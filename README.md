@@ -21,6 +21,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/19
+
+- Animagine XL 3.1 の Easy Prompt Selector ボタンを追加しました。
+	- 試した範囲では LCM LoRA での生成が効果的でした。  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Anmg31Eps.png)
+
 ### 2024/03/18
 
 - Animagine XL 3.1 をダウンロードする `Download/Model/animagine-xl-3.1.bat` を追加しました。
