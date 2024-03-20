@@ -21,6 +21,19 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/20
+
+- ドキュメントに『[Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』を追加しました。
+	- Animagine XL 3.1 がサポートしている 全 4917 キャラ の画像を生成する 10 クリック程度の手順です。  
+	大量の画像の閲覧方法についても、サンプル画像付きで補足します。
+	- サンプル画像は **`Download/Image/Animagine31Character.bat`** で `save/Animagine31Character/` に展開します。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Prompt.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/DynamicPrompt.png)|
+|--|--|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Explorer.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/BrowseImage.png)|
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Character.webp)
+
 ### 2024/03/19
 
 - Animagine XL 3.1 の Easy Prompt Selector ボタンを追加しました。
@@ -60,33 +73,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 左上が Animagine による元画像  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Sd15HiresW.webp)
 
-### 2024/03/09
-
-- **更新時に `sd-danbooru-tags-upsampler` でエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/sd-danbooru-tags-upsampler/` を削除して再更新してください。**
-- `タグ付け` の `インタロゲーター` に、新しい `WD14 ConvNeXT v3`, `WD14 SwinV2 v3`, `WD14 ViT v3` を追加しました。  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Wd14TaggerV3.png)
-- ドキュメントに 『[モデルに VAE を焼き込む](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB-VAE-%E3%82%92%E7%84%BC%E3%81%8D%E8%BE%BC%E3%82%80)』手順を追加しました。
-	- SDXL と SD1.5 を組み合わせる場合などに VAE を焼き込みます。  
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/BKVE/BakeVae.png)
-
-### 2024/03/07
-
-- `高解像度補助` でモデルやプロンプトなどを設定する UI をデフォルトで表示するようにしました。
-	- 無効にしたい場合は `SdxlWebUi/config.json` に `"hires_fix_show_sampler": false,` と `"hires_fix_show_prompts": false,` を追加します。
-- [EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA#%E8%A8%AD%E5%AE%9A-%E3%82%BF%E3%83%96%E3%81%AE%E5%A4%89%E6%9B%B4%E3%82%92%E6%AE%8B%E3%81%99) にブラウザの自動起動を無効にする設定の説明を追加しました。
-	- `SdxlWebUi/config.json` に `"auto_launch_browser": "Disable",` を追加します。
-		- `http://127.0.0.1:7860/` をブックマークしてご利用ください。
-
-### 2024/03/06
-
-- [Animagine で Tile アップスケール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7-Tile-%E3%82%A2%E3%83%83%E3%83%97%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)
-	- SD1.5 の 『[高コスパ！簡単ゴージャスアップスケール！](https://twitter.com/Zuntan03/status/1665553153654411265)』のように、Animagine で生成した画像を `高解像度補助`(Hires fix) と ControlNet の Tile でアップスケールします。
-	- 4K 超えの画像を 2分程度でアップスケールできています（forge、Geforce RTX 3060 12GB）。  
-		- SDXL なのに SD1.5 当時より 3倍速く、技術の進化を感じます。
-
-|[キャラ imgsli 比較](https://imgsli.com/MjQ0OTM5)|[背景 imgsli 比較](https://imgsli.com/MjQ0OTQx)|
-|:--:|:--:|
-|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/char_upscale.webp)](https://imgsli.com/MjQ0OTM5)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/UPSC/bg_upscale.webp)](https://imgsli.com/MjQ0OTQx)|
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 ## ドキュメント
@@ -128,6 +114,9 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- Animagine XL 3.0 を SdxlWebUi で利用する際の、プロンプトや設定のルールです。
 - [Animagine で Tile アップスケール](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7-Tile-%E3%82%A2%E3%83%83%E3%83%97%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)
 	- SD1.5 の 『[高コスパ！簡単ゴージャスアップスケール！](https://twitter.com/Zuntan03/status/1665553153654411265)』のように、Animagine で生成した画像を `高解像度補助`(Hires fix) と ControlNet の Tile でアップスケールします。
+- [Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)
+	- Animagine XL 3.1 がサポートしている 全 4917 キャラ の画像を生成する 10 クリック程度の手順です。  
+	大量の画像の閲覧方法についても、サンプル画像付きで補足します。
 
 ### Pony Diffusion
 

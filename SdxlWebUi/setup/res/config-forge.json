@@ -4,7 +4,7 @@
     "outdir_extras_samples": "../../output",
     "outdir_txt2img_grids": "../../output-grid",
     "outdir_img2img_grids": "../../output-grid",
-    "outdir_save": "../../output",
+    "outdir_save": "../../save",
     "outdir_init_images": "../../output",
     "export_for_4chan": false,
     "lora_preferred_name": "Filename",
