@@ -7,7 +7,7 @@ set DST_DIR=%~dp0..\..\save
 set BASE_NAME=Animagine31Character
 set ZIP_FILE_NAME=%BASE_NAME%.zip
 
-if exist "%DST_DIR%\%BASE_NAME%\0000-123-souryuu asuka langley, neon genesis evangelion.webp" ( exit /b 0 )
+if exist "%DST_DIR%\%BASE_NAME%\0000-789-souryuu asuka langley, neon genesis evangelion.webp" ( exit /b 0 )
 
 if not exist %DST_DIR% md %DST_DIR%
 pushd %DST_DIR%
