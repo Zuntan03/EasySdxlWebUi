@@ -4,6 +4,7 @@
     "txt2img/Height/value": 1024,
     "txt2img/Height/step": 32,
     "txt2img/Batch count/maximum": 999,
+    "txt2img/Batch size/maximum": 16,
     "txt2img/CFG Scale/step": 0.05,
     "txt2img/Hires. fix/value": false,
     "txt2img/Upscaler/value": "4x-UltraSharp",
