@@ -22,6 +22,7 @@
         "sd_vae",
         "img2img_extra_noise"
     ],
+    "auto_launch_browser": "Disable",
     "disabled_extensions": [
         "sd-webui-animatediff",
         "sd-webui-cutoff",

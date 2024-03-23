@@ -30,9 +30,12 @@ set COMMANDLINE_ARGS=^
 --xformers ^
 --opt-channelslast
 
-@REM if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
-@REM 	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
-@REM )
+@REM 起動時に操作不能になる件への対策
+@REM 自動起動を無効にするには set DISABLE_LISTEN_AUTOLAUNCH=1
+if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
+	echo http://127.0.0.1:7860/
+	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
+)
 
 set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% %*
 
