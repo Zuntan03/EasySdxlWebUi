@@ -79,6 +79,7 @@ if exist SdxlWebUi\venv-forge\ (
 )
 
 if exist .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\ (
+	echo rmdir /S /Q .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\
 	rmdir /S /Q .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\
 	if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
 )
