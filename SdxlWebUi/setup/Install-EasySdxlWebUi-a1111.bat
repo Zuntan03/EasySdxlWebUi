@@ -78,6 +78,11 @@ if exist SdxlWebUi\venv-a1111\ (
 	set /p YES_OR_NO=
 	if /i not "!YES_OR_NO!" == "y" ( popd & exit /b 1 )
 )
+
+if exist .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\ (
+	rmdir /S /Q .\SdxlWebUi\setup\lib\EasySdxlWebUi-main\
+	if !errorlevel! neq 0 ( pause & popd & exit /b !errorlevel! )
+)
 endlocal
 
 if not exist SdxlWebUi\setup\lib\ ( mkdir SdxlWebUi\setup\lib )
