@@ -14,19 +14,20 @@
   Size: 640x1536, Model hash: e3c47aedb0, Emphasis: No norm"
 設定: "\n
   masterpiece, best quality, very aesthetic, absurdres, \n
-  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], \n
+  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 28, Sampler: Euler a, CFG scale: 7, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 "[推] LCM 設定": "\n
   <lora:lcm-animagine-3:1> masterpiece, best quality, very aesthetic, absurdres, \n
-  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], \n
+  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 12, Sampler: LCM Karras, CFG scale: 1.4, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 Lightning 設定: "\n
   <lora:sdxl_lightning_8step_lora:1> masterpiece, best quality, very aesthetic, absurdres, \n
-  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], \n
+  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 12, Sampler: Euler SGMUniform, CFG scale: 2.5, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
-クオリティ: "masterpiece, best quality, very aesthetic, absurdres, "
-ネガティブ(Ctrl+Click): |-
-  lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], 
+クオリティ: "masterpiece, best quality, very aesthetic"
+absurdres: "absurdres"
+ネガティブ(Ctrl+Click): "lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]"
+短ネガ: worst quality, low quality
 TagUpsample NSFW: "rating:explicit, uncensored"
 flat: <lora:sdxl-flat:-1>
 "[Rating] expl": explicit, nsfw
