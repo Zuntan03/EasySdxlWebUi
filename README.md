@@ -15,17 +15,17 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## **[トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)**
 
-ホットな事案
-
 - **拡張機能の更新時にエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/` にある拡張機能のフォルダを削除して再更新してください。**
 
 ## 最近の主な更新
 
 ### 2024/03/23
 
-- 『[Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』にアップスケール込みの立ち絵サンプル画像を追加しました。
 - 起動時の操作不能を回避するために  --listen --autolaunch オプション付きで起動するようにしました。
 	- 起動時のブラウザ表示を無効にしたい場合は、`SdxlWebUi-forge-DisableAutoLaunch.bat` を参考にしてください。
+	- **更新時にエラーが発生した場合は、もう一度更新してください。**
+		- 再更新で同じエラーが発生しなければ問題有りません。
+- 『[Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』にアップスケール込みの立ち絵サンプル画像を追加しました。
 
 ### 2024/03/20
 
