@@ -19,6 +19,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/24
+
+- ドキュメントに『[Animagine で簡単カップリング画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E7%B0%A1%E5%8D%98%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)』を追加しました。
+	- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1) で [大幅に増えた組み込みキャラ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90) の同作品カップリング画像を、プロンプトだけで簡単に生成します。
+
+![](https://yyy.wpx.jp/EasySdxlWebUi/ACUP/All.webp)
+
 ### 2024/03/23
 
 - 起動時の操作不能を回避するために  --listen --autolaunch オプション付きで起動するようにしました。
@@ -56,28 +63,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- `__anmg31/char_full__` は全 4971 キャラのワイルドカードです。
 	- `__anmg31/char_add__` は Animagine 3.0 に無く、3.1 で追加された 2126 キャラのワイルドカードです。
 	- 『[Pony 系モデルの画風めぐり（Dynamic Prompts 組み合わせ生成）](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Pony-%E7%B3%BB%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E7%94%BB%E9%A2%A8%E3%82%81%E3%81%90%E3%82%8A%EF%BC%88Dynamic-Prompts-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E7%94%9F%E6%88%90%EF%BC%89) 』と同様の手順で全キャラの画像を生成できます。
-
-### 2024/03/16
-
-- ドキュメントに『[Pony 系モデルの画風めぐり（Dynamic Prompts 組み合わせ生成）](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Pony-%E7%B3%BB%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E7%94%BB%E9%A2%A8%E3%82%81%E3%81%90%E3%82%8A%EF%BC%88Dynamic-Prompts-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E7%94%9F%E6%88%90%EF%BC%89) 』を追加しました。
-	- [PonyXL Notes](https://rentry.org/ponyxl_loras_n_stuff) で共有されている画風プロンプトを、Dynamic Prompts の組み合わせ生成で全種類一括生成します。
-- ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0) 』を追加しました。
-	- インストールやアップデートや利用中の、よくあるトラブルへの対処集です。
-- [起動時に sd-danbooru-tags-upsampler のエラーが発生する問題](https://github.com/p1atdev/sd-danbooru-tags-upsampler/issues/21) に対処しました。
-
-### 2024/03/15
-
-- [NegPiP が動作しない問題](https://github.com/hako-mikan/sd-webui-negpip/issues/36#issuecomment-1995255830) への対処のために、forgeのバージョンを `b9705c5` にする対処を入れました。
-	- [Regional Prompter の問題](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/515#issuecomment-1986967238) も治るかもしれません。
-
-### 2024/03/10
-
-- ドキュメントに『[SDXL 生成画像を SD1.5 画風に寄せる](https://github.com/Zuntan03/EasySdxlWebUi/wiki/SDXL-%E7%94%9F%E6%88%90%E7%94%BB%E5%83%8F%E3%82%92-SD1.5-%E7%94%BB%E9%A2%A8%E3%81%AB%E5%AF%84%E3%81%9B%E3%82%8B)』を追加しました。
-	- Animagine 系や Pony 系の SDXL で生成した画像を、`高解像度補助` で SD1.5 モデルの画風に寄せます。  
-	- SDXL と SD1.5 を 組み合わせることで、SD1.5 の資産を SDXL 環境でも活用できるようにします。
-
-左上が Animagine による元画像  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Sd15HiresW.webp)
 
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
@@ -123,6 +108,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - [Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)
 	- Animagine XL 3.1 がサポートしている 全 4917 キャラ の画像を生成する 10 クリック程度の手順です。  
 	大量の画像の閲覧方法についても、サンプル画像付きで補足します。
+- [Animagine で簡単カップリング画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E7%B0%A1%E5%8D%98%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)
+	- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1) で [大幅に増えた組み込みキャラ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90) の同作品カップリング画像を、プロンプトだけで簡単に生成します。
 
 ### Pony Diffusion
 
