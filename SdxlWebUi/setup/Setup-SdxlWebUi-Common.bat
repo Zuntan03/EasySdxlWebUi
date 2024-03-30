@@ -121,7 +121,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/nihedon/sd-webui-weight-helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/Stable-Diffusion-Webui-Civitai-Helper
+@REM https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
+@REM https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
+call %~dp0GitCloneOrPull.bat https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP

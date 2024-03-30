@@ -28,7 +28,7 @@ set COMMANDLINE_ARGS=^
 @REM 起動時に操作不能になる件への対策
 if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (
 	echo http://127.0.0.1:7860/
-	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch
+	set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% --listen --autolaunch --enable-insecure-extension-access
 )
 
 set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% %*
