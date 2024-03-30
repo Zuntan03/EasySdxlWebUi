@@ -19,6 +19,15 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/31
+
+- [#1](https://github.com/Zuntan03/EasySdxlWebUi/issues/1) の問題に対応しました。
+	- 起動時にリロードするまで操作不能になる問題へのワークアラウンドとして `--listen` フラグを追加していましたが、これにより `extension access disabled because of command line flags` エラーが発生していました。
+		- `--listen` と一緒に `--enable-insecure-extension-access` を指定するようにしました。
+		- `SdxlWebUi-forge-DisableAutoLaunch.bat` で起動すれば `--listen` せずに起動できます。  
+		ただし、起動時にリロードするまで操作不能になる可能性があります。
+	- Civitai Helper を [butaixianran 版](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) に変更しました。
+
 ### 2024/03/30
 
 - forge 版の拡張機能に [`SD Forge Attention Couple`](https://github.com/Haoming02/sd-forge-couple) を追加しました。
