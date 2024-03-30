@@ -33,6 +33,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 if exist sd-forge-layerdiffusion\ ( rmdir /S /Q sd-forge-layerdiffusion\ )
 
+call %~dp0GitCloneOrPull.bat https://github.com/Haoming02/sd-forge-couple
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 @REM call %~dp0GitCloneOrPull.bat https://github.com/continue-revolution/sd-forge-animatediff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 

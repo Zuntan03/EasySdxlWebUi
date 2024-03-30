@@ -19,6 +19,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/03/30
+
+- forge 版の拡張機能に [`SD Forge Attention Couple`](https://github.com/Haoming02/sd-forge-couple) を追加しました。
+
 ### 2024/03/24
 
 - ドキュメントに『[Animagine で簡単カップリング画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E7%B0%A1%E5%8D%98%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)』を追加しました。
