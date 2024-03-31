@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/03/31
 
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/AFCP/AllHW.webp)
+
+- ドキュメントに『[Forge Couple で Animagine キャラの組み合わせ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-Couple-%E3%81%A7-Animagine-%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B)』を追加しました。
+	- 複数作品の Animagine 組み込みキャラを、3人以上組み合わせて画像生成できます。
 - [#1](https://github.com/Zuntan03/EasySdxlWebUi/issues/1) の問題に対応しました。
 	- 起動時にリロードするまで操作不能になる問題へのワークアラウンドとして `--listen` フラグを追加していましたが、これにより `extension access disabled because of command line flags` エラーが発生していました。
 		- `--listen` と一緒に `--enable-insecure-extension-access` を指定するようにしました。
@@ -123,6 +127,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	大量の画像の閲覧方法についても、サンプル画像付きで補足します。
 - [Animagine で簡単カップリング画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E7%B0%A1%E5%8D%98%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)
 	- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1) で [大幅に増えた組み込みキャラ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90) の同作品カップリング画像を、プロンプトだけで簡単に生成します。
+- [Forge Couple で Animagine キャラの組み合わせ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-Couple-%E3%81%A7-Animagine-%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B)
+	- 複数作品の Animagine 組み込みキャラを、3人以上組み合わせて画像生成できます。
 
 ### Pony Diffusion
 
