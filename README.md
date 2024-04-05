@@ -25,6 +25,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 スプレッドシートをコピーしてご利用ください。
 	- 作品名やキャラ名のフィルタでキャラを探して、`sex`, `name`, `series` の 3カラムをプロンプト入力欄にコピペしてください。  
 	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/AnimagineCharacterSheet.png)
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/AnimagineCharacterGen.png)
 	- 元のリストから重複を取り除いてありますが、性別違いは追いきれないためそのままにしてあります。
 - 不具合への仮対処として forge のバージョンを b9705c5 に巻き戻していたのを元に戻しました。
 
