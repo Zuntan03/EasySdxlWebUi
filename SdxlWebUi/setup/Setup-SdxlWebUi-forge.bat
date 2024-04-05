@@ -7,9 +7,9 @@ call %~dp0GitCloneOrPull.bat https://github.com/lllyasviel/stable-diffusion-webu
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM  forge b9705c5
-echo git -C stable-diffusion-webui-forge checkout b9705c5
-git -C stable-diffusion-webui-forge checkout b9705c5 2>NUL
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM echo git -C stable-diffusion-webui-forge checkout b9705c5
+@REM git -C stable-diffusion-webui-forge checkout b9705c5 2>NUL
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0ActivateVirtualEnvironment.bat venv-forge
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

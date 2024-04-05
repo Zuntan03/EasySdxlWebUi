@@ -19,6 +19,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/04/05
+
+- 不具合への仮対処として forge のバージョンを b9705c5 に巻き戻していたのを元に戻しました。
+
 ### 2024/03/31
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/AFCP/AllHW.webp)
