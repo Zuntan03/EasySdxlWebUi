@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/04/05
 
+- Animagine XL 3.1 のキャラリストから、[キャラを探してコピペしやすくするスプレッドシート](https://docs.google.com/spreadsheets/d/1CA8j8PV4mZ2IYqHKrU0vKOf_YzbPcX20e6WMWUlOt64/copy)を用意しました。  
+スプレッドシートをコピーしてご利用ください。
+	- `series` の作品名フィルタなどからキャラを探して、`sex`, `name`, `series` の 3カラムをプロンプト入力欄にコピペしてください。  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/AnimagineCharacterSheet.png)
+	- 元のリストから重複を取り除いてありますが、性別間違いは追いきれないためそのままにしてあります。
 - 不具合への仮対処として forge のバージョンを b9705c5 に巻き戻していたのを元に戻しました。
 
 ### 2024/03/31
