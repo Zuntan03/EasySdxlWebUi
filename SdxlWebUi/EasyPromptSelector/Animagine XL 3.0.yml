@@ -26,6 +26,7 @@ LCM 無効設定: "\n
 TagUpsample NSFW: "rating:explicit, uncensored"
 ネガティブ(Ctrl+Click): |-
   lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
+Fixhands: "<lora:Fixhands_anime_bdsqlsz_V1:1> # bdsqlsz_V1:1>,bdsqlsz_V1:0.8>,bdsqlsz_V1:0.6>,bdsqlsz_V1:0.4>,bdsqlsz_V1:0.2>"
 flat: <lora:sdxl-flat:-1>
 1girl: 1girl
 マスピ: masterpiece

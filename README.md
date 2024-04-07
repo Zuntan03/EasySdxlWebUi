@@ -19,6 +19,18 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/04/07
+
+- ドキュメントに『[Fixhands LoRA の重みガチャで手を修正](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Fixhands-LoRA-%E3%81%AE%E9%87%8D%E3%81%BF%E3%82%AC%E3%83%81%E3%83%A3%E3%81%A7%E6%89%8B%E3%82%92%E4%BF%AE%E6%AD%A3)』を追加しました。
+	- [Fixhands LoRA](https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2) の重みガチャで手軽に手を修正する手法です。
+- Easy Prompt Selector で `Fixhands` ボタンを追加しました。
+- 手の描画を修正する [Fixhands LoRA](https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2) をダウンロードする `Download/Lora/Fixhands.bat` を追加しました。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/waving-suletta.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/double_v-bocchi.webp)|
+|--|--|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/rabbit_pose-aqua.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/rabbit_pose-anya.webp)|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/pointing_at_viewer-bocchi.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/pointing_at_viewer-asuka.webp)|
+
 ### 2024/04/05
 
 - Animagine XL 3.1 のキャラリストから、[キャラを探してコピペしやすくするスプレッドシート](https://docs.google.com/spreadsheets/d/1CA8j8PV4mZ2IYqHKrU0vKOf_YzbPcX20e6WMWUlOt64/copy)を用意しました。  
@@ -105,6 +117,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- まずは先人の真似をしつつ、少しずつプロンプトを変えてみるところから始めましょう。
 - [モデルや LoRA の追加](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%A2%E3%83%87%E3%83%AB%E3%82%84-LoRA-%E3%81%AE%E8%BF%BD%E5%8A%A0)
 	- Civitai Helper の API キーを登録していますか？ファイルコピーだけじゃないモデルや LoRA の追加方法です。
+- [Fixhands LoRA の重みガチャで手を修正](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Fixhands-LoRA-%E3%81%AE%E9%87%8D%E3%81%BF%E3%82%AC%E3%83%81%E3%83%A3%E3%81%A7%E6%89%8B%E3%82%92%E4%BF%AE%E6%AD%A3)
+	- [Fixhands LoRA](https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2) の重みガチャで手軽に手を修正する手法です。
 - [Danbooru Tags Upsampler でかんたん高品質プロンプトガチャ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Danbooru-Tags-Upsampler-%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%AB%98%E5%93%81%E8%B3%AA%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%AC%E3%83%81%E3%83%A3)
 	- [Platさん](https://twitter.com/p1atdev_art) の [Danbooru Tags Upsampler](https://github.com/p1atdev/sd-danbooru-tags-upsampler) はプロンプト生成専用の言語モデルにより、とても簡単に高品質なプロンプトでガチャれます。
 - [トラブルシューティング](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)

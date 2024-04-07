@@ -21,4 +21,5 @@ TagUpsample NSFW: "rating:explicit, uncensored"
 ネガティブ(Ctrl+Click): bad anatomy, worst quality, low quality
 myjs: <lora:myjs_XL_zipang_test03:1> myjs
 myjc: <lora:myjc_v1_XL:1> myjc
+Fixhands: "<lora:Fixhands_anime_bdsqlsz_V1:1> # bdsqlsz_V1:1>,bdsqlsz_V1:0.8>,bdsqlsz_V1:0.6>,bdsqlsz_V1:0.4>,bdsqlsz_V1:0.2>"
 flat: <lora:sdxl-flat:-1>

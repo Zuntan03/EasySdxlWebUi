@@ -25,6 +25,7 @@ Lightning 設定2: "\n
   Negative prompt: source_furry, source_cartoon, source_pony, blurry, \n
   Steps: 12, Sampler: Euler SGMUniform, CFG scale: 3.0, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 TagUpsample NSFW: "rating:explicit, uncensored"
+Fixhands: "<lora:Fixhands_anime_bdsqlsz_V1:1> # bdsqlsz_V1:1>,bdsqlsz_V1:0.8>,bdsqlsz_V1:0.6>,bdsqlsz_V1:0.4>,bdsqlsz_V1:0.2>"
 flat: <lora:sdxl-flat:-1>
 score_9: score_9
 score_8: score_8_up

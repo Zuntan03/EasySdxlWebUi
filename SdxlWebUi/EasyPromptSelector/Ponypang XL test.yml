@@ -20,4 +20,5 @@ Lightning 設定: "\n
 TagUpsample NSFW: "rating:explicit, uncensored"
 ネガティブ(Ctrl+Click): worst quality, low quality, normal quality, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, source_furry, source_pony, source_cartoon, comic, source filmmaker, 3d
 myjs: <lora:myjs_XL_ponypang:1> myjs
+Fixhands: "<lora:Fixhands_anime_bdsqlsz_V1:1> # bdsqlsz_V1:1>,bdsqlsz_V1:0.8>,bdsqlsz_V1:0.6>,bdsqlsz_V1:0.4>,bdsqlsz_V1:0.2>"
 flat: <lora:sdxl-flat:-1>

@@ -29,6 +29,7 @@ absurdres: "absurdres"
 ネガティブ(Ctrl+Click): "lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]"
 短ネガ: worst quality, low quality
 TagUpsample NSFW: "rating:explicit, uncensored"
+Fixhands: "<lora:Fixhands_anime_bdsqlsz_V1:1> # bdsqlsz_V1:1>,bdsqlsz_V1:0.8>,bdsqlsz_V1:0.6>,bdsqlsz_V1:0.4>,bdsqlsz_V1:0.2>"
 flat: <lora:sdxl-flat:-1>
 "[Rating] expl": explicit, nsfw
 nsfw: nsfw
