@@ -19,6 +19,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/04/13
+
+- [7th anime XL](https://huggingface.co/syaimu/7th_Layer_XL) をダウンロードする `Download/Model/7th_LayerXL.bat` を追加しました。
+	- [7th anime XL-Pony A](https://civitai.com/models/395554) は Civitai でダウンロードしてください。
+
 ### 2024/04/07
 
 - ドキュメントに『[Fixhands LoRA の重みガチャで手を修正](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Fixhands-LoRA-%E3%81%AE%E9%87%8D%E3%81%BF%E3%82%AC%E3%83%81%E3%83%A3%E3%81%A7%E6%89%8B%E3%82%92%E4%BF%AE%E6%AD%A3)』を追加しました。
