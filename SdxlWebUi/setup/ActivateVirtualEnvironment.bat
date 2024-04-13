@@ -69,6 +69,9 @@ if not exist %VIRTUAL_ENV_DIR%\ (
 	%PYTHON_CMD% -m venv %VIRTUAL_ENV_DIR%
 
 	if not exist %VIRTUAL_ENV_DIR%\ (
+		echo %PYTHON_CMD% -m pip install virtualenv --no-warn-script-location
+		%PYTHON_CMD% -m pip install virtualenv --no-warn-script-location
+
 		echo %PYTHON_CMD% -m virtualenv --copies %VIRTUAL_ENV_DIR%
 		%PYTHON_CMD% -m virtualenv --copies %VIRTUAL_ENV_DIR%
 	)
