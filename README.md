@@ -24,7 +24,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - Stable Diffusion web UI 1.9.0 に更新して、画像を生成できることを確認しました。
 	- 1.8.0 では使えなかった LCM 用の `LCM Karras` や Lightning 用の `* SGM Uniform` が利用できるようになりました。
 	- a1111 の通常の更新手順で問題が残ってしまった場合は、`SdxlWebUi/stable-diffusion-webui/` をリネームして更新すると解決する場合があります。
-	- 私の環境依存かもしれませんが、[NegPip](https://github.com/hako-mikan/sd-webui-negpip) と [CD Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) の利用時にエラーが発生しています。
+	- 私の環境依存かもしれませんが、[NegPip](https://github.com/hako-mikan/sd-webui-negpip)(fp8 利用時) と [CD Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) の利用時にエラーが発生しています。
 		- 機能を利用しなければ悪影響はなさそうです。
 - [7th anime XL](https://huggingface.co/syaimu/7th_Layer_XL) をダウンロードする `Download/Model/7th_LayerXL.bat` を追加しました。
 	- [7th anime XL-Pony A](https://civitai.com/models/395554) は Civitai でダウンロードしてください。
