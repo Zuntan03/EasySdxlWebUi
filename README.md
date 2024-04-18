@@ -17,14 +17,15 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - **拡張機能の更新時にエラーが発生した場合は、`SdxlWebUi/stable-diffusion-webui(-forge)/extensions/` にある拡張機能のフォルダを削除して再更新してください。**
 - **ブラウザの自動起動でまれに操作不能となる不具合があります。**  
-**`SdxlWebUi-forge-DisableAutoLaunch.bat` で起動し、[http://localhost:7860/](http://localhost:7860/) をブックマークして手動で開くことで回避できます。**
+**`SdxlWebUi-(forge|a1111)-DisableAutoLaunch.bat` で起動し、[http://localhost:7860/](http://localhost:7860/) をブックマークして手動で開くことで回避できます。**
 
 ## 最近の主な更新
 
 ### 2024/04/18
 
 - **ブラウザの自動起動でまれに操作不能となる不具合があります。**  
-**`SdxlWebUi-forge-DisableAutoLaunch.bat` で起動し、[http://localhost:7860/](http://localhost:7860/) をブックマークして手動で開くことで回避できます。** の注意書きを追加しました。
+**`SdxlWebUi-(forge|a1111)-DisableAutoLaunch.bat` で起動し、[http://localhost:7860/](http://localhost:7860/) をブックマークして手動で開くことで回避できます。** の注意書きを追加しました。
+- `SdxlWebUi-a1111-DisableAutoLaunch.bat` を追加しました。
 
 ### 2024/04/13
 
