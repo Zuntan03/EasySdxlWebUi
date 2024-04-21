@@ -8,9 +8,15 @@ pushd %~dp0..
 @REM sd-danbooru-tags-upsampler
 @REM pip -qq install "tensorflow==2.16.1"
 @REM ModuleNotFoundError: No module named 'keras.__internal__'
-@REM echo pip -qq install "tensorflow==2.15.1"
-@REM pip -qq install "tensorflow==2.15.1"
-@REM if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+echo pip -qq install "tensorflow==2.15.1"
+pip -qq install "tensorflow==2.15.1"
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
+@REM ImportError: cannot import name 'Undefined' from 'pydantic.fields'
+@REM https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15564
+echo pip -qq install albumentations==1.4.3 pydantic==1.10.15
+pip -qq install albumentations==1.4.3 pydantic==1.10.15
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 @REM e621-v3-20221117-sgd-e32
 echo pip -qq install tensorflow_io

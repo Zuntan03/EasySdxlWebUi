@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/04/21
+
+- 4/17 以降の新規インストールや venv の削除で `ImportError: cannot import name 'Undefined' from 'pydantic.fields'` が発生する [不具合](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15564) に仮対処しました。
+
 ### 2024/04/18
 
 - **ブラウザの自動起動でまれに操作不能となる不具合があります。**  
