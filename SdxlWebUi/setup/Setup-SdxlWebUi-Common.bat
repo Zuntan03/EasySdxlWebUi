@@ -65,6 +65,11 @@ call %~dp0Download.bat Lora Fixhands_anime_bdsqlsz_V1.safetensors ^
 https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2/resolve/main/Fixhands_anime_bdsqlsz_V1.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+@REM Hyper-SD LoRA
+call %~dp0Download.bat Lora\Hyper-SD Hyper-SDXL-8steps-lora.safetensors	 ^
+https://huggingface.co/ByteDance/Hyper-SD/resolve/main/Hyper-SDXL-8steps-lora.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 @REM Upscaler
 call %~dp0Link.bat %SD_DIR%\models\ESRGAN Upscaler
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

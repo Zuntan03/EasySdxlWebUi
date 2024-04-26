@@ -1,0 +1,13 @@
+@echo off
+chcp 65001 > NUL
+
+start "" https://huggingface.co/2vXpSwA7/iroiro-lora
+
+set SDXL_WEB_UI=%~dp0..\..\SdxlWebUi
+pushd %SDXL_WEB_UI%\ControlNet
+
+call %SDXL_WEB_UI%\setup\Download.bat . cnlllite-anystyle_v3-step00004000.safetensors ^
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet/cnlllite-anystyle_v3-step00004000.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+popd rem %SDXL_WEB_UI%\Lora

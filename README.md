@@ -21,112 +21,29 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
-### 2024/04/21
+### 2024/04/27
 
-- 4/17 以降の新規インストールや venv の削除で `ImportError: cannot import name 'Undefined' from 'pydantic.fields'` が発生する [不具合](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15564) に仮対処しました。
+- [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` をダウンロードする `Download/ControlNet/2vXpSwA7-cnlllite-anystyle_v3.bat` を追加しました。
+	- モデルをダウンロードしたら、ControlNet の `モデル` に `cnlllite-anystyle_v3-step00004000` を設定し `Ending Control Setp` を `0.2 ~ 0.3` にすると、構図を寄せつつも書き足せます。
 
-### 2024/04/18
+|元画像|設定|CN画像|生成画像|
+|:--:|:--:|:--:|:--:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-0.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-Ui.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-1.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-2.png)|
 
-- **ブラウザの自動起動でまれに操作不能となる不具合があります。**  
-**`SdxlWebUi-(forge|a1111)-DisableAutoLaunch.bat` で起動し、[http://localhost:7860/](http://localhost:7860/) をブックマークして手動で開くことで回避できます。** の注意書きを追加しました。
-- `SdxlWebUi-a1111-DisableAutoLaunch.bat` を追加しました。
+- LCM LoRA や Lightning LoRA と同様に高速化されつつも、絵への影響が少ないと評判の [Hyper-SD LoRA](https://huggingface.co/ByteDance/Hyper-SD) に対応しました。
+	- アップデート時に `SdxlWebUi/Lora/Hyper-SD` に `8steps` 版をダウンロードします。
+		- `Download/Lora/Hyper-SD.bat` で `1, 2, 4steps` 版をダウンロードします。
+	- Easy Prompt Selector に `Hyper-SD Cfg1 設定` のボタンを追加しました。
+		- Cfg1 だと高速ですが、Negative prompt が効きません（だったはず）。
+		- `Apr.26, 2024. 💥💥💥 Our CFG-Preserved Hyper-SD15/SDXL that facilitate negative prompts and larger guidance scales (e.g. 5~10) will be coming soon!!! 💥💥💥` だそうです。  
+		![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Ui.png)
+	- Geforce RTX 3060 で 896x1152 のバッチサイズ 9 が 40秒ぐらい（平均 4.5秒）で生成されています。
 
-### 2024/04/13
-
-- Stable Diffusion web UI 1.9.0 に更新して、画像を生成できることを確認しました。
-	- 1.8.0 では使えなかった LCM 用の `LCM Karras` や Lightning 用の `* SGM Uniform` が利用できるようになりました。
-	- a1111 の通常の更新手順で問題が残ってしまった場合は、`SdxlWebUi/stable-diffusion-webui/` をリネームして更新すると解決する場合があります。
-	- 私の環境依存かもしれませんが、[NegPip](https://github.com/hako-mikan/sd-webui-negpip)(fp8 利用時) と [CD Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) の利用時にエラーが発生しています。
-		- 機能を利用しなければ悪影響はなさそうです。
-- [7th anime XL](https://huggingface.co/syaimu/7th_Layer_XL) をダウンロードする `Download/Model/7th_LayerXL.bat` を追加しました。
-	- [7th anime XL-Pony A](https://civitai.com/models/395554) は Civitai でダウンロードしてください。
-
-### 2024/04/07
-
-- ドキュメントに『[Fixhands LoRA の重みガチャで手を修正](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Fixhands-LoRA-%E3%81%AE%E9%87%8D%E3%81%BF%E3%82%AC%E3%83%81%E3%83%A3%E3%81%A7%E6%89%8B%E3%82%92%E4%BF%AE%E6%AD%A3)』を追加しました。
-	- [Fixhands LoRA](https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2) の重みガチャで手軽に手を修正する手法です。
-- Easy Prompt Selector で `Fixhands` ボタンを追加しました。
-- 手の描画を修正する [Fixhands LoRA](https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2) をダウンロードする `Download/Lora/Fixhands.bat` を追加しました。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/waving-suletta.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/double_v-bocchi.webp)|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Aqua.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Bocchi.webp)|
 |--|--|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/rabbit_pose-aqua.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/rabbit_pose-anya.webp)|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/pointing_at_viewer-bocchi.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/FXHG/pointing_at_viewer-asuka.webp)|
-
-### 2024/04/05
-
-- Animagine XL 3.1 のキャラリストから、[キャラを探してコピペしやすくするスプレッドシート](https://docs.google.com/spreadsheets/d/1CA8j8PV4mZ2IYqHKrU0vKOf_YzbPcX20e6WMWUlOt64/copy)を用意しました。  
-スプレッドシートをコピーしてご利用ください。
-	- 作品名やキャラ名のフィルタでキャラを探して、`sex`, `name`, `series` の 3カラムをプロンプト入力欄にコピペしてください。  
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/AnimagineCharacterSheet.png)
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/AnimagineCharacterGen.png)
-	- 元のリストから重複を取り除いてありますが、性別違いは追いきれないためそのままにしてあります。
-- 不具合への仮対処として forge のバージョンを b9705c5 に巻き戻していたのを元に戻しました。
-
-### 2024/03/31
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/AFCP/AllHW.webp)
-
-- ドキュメントに『[Forge Couple で Animagine キャラの組み合わせ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-Couple-%E3%81%A7-Animagine-%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B)』を追加しました。
-	- 複数作品の Animagine 組み込みキャラを、3人以上組み合わせて画像生成できます。
-- [#1](https://github.com/Zuntan03/EasySdxlWebUi/issues/1) の問題に対応しました。
-	- 起動時にリロードするまで操作不能になる問題へのワークアラウンドとして `--listen` フラグを追加していましたが、これにより `extension access disabled because of command line flags` エラーが発生していました。
-		- `--listen` と一緒に `--enable-insecure-extension-access` を指定するようにしました。
-		- `SdxlWebUi-forge-DisableAutoLaunch.bat` で起動すれば `--listen` せずに起動できます。  
-		ただし、起動時にリロードするまで操作不能になる可能性があります。
-	- Civitai Helper を [butaixianran 版](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) に変更しました。
-
-### 2024/03/30
-
-- forge 版の拡張機能に [`SD Forge Attention Couple`](https://github.com/Haoming02/sd-forge-couple) を追加しました。
-
-### 2024/03/24
-
-- ドキュメントに『[Animagine で簡単カップリング画像生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E3%81%A7%E7%B0%A1%E5%8D%98%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90)』を追加しました。
-	- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1) で [大幅に増えた組み込みキャラ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90) の同作品カップリング画像を、プロンプトだけで簡単に生成します。
-
-![](https://yyy.wpx.jp/EasySdxlWebUi/ACUP/All.webp)
-
-### 2024/03/23
-
-- 起動時の操作不能を回避するために  --listen --autolaunch オプション付きで起動するようにしました。
-	- 起動時のブラウザ表示を無効にしたい場合は、`SdxlWebUi-forge-DisableAutoLaunch.bat` を参考にしてください。
-	- **更新時にエラーが発生した場合は、もう一度更新してください。**
-		- 再更新で同じエラーが発生しなければ問題有りません。
-- 『[Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』にアップスケール込みの立ち絵サンプル画像を追加しました。
-
-### 2024/03/20
-
-- ドキュメントに『[Animagine 全キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Animagine-%E5%85%A8%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』を追加しました。
-	- Animagine XL 3.1 がサポートしている 全 4917 キャラ の画像を生成する 10 クリック程度の手順です。  
-	大量の画像の閲覧方法についても、サンプル画像付きで補足します。
-	- サンプル画像は **`Download/Image/Animagine31Character.bat`** で `save/Animagine31Character/` に展開します。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Prompt.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/DynamicPrompt.png)|
-|--|--|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Explorer.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/BrowseImage.png)|
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/ACHR/Character.webp)
-
-### 2024/03/19
-
-- Animagine XL 3.1 の Easy Prompt Selector ボタンを追加しました。
-	- 試した範囲では LCM LoRA での生成が効果的でした。  
-	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/Anmg31Eps.png)
-
-### 2024/03/18
-
-- Animagine XL 3.1 をダウンロードする `Download/Model/animagine-xl-3.1.bat` を追加しました。
-	- [公式ブログ](https://cagliostrolab.net/posts/animagine-xl-v31-release) 
-	- [HuggingFace](https://huggingface.co/cagliostrolab/animagine-xl-3.1) 
-	- デフォルトでインストールするモデルも Animagine XL 3.0 から 3.1 に変更しました。
-- Animagine XL 3.1 のキャラクターワイルドカードを追加しました。
-	- `__anmg31/char_full__` は全 4971 キャラのワイルドカードです。
-	- `__anmg31/char_add__` は Animagine 3.0 に無く、3.1 で追加された 2126 キャラのワイルドカードです。
-	- 『[Pony 系モデルの画風めぐり（Dynamic Prompts 組み合わせ生成）](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Pony-%E7%B3%BB%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E7%94%BB%E9%A2%A8%E3%82%81%E3%81%90%E3%82%8A%EF%BC%88Dynamic-Prompts-%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E7%94%9F%E6%88%90%EF%BC%89) 』と同様の手順で全キャラの画像を生成できます。
-
 
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
+
 ## ドキュメント
 
 ### はじめに

@@ -16,7 +16,11 @@
   masterpiece, best quality, very aesthetic, absurdres, \n
   Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 28, Sampler: Euler a, CFG scale: 7, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
-"[推] LCM 設定": "\n
+Hyper-SD Cfg1 設定: "\n
+  <lora:Hyper-SDXL-8steps-lora:1> masterpiece, best quality, very aesthetic, absurdres, \n
+  Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
+  Steps: 10, Sampler: Euler A SGMUniform, CFG scale: 1, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+LCM 設定: "\n
   <lora:lcm-animagine-3:1> masterpiece, best quality, very aesthetic, absurdres, \n
   Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 12, Sampler: LCM Karras, CFG scale: 1.4, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
