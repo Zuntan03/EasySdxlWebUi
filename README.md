@@ -23,6 +23,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/04/27
 
+- `DownloadAll*.bat` の更新漏れを修正しました。
 - [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` をダウンロードする `Download/ControlNet/2vXpSwA7-cnlllite-anystyle_v3.bat` を追加しました。
 	- モデルをダウンロードしたら、ControlNet の `モデル` に `cnlllite-anystyle_v3-step00004000` を設定し `Ending Control Setp` を `0.2 ~ 0.3` にすると、構図を寄せつつ書き換えられます。
 
