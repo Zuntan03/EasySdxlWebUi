@@ -24,13 +24,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/04/27
 
 - [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` をダウンロードする `Download/ControlNet/2vXpSwA7-cnlllite-anystyle_v3.bat` を追加しました。
-	- モデルをダウンロードしたら、ControlNet の `モデル` に `cnlllite-anystyle_v3-step00004000` を設定し `Ending Control Setp` を `0.2 ~ 0.3` にすると、構図を寄せつつも書き足せます。
+	- モデルをダウンロードしたら、ControlNet の `モデル` に `cnlllite-anystyle_v3-step00004000` を設定し `Ending Control Setp` を `0.2 ~ 0.3` にすると、構図を寄せつつ書き換えられます。
 
-|元画像|設定|CN画像|生成画像|
+|元の画像|CN 設定|参照画像|生成画像|
 |:--:|:--:|:--:|:--:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-0.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-Ui.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-1.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-2.png)|
 
-- LCM LoRA や Lightning LoRA と同様に高速化されつつも、絵への影響が少ないと評判の [Hyper-SD LoRA](https://huggingface.co/ByteDance/Hyper-SD) に対応しました。
+- LCM LoRA や Lightning LoRA と同様に高速化されつつも、絵への影響が少ないらしい [Hyper-SD LoRA](https://huggingface.co/ByteDance/Hyper-SD) に対応しました。
 	- アップデート時に `SdxlWebUi/Lora/Hyper-SD` に `8steps` 版をダウンロードします。
 		- `Download/Lora/Hyper-SD.bat` で `1, 2, 4steps` 版をダウンロードします。
 	- Easy Prompt Selector に `Hyper-SD Cfg1 設定` のボタンを追加しました。
@@ -38,6 +38,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 		- `Apr.26, 2024. 💥💥💥 Our CFG-Preserved Hyper-SD15/SDXL that facilitate negative prompts and larger guidance scales (e.g. 5~10) will be coming soon!!! 💥💥💥` だそうです。  
 		![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Ui.png)
 	- Geforce RTX 3060 で 896x1152 のバッチサイズ 9 が 40秒ぐらい（平均 4.5秒）で生成されています。
+	- Animagine XL 3.1 との相性が良さそうです。
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Aqua.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Bocchi.webp)|
 |--|--|
