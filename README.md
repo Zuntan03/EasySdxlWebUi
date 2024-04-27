@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/04/28
+
+- [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` が触れば触るほど良いものでしたので、更新時にデフォルトでダウンロードするようにしました。
+
 ### 2024/04/27
 
 - `DownloadAll*.bat` の更新漏れを修正しました。

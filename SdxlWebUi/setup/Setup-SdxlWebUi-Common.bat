@@ -66,7 +66,7 @@ https://huggingface.co/bdsqlsz/stable-diffusion-xl-anime-5.2/resolve/main/Fixhan
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Hyper-SD LoRA
-call %~dp0Download.bat Lora\Hyper-SD Hyper-SDXL-8steps-lora.safetensors	 ^
+call %~dp0Download.bat Lora\Hyper-SD Hyper-SDXL-8steps-lora.safetensors ^
 https://huggingface.co/ByteDance/Hyper-SD/resolve/main/Hyper-SDXL-8steps-lora.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -76,6 +76,11 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM ControlNet
 call %~dp0Link.bat %SD_DIR%\models\ControlNet ControlNet
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+@REM anystyle
+call %~dp0Download.bat ControlNet cnlllite-anystyle_v3-step00004000.safetensors ^
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet/cnlllite-anystyle_v3-step00004000.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 @REM Tagger
