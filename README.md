@@ -24,6 +24,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/04/28
 
 - [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` が触れば触るほど良いものでしたので、更新時に自動的にダウンロードするようにしました。
+- [TTPLanet_SDXL_Controlnet_Tile_Realistic](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic) の v2 を `Download\ControlNet\TTPlanet-TTPLanet_SDXL_Controlnet_Tile_Realistic.bat` でダウンロードするようにしました。
 
 ### 2024/04/27
 
