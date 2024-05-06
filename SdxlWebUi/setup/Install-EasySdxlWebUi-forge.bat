@@ -88,8 +88,8 @@ endlocal
 
 if not exist SdxlWebUi\setup\lib\ ( mkdir SdxlWebUi\setup\lib )
 
-echo %CURL_CMD% -Lo SdxlWebUi\setup\lib\EasySdxlWebUi.zip https://github.com/Zuntan03/EasySdxlWebUi/archive/refs/heads/main.zip
-%CURL_CMD% -Lo SdxlWebUi\setup\lib\EasySdxlWebUi.zip https://github.com/Zuntan03/EasySdxlWebUi/archive/refs/heads/main.zip
+echo %CURL_CMD% -k -Lo SdxlWebUi\setup\lib\EasySdxlWebUi.zip https://github.com/Zuntan03/EasySdxlWebUi/archive/refs/heads/main.zip
+%CURL_CMD% -k -Lo SdxlWebUi\setup\lib\EasySdxlWebUi.zip https://github.com/Zuntan03/EasySdxlWebUi/archive/refs/heads/main.zip
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 echo %PS_CMD% Expand-Archive -Path SdxlWebUi\setup\lib\EasySdxlWebUi.zip -DestinationPath SdxlWebUi\setup\lib -Force

@@ -20,8 +20,11 @@ Hyper-SD Cfg1 設定: "\n
   <lora:Hyper-SDXL-8steps-lora:1> masterpiece, best quality, very aesthetic, absurdres, \n
   Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 10, Sampler: Euler A SGMUniform, CFG scale: 1, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
+LCM CFG1 設定: "\n
+  <lora:lcm-animaginexl-3_1:1> masterpiece, best quality, very aesthetic, absurdres, \n
+  Steps: 16, Sampler: LCM Karras, CFG scale: 1, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 LCM 設定: "\n
-  <lora:lcm-animagine-3:1> masterpiece, best quality, very aesthetic, absurdres, \n
+  <lora:lcm-animaginexl-3_1:1> masterpiece, best quality, very aesthetic, absurdres, \n
   Negative prompt: lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]\n
   Steps: 12, Sampler: LCM Karras, CFG scale: 1.4, Emphasis: No norm, # 生成ボタン左下の矢印ボタンで適用"
 Lightning 設定: "\n

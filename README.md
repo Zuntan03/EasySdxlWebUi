@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/05/06
+
+- [Animagine 3.1 用 LCM LoRA](https://huggingface.co/furusu/SD-LoRA/blob/main/lcm-animaginexl-3_1.safetensors) に対応しました。
+- curl コマンドに -k オプションを追加しました。
+
 ### 2024/04/28
 
 - [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` が触れば触るほど良いものでしたので、更新時に自動的にダウンロードするようにしました。

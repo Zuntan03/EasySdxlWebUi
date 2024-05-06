@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 > NUL
-set CURL_CMD=C:\Windows\System32\curl.exe
+set CURL_CMD=C:\Windows\System32\curl.exe -k
 set PS_CMD=PowerShell -Version 5.1 -ExecutionPolicy Bypass
 
 where /Q git

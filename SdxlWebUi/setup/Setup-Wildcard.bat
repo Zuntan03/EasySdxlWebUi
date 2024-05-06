@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 > NUL
 pushd %~dp0..\Wildcard
-set CURL_CMD=C:\Windows\System32\curl.exe
+set CURL_CMD=C:\Windows\System32\curl.exe -k
 set PS_CMD=PowerShell -Version 5.1 -ExecutionPolicy Bypass
 
 xcopy /SQY %~dp0res\wildcards\ . > NUL

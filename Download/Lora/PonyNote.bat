@@ -31,8 +31,8 @@ pause
 
 start "" %NOTE_URL%
 
-echo %CURL_CMD% -Lo "%~dp0PonyNote.ps1" %PS1_URL%
-%CURL_CMD% -Lo "%~dp0PonyNote.ps1" %PS1_URL%
+echo %CURL_CMD% -k -Lo "%~dp0PonyNote.ps1" %PS1_URL%
+%CURL_CMD% -k -Lo "%~dp0PonyNote.ps1" %PS1_URL%
 if %errorlevel% neq 0 ( pause & exit /b %errorlevel% )
 
 echo %PS_CMD% -File "%~dp0PonyNote.ps1" %PONY_DIR%
