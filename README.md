@@ -21,6 +21,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/05/07
+
+- forge 版を `dev` や `dev2` ブランチに切り替える
+`SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev.bat` と `SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev2.bat` を追加しました。
+	- 更新時に `main` ブランチに戻りますので、更新後に実行してブランチを切り替えてください。
+
 ### 2024/05/06
 
 - [Animagine 3.1 用 LCM LoRA](https://huggingface.co/furusu/SD-LoRA/blob/main/lcm-animaginexl-3_1.safetensors) に対応しました。

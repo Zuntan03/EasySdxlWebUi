@@ -6,7 +6,7 @@ pushd %~dp0..
 call %~dp0GitCloneOrPull.bat https://github.com/lllyasviel/stable-diffusion-webui-forge main
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-@REM  forge dev2
+@REM forge dev2
 @REM echo git -C stable-diffusion-webui-forge checkout dev2
 @REM git -C stable-diffusion-webui-forge checkout dev2 2>NUL
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
