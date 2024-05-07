@@ -26,6 +26,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - forge 版を `dev` や `dev2` ブランチに切り替える
 `SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev.bat` と `SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev2.bat` を追加しました。
 	- 更新時に `main` ブランチに戻りますので、更新後に実行してブランチを切り替えてください。
+	- [`dev2` で ControlNet が利用できない問題への仮対処](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/709#issuecomment-2097434315) をいれました。
 
 ### 2024/05/06
 
