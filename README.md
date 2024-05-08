@@ -21,6 +21,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/09
+
+- [IC-Light](https://github.com/lllyasviel/IC-Light) を試せる `IC-Light-Demo.bat` と `IC-Light-DemoBg.bat` を追加しました。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/IC-Light.webp)
+
 ### 2024/05/07
 
 - forge 版を `dev` や `dev2` ブランチに切り替える
