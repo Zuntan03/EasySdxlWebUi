@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/10
+
+- `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`CN-anytest_v1_fp16.safetensors`](https://twitter.com/nana_tsukisuwa/status/1788261709079257296) をダウンロードするようにしました。
+
 ## 2024/05/09
 
 - [IC-Light](https://github.com/lllyasviel/IC-Light) を試せる `IC-Light-Demo.bat` と `IC-Light-DemoBg.bat` を追加しました。
