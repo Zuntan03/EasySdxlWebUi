@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/12
+
+- `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
+- `Download/ControlNet/kataragi-ControlNet-LineartXL.bat` で ControlNet の [`Katarag_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) をダウンロードするようにしました。
+
 ## 2024/05/10
 
 - `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`CN-anytest_v1_fp16.safetensors`](https://twitter.com/nana_tsukisuwa/status/1788261709079257296) をダウンロードするようにしました。
