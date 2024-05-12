@@ -24,6 +24,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ## 2024/05/12
 
 - `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
+- `Download/Model/loliDiffusion.bat` でモデルの [`ebara_pony_2`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
 - `Download/ControlNet/kataragi-ControlNet-LineartXL.bat` で ControlNet の [`Katarag_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) をダウンロードするようにしました。
 
 ## 2024/05/10
