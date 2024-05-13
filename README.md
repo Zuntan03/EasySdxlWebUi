@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/14
+
+- `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2.1`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
+
 ## 2024/05/12
 
 - `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
