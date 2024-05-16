@@ -21,6 +21,10 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/17
+
+- `stable-diffusion-webui-wd14-tagger` を [`picobyte`](https://github.com/picobyte/stable-diffusion-webui-wd14-tagger) さん製から [`Bocchi-Chan2023`](https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger) さん製に変更しました。
+
 ## 2024/05/14
 
 - `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2.1`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
