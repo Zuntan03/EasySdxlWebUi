@@ -23,6 +23,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 2024/05/17
 
+- [Forge を高速な安定版として利用する](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-%E3%82%92%E9%AB%98%E9%80%9F%E3%81%AA%E5%AE%89%E5%AE%9A%E7%89%88%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
+	- 更新が落ち着いた Forge を、高速な安定版として利用する方法です。
 - `stable-diffusion-webui-wd14-tagger` を [`picobyte`](https://github.com/picobyte/stable-diffusion-webui-wd14-tagger) さん製から [`Bocchi-Chan2023`](https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger) さん製に変更しました。
 
 ## 2024/05/14
@@ -120,6 +122,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - [SDXL 生成画像を SD1.5 画風に寄せる](https://github.com/Zuntan03/EasySdxlWebUi/wiki/SDXL-%E7%94%9F%E6%88%90%E7%94%BB%E5%83%8F%E3%82%92-SD1.5-%E7%94%BB%E9%A2%A8%E3%81%AB%E5%AF%84%E3%81%9B%E3%82%8B)
 	- Animagine 系や Pony 系の SDXL で生成した画像を、`高解像度補助` で SD1.5 モデルの画風に寄せます。  
 	- SDXL と SD1.5 を 組み合わせることで、SD1.5 の資産を SDXL 環境でも活用できるようにします。
+- [Forge を高速な安定版として利用する](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-%E3%82%92%E9%AB%98%E9%80%9F%E3%81%AA%E5%AE%89%E5%AE%9A%E7%89%88%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
+	- 更新が落ち着いた Forge を、高速な安定版として利用する方法です。
 - [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 	- 過去の更新履歴です。
 
