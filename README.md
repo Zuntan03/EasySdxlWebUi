@@ -25,6 +25,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - [`DoRA Support`](https://github.com/lllyasviel/stable-diffusion-webui-forge/pull/608) の [パッチ](https://patch-diff.githubusercontent.com/raw/lllyasviel/stable-diffusion-webui-forge/pull/608.patch) をあてる `Checkout-SdxlWebUi-forge-Dora.bat` と `Checkout-SdxlWebUi-forge-dev2_Dora.bat` を `SdxlWebUi/setup` に追加しました。
 	- 更新時に元の状態に戻るため、再実行する必要があります。
+	- [Civitai](https://civitai.com/models) で DoRA を探すには、`Filters` で `DoRA` を指定します。
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/DoRA.png)
 
 ## 2024/05/17
 
