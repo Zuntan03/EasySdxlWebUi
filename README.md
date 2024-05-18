@@ -28,7 +28,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- [Civitai](https://civitai.com/models) で DoRA を探すには、`Filters` で `DoRA` を指定します。
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/DoRA.png)
 - 新しい ControlNet の [MistoLine](https://huggingface.co/TheMistoAI/MistoLine) を `Download/ControlNet/TheMistoAI-MistoLine.bat` で追加できるようにしました。
-	- 先日の [`Kataragi_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) と同様に、ControlNet に線画を入力するか lineart 系のプリプロセッサをご利用ください。
+	- ~~先日の [`Kataragi_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) と同様に、ControlNet に線画を入力するか lineart 系のプリプロセッサをご利用ください。~~
+	- 公式の利用方法とは異なりますが、anystyleと同様にプリプロセッサなしの運用で構図を維持しつつキャラを変更したりできるようです。
 
 ## 2024/05/17
 
