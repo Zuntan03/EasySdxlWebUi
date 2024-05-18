@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+## 2024/05/18
+
+- [`DoRA Support`](https://github.com/lllyasviel/stable-diffusion-webui-forge/pull/608) の [パッチ](https://patch-diff.githubusercontent.com/raw/lllyasviel/stable-diffusion-webui-forge/pull/608.patch) をあてる `Checkout-SdxlWebUi-forge-Dora.bat` と `Checkout-SdxlWebUi-forge-dev2_Dora.bat` を `SdxlWebUi/setup` に追加しました。
+	- 更新時に元の状態に戻るため、再実行する必要があります。
+
 ## 2024/05/17
 
 - ドキュメントに『[Forge を高速な安定版として利用する](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-%E3%82%92%E9%AB%98%E9%80%9F%E3%81%AA%E5%AE%89%E5%AE%9A%E7%89%88%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)』を追加しました。
