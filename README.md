@@ -27,6 +27,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- 更新時に元の状態に戻るため、再実行する必要があります。
 	- [Civitai](https://civitai.com/models) で DoRA を探すには、`Filters` で `DoRA` を指定します。
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/DoRA.png)
+- 新しい ControlNet の [MistoLine](https://huggingface.co/TheMistoAI/MistoLine) を `Download/ControlNet/TheMistoAI-MistoLine.bat` で追加できるようにしました。
+	- 先日の [`Kataragi_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) と同様に、ControlNet に線画を入力するか lineart 系のプリプロセッサをご利用ください。
 
 ## 2024/05/17
 
@@ -42,7 +44,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - `Download/Model/ebara_pony.bat` でモデルの [`ebara_pony_2`](https://huggingface.co/tsukihara/xl_model) をダウンロードするようにしました。
 - `Download/Model/loliDiffusion.bat` でモデルの [`Loli Diffusion v1.1 PDXL Lx7`](https://huggingface.co/JosefJilek/loliDiffusion) をダウンロードするようにしました。
-- `Download/ControlNet/kataragi-ControlNet-LineartXL.bat` で ControlNet の [`Katarag_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) をダウンロードするようにしました。
+- `Download/ControlNet/kataragi-ControlNet-LineartXL.bat` で ControlNet の [`Kataragi_lineartXL`](https://twitter.com/redraw_0/status/1789218899315093999) をダウンロードするようにしました。
 
 ## 2024/05/10
 

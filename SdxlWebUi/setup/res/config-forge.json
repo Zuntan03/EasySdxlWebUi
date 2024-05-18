@@ -30,6 +30,7 @@
         "stable-diffusion-webui-model-toolkit"
     ],
     "ch_dl_lyco_to_lora": true,
+    "ch_nsfw_threshold": "XXX",
     "dp_wildcard_manager_no_sort": true,
     "disable_mean_in_calclate_cond": false
 }
