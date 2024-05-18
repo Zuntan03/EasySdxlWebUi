@@ -54,47 +54,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/IC-Light.webp)
 
-### 2024/05/07
-
-- forge 版を `dev` や `dev2` ブランチに切り替える
-`SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev.bat` と `SdxlWebUi/setup/Checkout-SdxlWebUi-forge-dev2.bat` を追加しました。
-	- 更新時に `main` ブランチに戻りますので、更新後に実行してブランチを切り替えてください。
-	- [`dev2` で ControlNet が利用できない問題への仮対処](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/709#issuecomment-2097434315) をいれました。
-- [zixaphir 版 Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) がよいとの[意見](https://github.com/Zuntan03/EasySdxlWebUi/issues/1#issuecomment-2098523206) がありましたので、切り替えてみました。
-
-### 2024/05/06
-
-- [Animagine 3.1 用 LCM LoRA](https://huggingface.co/furusu/SD-LoRA/blob/main/lcm-animaginexl-3_1.safetensors) に対応しました。
-- curl コマンドに -k オプションを追加しました。
-
-### 2024/04/28
-
-- [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` が触れば触るほど良いものでしたので、更新時に自動的にダウンロードするようにしました。
-- [TTPLanet_SDXL_Controlnet_Tile_Realistic](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic) の v2 を `Download\ControlNet\TTPlanet-TTPLanet_SDXL_Controlnet_Tile_Realistic.bat` でダウンロードするようにしました。
-
-### 2024/04/27
-
-- `DownloadAll*.bat` の更新漏れを修正しました。
-- [月須和・那々さん](https://twitter.com/nana_tsukisuwa) の `cnlllite-anystyle_v3` をダウンロードする `Download/ControlNet/2vXpSwA7-cnlllite-anystyle_v3.bat` を追加しました。
-	- モデルをダウンロードしたら、ControlNet の `モデル` に `cnlllite-anystyle_v3-step00004000` を設定し `Ending Control Setp` を `0.2 ~ 0.3` にすると、構図を寄せつつ書き換えられます。
-
-|元の画像|CN 設定|参照画像|生成画像|
-|:--:|:--:|:--:|:--:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-0.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-Ui.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-1.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/CnAnyStyle-2.png)|
-
-- LCM LoRA や Lightning LoRA と同様に高速化されつつも、絵への影響が少ないらしい [Hyper-SD LoRA](https://huggingface.co/ByteDance/Hyper-SD) に対応しました。
-	- アップデート時に `SdxlWebUi/Lora/Hyper-SD` に `8steps` 版をダウンロードします。
-		- `Download/Lora/Hyper-SD.bat` で `1, 2, 4steps` 版をダウンロードします。
-	- Easy Prompt Selector に `Hyper-SD Cfg1 設定` のボタンを追加しました。
-		- Cfg1 だと高速ですが、Negative prompt が効きません（だったはず）。
-		- `Apr.26, 2024. 💥💥💥 Our CFG-Preserved Hyper-SD15/SDXL that facilitate negative prompts and larger guidance scales (e.g. 5~10) will be coming soon!!! 💥💥💥` だそうです。  
-		![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Ui.png)
-	- Geforce RTX 3060 で 896x1152 のバッチサイズ 9 が 40秒ぐらい（平均 4.5秒）で生成されています。
-	- Animagine XL 3.1 との相性が良さそうです。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Aqua.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/HyperSd-Bocchi.webp)|
-|--|--|
-
 [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 
 ## ドキュメント
