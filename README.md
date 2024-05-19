@@ -25,6 +25,9 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - ドキュメントに『[anystyle 系 ControlNet で構図再現](https://github.com/Zuntan03/EasySdxlWebUi/wiki/anystyle-%E7%B3%BB-ControlNet-%E3%81%A7%E6%A7%8B%E5%9B%B3%E5%86%8D%E7%8F%BE)』を追加しました。
 	- 構図を残しつつキャラや背景を変更できる [anystyle](https://twitter.com/nana_tsukisuwa/status/1782186812846543000) 系の ControlNet を比較します。
+- ドキュメントの『[EasySdxlWebUi のカスタマイズ](https://github.com/Zuntan03/EasySdxlWebUi/wiki/EasySdxlWebUi-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)』に e621 タグの入力補完について追記しました。
+	- `SdxlWebUi/config.json` に `"tac_tagFile": "e621.csv",` を追加して再起動すると Pony 系モデル用の e621 タグで入力補完できます。  
+	元に戻したい場合は `"tac_tagFile": "danbooru.csv",` にして再起動です。
 
 ## 2024/05/18
 
