@@ -14,8 +14,8 @@ setlocal enabledelayedexpansion
 if exist %GIT_CLONE_OR_PULL_DIR%\ (
 	if "%GIT_CLONE_OR_PULL_URL%"=="%REMOTE_ORIGIN_URL%" (
 		if "%CHECKOUT_NAME%" neq "" (
-			echo git -C %GIT_CLONE_OR_PULL_DIR% checkout %CHECKOUT_NAME%
-			git -C %GIT_CLONE_OR_PULL_DIR% checkout %CHECKOUT_NAME%
+			echo git -C %GIT_CLONE_OR_PULL_DIR% checkout -f %CHECKOUT_NAME%
+			git -C %GIT_CLONE_OR_PULL_DIR% checkout -f %CHECKOUT_NAME%
 		)
 
 		echo git -C %GIT_CLONE_OR_PULL_DIR% pull
