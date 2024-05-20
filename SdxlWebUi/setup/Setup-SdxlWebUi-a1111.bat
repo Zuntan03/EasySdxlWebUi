@@ -3,7 +3,12 @@ chcp 65001 > NUL
 
 pushd %~dp0..
 
-call %~dp0GitCloneOrPull.bat https://github.com/AUTOMATIC1111/stable-diffusion-webui
+call %~dp0GitCloneOrPull.bat https://github.com/AUTOMATIC1111/stable-diffusion-webui master
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+@REM a1111 PerfBundle https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/15821
+echo git -C stable-diffusion-webui fetch origin pull/15821/head:PerfBundle
+git -C stable-diffusion-webui fetch origin pull/15821/head:PerfBundle
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0ActivateVirtualEnvironment.bat venv-a1111

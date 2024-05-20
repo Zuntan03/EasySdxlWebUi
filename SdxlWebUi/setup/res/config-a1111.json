@@ -10,7 +10,7 @@
     "lora_preferred_name": "Filename",
     "lora_show_all": true,
     "ui_extra_networks_tab_reorder": "Checkpoints,LoRA,Textual Inversion,Hypernetworks",
-    "fp8_storage": "Enable for SDXL",
+    "fp8_storage": "Disable",
     "cache_fp16_weight": true,
     "emphasis": "No norm",
     "hires_fix_show_sampler": true,

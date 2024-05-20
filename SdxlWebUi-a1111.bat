@@ -27,8 +27,7 @@ set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.75,max_split_size_mb:
 set COMMANDLINE_ARGS=^
 --styles-file ../styles.csv ^
 --gradio-allowed-path .. ^
---xformers ^
---opt-channelslast
+--xformers
 
 @REM 起動時に操作不能になる件への対策
 if "%DISABLE_LISTEN_AUTOLAUNCH%" == "" (

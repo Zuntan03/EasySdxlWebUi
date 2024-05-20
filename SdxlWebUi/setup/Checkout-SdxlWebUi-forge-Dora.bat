@@ -9,7 +9,7 @@ if exist %CONTROLNET_PY%.bak (
 	move /Y %CONTROLNET_PY%.bak %CONTROLNET_PY% > NUL
 )
 
-@REM forge Dora
+@REM forge Dora https://github.com/lllyasviel/stable-diffusion-webui-forge/pull/608
 echo git -C stable-diffusion-webui-forge checkout Dora
 git -C stable-diffusion-webui-forge checkout Dora
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )

@@ -17,6 +17,7 @@ if %errorlevel% neq 0 (
 	git -C stable-diffusion-webui-forge checkout dev2_Dora
 )
 
+@REM forge Dora https://github.com/lllyasviel/stable-diffusion-webui-forge/pull/608
 echo git -C stable-diffusion-webui-forge merge Dora
 git -C stable-diffusion-webui-forge merge Dora
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
