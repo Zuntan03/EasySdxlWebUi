@@ -26,7 +26,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - A1111 の [All perf improvements bundle](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/15821) に対応しました。
 	- 1024x1024 の 6枚生成が 104秒から 94秒に 10秒縮みました。
 		- **ですが [forge の Hyper-SD(8step) の CFG Scale: 1.0 運用](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-%E3%82%92%E9%AB%98%E9%80%9F%E3%81%AA%E5%AE%89%E5%AE%9A%E7%89%88%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B#%E9%80%9F%E5%BA%A6%E9%87%8D%E8%A6%96%E3%81%AE%E5%88%A9%E7%94%A8-cfg%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB-10) なら 53秒です。**  
-		**[比較動画](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/PerfBundle.mp4)**
+		**[比較動画](https://twitter.com/Zuntan03/status/1792702913456078878) [DL](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/PerfBundle.mp4)**
 	- `SdxlWebUi/setup/Checkout-SdxlWebUi-a1111-PerfBundle.bat` で切り替えられます。
 		- `SdxlWebUi-a1111-PrecisionHalf.bat` で `--precision half` 付きで起動できます。
 		- 拡張機能がどこまで動作するかは確認していません。
