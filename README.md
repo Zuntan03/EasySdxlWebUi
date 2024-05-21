@@ -32,7 +32,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 		- 拡張機能がどこまで動作するかは確認していません。
 		- a1111 を更新すると元に戻ります。
 	- **[All perf improvements bundle が fp8 非対応のため](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/15821#issuecomment-2116681846) fp8 を無効化しています。**
-		- **fp8 を利用するには `SdxlWebUi/config.json` に `"fp8_storage": "Enable for SDXL",` を追加してください。**
+		- **fp8 を利用するには `SdxlWebUi/config.json` に `"fp8_storage": "Enable for SDXL",` を追加してください。**  
+		a1111 で fp8 を有効にすると複数 LoRA 使用時に最後の LoRA 以外が効かない説があります(2024/05/21)。
 
 ## 2024/05/19
 
