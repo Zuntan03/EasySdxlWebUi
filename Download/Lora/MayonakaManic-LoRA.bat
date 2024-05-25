@@ -38,5 +38,12 @@ call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic LECO_LessMuscularityXL_forPo
 https://huggingface.co/MayonakaManic/LoRA/resolve/main/LECO/LECO_LessMuscularityXL_forPony.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-popd rem %SDXL_WEB_UI%\Lora
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic MN_+Skinny-CurvySliderXL_forAnimagine.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LoRA/SkinnyCurvySliderXL/MN_+Skinny-CurvySliderXL_forAnimagine.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %SDXL_WEB_UI%\setup\Download.bat MayonakaManic MN_+Skinny-CurvySliderXL_forEbaraPony.safetensors ^
+https://huggingface.co/MayonakaManic/LoRA/resolve/main/LoRA/SkinnyCurvySliderXL/MN_+Skinny-CurvySliderXL_forEbaraPony.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+popd rem %SDXL_WEB_UI%\Lora

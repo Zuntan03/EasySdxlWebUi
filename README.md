@@ -21,6 +21,14 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/05/26
+
+- ドキュメントに『[ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)』を追加しました。
+	- ControlNet の [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) や [852AClone](https://twitter.com/8co28/status/1793460439059485169) を利用することで、高倍率の `高解像度補助`(Hires.fix) を可能にします。  
+- `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`anytest_v3-50000 一式`](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) もダウンロードするようにしました。
+- `Download/ControlNet/controlnet852A.bat` で [852A Clone と Scribble](https://twitter.com/8co28/status/1793460439059485169) をダウンロードするようにしました。
+- `Download/Lora/MayonakaManic-LoRA.bat` で `MN_+Skinny-CurvySliderXL` もダウンロードするようにしました。
+
 ### 2024/05/23
 
 - forge の [`DoRA Support`](https://github.com/lllyasviel/stable-diffusion-webui-forge/pull/608) をデフォルトで有効にするようにしました。
@@ -123,6 +131,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- 更新が落ち着いた Forge を、高速な安定版として利用する方法です。
 - [anystyle 系 ControlNet で構図再現](https://github.com/Zuntan03/EasySdxlWebUi/wiki/anystyle-%E7%B3%BB-ControlNet-%E3%81%A7%E6%A7%8B%E5%9B%B3%E5%86%8D%E7%8F%BE)
 	- 構図を残しつつキャラや背景を変更できる [anystyle](https://twitter.com/nana_tsukisuwa/status/1782186812846543000) 系の ControlNet を比較します。
+- [ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)
+	- ControlNet の [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) や [852AClone](https://twitter.com/8co28/status/1793460439059485169) を利用することで、高倍率の `高解像度補助`(Hires.fix) を可能にします。
 - [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 	- 過去の更新履歴です。
 
