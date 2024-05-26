@@ -26,6 +26,7 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - ドキュメントに『[ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)』を追加しました。
 	- ControlNet の [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) や [852AClone](https://twitter.com/8co28/status/1793460439059485169) を利用することで、高倍率の `高解像度補助`(Hires.fix) を可能にします。  
 - `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`anytest_v3-50000 一式`](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) もダウンロードするようにしました。
+- `Download/ControlNet/kataragi-ControlNet.bat` で [`inpaint の f16 と lora128`](https://x.com/redraw_0/status/1794565370088399328) もダウンロードするようにしました。
 - `Download/ControlNet/controlnet852A.bat` で [852A Clone と Scribble](https://twitter.com/8co28/status/1793460439059485169) をダウンロードするようにしました。
 - `Download/Lora/MayonakaManic-LoRA.bat` で `MN_+Skinny-CurvySliderXL` もダウンロードするようにしました。
 
