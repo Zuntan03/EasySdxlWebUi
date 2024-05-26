@@ -21,6 +21,13 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/05/27
+
+- 新しい CN [`inpaint`](https://x.com/redraw_0/status/1794565370088399328) ＆ [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) と [IC-Light](https://x.com/Zuntan03/status/1788351424612499533) と [CN 4K アプスケ](https://x.com/Zuntan03/status/1794490257351836092) を組み合わせて、[**雑コラしてみる記事です**](https://twitter.com/Zuntan03/status/1794872656283734107)。
+	- [imgsli での画像の比較（ぜひ 4K を拡大してみてください）](https://imgsli.com/MjY3MjY0/3/0)
+
+[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/InpaintH.webp)](https://imgsli.com/MjY3MjY0/3/0)
+
 ### 2024/05/26
 
 - ドキュメントに『[ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)』を追加しました。
