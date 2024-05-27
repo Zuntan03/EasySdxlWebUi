@@ -28,6 +28,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 [![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/InpaintH.webp)](https://imgsli.com/MjY3MjY0/3/0)
 
+- ドキュメントに『[ControlNet inpaint & anytest で部分書き換え](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-inpaint-&-anytest-%E3%81%A7%E9%83%A8%E5%88%86%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88)』を追加しました。
+	- ControlNet の [Kataragi_inpaint](https://twitter.com/redraw_0/status/1794565370088399328) と [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) で画像の一部分を書き換えます。
+	- ↑ の雑コラの inpaint 部切り出し版です。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CNIP/4char_upsc.webp)
+
 ### 2024/05/26
 
 - ドキュメントに『[ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)』を追加しました。
@@ -141,6 +147,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 	- 構図を残しつつキャラや背景を変更できる [anystyle](https://twitter.com/nana_tsukisuwa/status/1782186812846543000) 系の ControlNet を比較します。
 - [ControlNet で高倍率高解像度補助](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-%E3%81%A7%E9%AB%98%E5%80%8D%E7%8E%87%E9%AB%98%E8%A7%A3%E5%83%8F%E5%BA%A6%E8%A3%9C%E5%8A%A9)
 	- ControlNet の [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) や [852AClone](https://twitter.com/8co28/status/1793460439059485169) を利用することで、高倍率の `高解像度補助`(Hires.fix) を可能にします。
+- [ControlNet inpaint & anytest で部分書き換え](https://github.com/Zuntan03/EasySdxlWebUi/wiki/ControlNet-inpaint-&-anytest-%E3%81%A7%E9%83%A8%E5%88%86%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88)
+	- ControlNet の [Kataragi_inpaint](https://twitter.com/redraw_0/status/1794565370088399328) と [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) で画像の一部分を書き換えます。
 - [過去の更新](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0)
 	- 過去の更新履歴です。
 
