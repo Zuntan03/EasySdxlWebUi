@@ -21,6 +21,17 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/06/04
+
+- 画面上部にあるクイック設定の `Extra noise multiplier` を `タグのファイル名` に変更しました。
+	- `danbooru.csv` だと Animagine 系の Danbooru タグでプロンプトを入力補完し、`e621.csv` だと Pony 系の e621 タグで入力補完します。
+- `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`anytest_v4 LoRA`](https://twitter.com/nana_tsukisuwa/status/1797457796918882623) もダウンロードするようにしました。
+
+Anytest 作例
+|きららジャンプ|百合太極図|
+|:-:|:-:|
+|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/kirara_jump.webp)](https://twitter.com/Zuntan03/status/1797045030374506718)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/yuri.webp)](https://twitter.com/Zuntan03/status/1796691126956470396)|
+
 ### 2024/05/27
 
 - 新しい CN [`inpaint`](https://x.com/redraw_0/status/1794565370088399328) ＆ [anytest_v3](https://twitter.com/nana_tsukisuwa/status/1793674601412833589) と [IC-Light](https://x.com/Zuntan03/status/1788351424612499533) と [CN 4K アプスケ](https://x.com/Zuntan03/status/1794490257351836092) を組み合わせて、[**雑コラしてみる記事です**](https://twitter.com/Zuntan03/status/1794872656283734107)。

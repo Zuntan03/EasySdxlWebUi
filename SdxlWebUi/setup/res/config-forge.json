@@ -19,7 +19,7 @@
     "quicksettings_list": [
         "sd_model_checkpoint",
         "sd_vae",
-        "img2img_extra_noise"
+        "tac_tagFile"
     ],
     "auto_launch_browser": "Disable",
     "disabled_extensions": [

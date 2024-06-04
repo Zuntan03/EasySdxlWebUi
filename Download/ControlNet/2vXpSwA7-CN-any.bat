@@ -17,4 +17,7 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %SDXL_WEB_UI%\setup\Download-HuggingFace.bat . 2vXpSwA7/iroiro-lora test_controlnet2/CN-anytest_v3-50000_*.safetensors
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %SDXL_WEB_UI%\setup\Download-HuggingFace.bat . 2vXpSwA7/iroiro-lora test_controlnet2/CN-anytest_v4-marged_*.safetensors
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 popd rem %SDXL_WEB_UI%\Lora
