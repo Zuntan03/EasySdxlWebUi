@@ -24,7 +24,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 ### 2024/06/04
 
 - 画面上部にあるクイック設定の `Extra noise multiplier` を `タグのファイル名` に変更しました。
-	- `danbooru.csv` だと Animagine 系の Danbooru タグでプロンプトを入力補完し、`e621.csv` だと Pony 系の e621 タグで入力補完します。
+	- `danbooru.csv` だと Animagine 系などの Danbooru タグでプロンプトを入力補完し、`e621.csv` だと Pony 系などの e621 タグで入力補完します。
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/e621_tag.png)
 - `Download/ControlNet/2vXpSwA7-CN-any.bat` で [`anytest_v4 LoRA`](https://twitter.com/nana_tsukisuwa/status/1797457796918882623) もダウンロードするようにしました。
 
 Anytest 作例
