@@ -21,6 +21,17 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/06/05
+
+- anytest_v4 で高難度のポーズを再現してみました。
+	- 海老反りの ControlNet 入力画像は [こちら](https://www.pexels.com/ja-jp/photo/415212/)。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4.webp)
+
+|海老反りの設定|キン肉バスター|
+|:--:|:--:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4_setting.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/29buster.webp)|
+
 ### 2024/06/04
 
 - 画面上部にあるクイック設定の `Extra noise multiplier` を `タグのファイル名` に変更しました。
