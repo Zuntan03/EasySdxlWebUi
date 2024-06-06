@@ -26,11 +26,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 - anytest_v4 で高難度のポーズを再現してみました。
 	- 海老反りの ControlNet 入力画像は [こちら](https://www.pexels.com/ja-jp/photo/415212/)。
 
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4.webp)
+[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4.webp)](https://twitter.com/Zuntan03/status/1798496774765613096)
 
 |海老反りの設定|キン肉バスター|
 |:--:|:--:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4_setting.png)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/29buster.webp)|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/anytest_v4_setting.png)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/29buster.webp)](https://twitter.com/Zuntan03/status/1798614237910356436)|
 
 ### 2024/06/04
 
