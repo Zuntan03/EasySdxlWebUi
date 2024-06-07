@@ -138,6 +138,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-regional-prompter
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+@REM call %~dp0GitCloneOrPull.bat https://github.com/Takenoko3333/sd-webui-reuse-seed-plus
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-supermerger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
