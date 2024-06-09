@@ -21,6 +21,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/06/09
+
+- forge の [互換性のない更新予告](https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/801) に備えて、バージョンを固定するようにしました。
+	- [forge CFG1 と、a1111 高速化パッチ適用済の速度差](https://x.com/Zuntan03/status/1792702913456078878)
+	- 『[Forge を高速な安定版として利用する](https://github.com/Zuntan03/EasySdxlWebUi/wiki/Forge-%E3%82%92%E9%AB%98%E9%80%9F%E3%81%AA%E5%AE%89%E5%AE%9A%E7%89%88%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)』
+
 ### 2024/06/08
 
 - ドキュメントに『[複数キャラ画像の生成](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E8%A4%87%E6%95%B0%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)』を追加しました。
@@ -28,9 +34,6 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 |[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/MCHR/MultiCharV.webp)](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E8%A4%87%E6%95%B0%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)|[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/MCHR/MultiChar.webp)](https://github.com/Zuntan03/EasySdxlWebUi/wiki/%E8%A4%87%E6%95%B0%E3%82%AD%E3%83%A3%E3%83%A9%E7%94%BB%E5%83%8F%E3%81%AE%E7%94%9F%E6%88%90)|
 |:--:|:--:|
-
-
-
 
 ### 2024/06/05
 
