@@ -12,6 +12,11 @@ echo pip -qq install "tensorflow==2.15.1"
 pip -qq install "tensorflow==2.15.1"
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
+@REM JAX requires ml_dtypes version 0.4.0 or newer; installed version is 0.3.2.
+echo pip -qq install "jax==0.4.28" "jaxlib==0.4.28"
+pip -qq install "jax==0.4.28" "jaxlib==0.4.28"
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 @REM ImportError: cannot import name 'Undefined' from 'pydantic.fields'
 @REM https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15564
 echo pip -qq install albumentations==1.4.3 pydantic==1.10.15

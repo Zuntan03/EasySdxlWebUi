@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/06/12
+
+- `JAX requires ml_dtypes version 0.4.0 or newer; installed version is 0.3.2.` エラーへの対処を入れました。
+	- エラーが出ている場合は、更新時の `更新に時間がかかりますが、安全のために SdxlWebUi\venv-(forge|a1111)\ を削除しますか？` で削除してください。
+
 ### 2024/06/09
 
 - forge の [互換性のない更新予告](https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/801) に備えて、バージョンを固定するようにしました。
