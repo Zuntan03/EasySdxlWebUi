@@ -21,6 +21,12 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/06/26
+
+- a1111 の fp8 を無効にしたことで VRAM が足りない環境のために `SdxlWebUi-a1111-MedVram.bat` を用意しました。
+	- `--medvram-sdxl` オプション付きでの起動で、動作は遅くなりますが VRAM 不足を回避できます。
+	- a1111 では [fp8 を有効にすると LoRA が複数適用できません](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15995)。
+
 ### 2024/06/12
 
 - `JAX requires ml_dtypes version 0.4.0 or newer; installed version is 0.3.2.` エラーへの対処を入れました。
