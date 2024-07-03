@@ -5,6 +5,11 @@ set SD_DIR=%~1
 set SD_NAME=%~2
 pushd %~dp0..
 
+@REM ImportError: cannot import name 'packaging' from 'pkg_resources'
+echo pip -qq install "setuptools==69.5.1"
+pip -qq install "setuptools==69.5.1"
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 @REM sd-danbooru-tags-upsampler
 @REM pip -qq install "tensorflow==2.16.1"
 @REM ModuleNotFoundError: No module named 'keras.__internal__'
