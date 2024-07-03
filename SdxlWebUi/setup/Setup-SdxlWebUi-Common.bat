@@ -6,6 +6,7 @@ set SD_NAME=%~2
 pushd %~dp0..
 
 @REM ImportError: cannot import name 'packaging' from 'pkg_resources'
+@REM https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/15905
 echo pip -qq install "setuptools==69.5.1"
 pip -qq install "setuptools==69.5.1"
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
