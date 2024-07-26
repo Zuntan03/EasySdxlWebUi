@@ -21,6 +21,11 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ## 最近の主な更新
 
+### 2024/07/26
+
+- サンプラーを追加する拡張機能の [advanced_euler_sampler_extension](https://github.com/licyk/advanced_euler_sampler_extension) を追加しました。
+
+
 ### 2024/07/04
 
 - 環境によって forge の起動時に `ImportError: cannot import name 'packaging' from 'pkg_resources'` のエラーになる不具合を修正しました。

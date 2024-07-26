@@ -49,6 +49,7 @@ if exist SdxlWebUi\venv-forge\ (
 	echo.
 	echo https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 	echo https://github.com/hinablue/adetailer
+	echo https://github.com/licyk/advanced_euler_sampler_extension
 	echo https://github.com/adieyal/sd-dynamic-prompts
 	echo https://github.com/layerdiffusion/sd-forge-layerdiffusion
 	echo https://github.com/blue-pen5805/sdweb-easy-prompt-selector

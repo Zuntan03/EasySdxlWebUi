@@ -49,6 +49,7 @@ if exist SdxlWebUi\venv-a1111\ (
 	echo.
 	echo https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 	echo https://github.com/Bing-su/adetailer
+	echo https://github.com/licyk/advanced_euler_sampler_extension
 	echo https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 	echo https://github.com/adieyal/sd-dynamic-prompts
 	echo https://github.com/blue-pen5805/sdweb-easy-prompt-selector
