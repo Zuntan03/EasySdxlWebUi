@@ -43,8 +43,11 @@ pushd %~dp0..\stable-diffusion-webui-forge\extensions
 call %~dp0GitCloneOrPull.bat https://github.com/hinablue/adetailer
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/layerdiffusion/sd-forge-layerdiffuse
+call %~dp0GitCloneOrPull.bat https://github.com/layerdiffusion/sd-forge-layerdiffuse main
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+git -C sd-forge-layerdiffuse switch -C e4d5060 e4d5060
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 if exist sd-forge-layerdiffusion\ ( rmdir /S /Q sd-forge-layerdiffusion\ )
 

@@ -23,8 +23,8 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 ### 2024/07/26
 
+- forge の [Layer Diffuse](https://github.com/lllyasviel/sd-forge-layerdiffuse) に互換性のない変更が入ったため、過去バージョンに巻き戻しました。
 - サンプラーを追加する拡張機能の [advanced_euler_sampler_extension](https://github.com/licyk/advanced_euler_sampler_extension) を追加しました。
-
 
 [forge の HyperSD 8step & CFG 1.0 の高速運用との組み合わせ例](https://x.com/Zuntan03/status/1817050077124514225)
 
