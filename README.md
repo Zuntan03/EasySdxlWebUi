@@ -25,6 +25,9 @@ EasySdxlWebUi は簡単に SDXL で画像を生成できるようにします。
 
 - サンプラーを追加する拡張機能の [advanced_euler_sampler_extension](https://github.com/licyk/advanced_euler_sampler_extension) を追加しました。
 
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S0_ebara_pony_2.1.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S1_peganaMERGE_v30.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S2_waiREALMIX_v70.webp)|
+|-|-|-|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S3_PerillaniumCCM_PONY.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S4_elflandMERGE_v10.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasySdxlWebUi/img/CLG/S5_chacolsemirealponymi_v10.webp)|
 
 ### 2024/07/04
 
