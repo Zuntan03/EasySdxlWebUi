@@ -26,6 +26,7 @@
     "disabled_extensions": [
         "sd-webui-animatediff",
         "sd-webui-cutoff",
+        "sd-danbooru-tags-upsampler",
         "sd-webui-prevent-artifact",
         "sd-webui-traintrain",
         "stable-diffusion-webui-model-toolkit"

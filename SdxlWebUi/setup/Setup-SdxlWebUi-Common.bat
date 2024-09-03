@@ -14,9 +14,9 @@ if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 @REM sd-danbooru-tags-upsampler
 @REM pip -qq install "tensorflow==2.16.1"
 @REM ModuleNotFoundError: No module named 'keras.__internal__'
-echo pip -qq install "tensorflow==2.15.1"
-pip -qq install "tensorflow==2.15.1"
-if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+@REM echo pip -qq install "tensorflow==2.15.1"
+@REM pip -qq install "tensorflow==2.15.1"
+@REM if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 @REM JAX requires ml_dtypes version 0.4.0 or newer; installed version is 0.3.2.
 echo pip -qq install "jax==0.4.28" "jaxlib==0.4.28"
@@ -124,7 +124,10 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/adieyal/sd-dynamic-prompts
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/p1atdev/sd-danbooru-tags-upsampler
+@REM onnx ランタイムのバージョン不整合
+@REM call %~dp0GitCloneOrPull.bat https://github.com/p1atdev/sd-danbooru-tags-upsampler
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+call %~dp0GitCloneOrPull.bat https://github.com/KohakuBlueleaf/z-a1111-sd-webui-dtg
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/sdweb-easy-generate-forever
