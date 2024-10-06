@@ -146,9 +146,6 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 call %~dp0GitCloneOrPull.bat https://github.com/zanllp/sd-webui-infinite-image-browsing
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-lora-block-weight
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
 call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-negpip
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
@@ -186,10 +183,6 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-
-@REM LoraBlockWeight プリセット
-copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
-if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 @REM EasyPromptSelector
 call %~dp0Link.bat sdweb-easy-prompt-selector\tags %~dp0..\EasyPromptSelector

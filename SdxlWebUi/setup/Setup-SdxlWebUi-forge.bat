@@ -57,4 +57,14 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM call %~dp0GitCloneOrPull.bat https://github.com/continue-revolution/sd-forge-animatediff
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
+call %~dp0GitCloneOrPull.bat https://github.com/hako-mikan/sd-webui-lora-block-weight main
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+git -C sd-webui-lora-block-weight switch -C 4d94d24 4d94d24
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
+@REM LoraBlockWeight プリセット
+copy /Y %~dp0res\lora_block_weight\lbwpresets.txt sd-webui-lora-block-weight\scripts\ > NUL
+if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
+
 popd rem %~dp0..\stable-diffusion-webui-forge\extensions
