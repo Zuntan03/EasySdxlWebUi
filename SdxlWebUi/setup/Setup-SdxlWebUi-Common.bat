@@ -127,8 +127,9 @@ if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 @REM onnx ランタイムのバージョン不整合
 @REM call %~dp0GitCloneOrPull.bat https://github.com/p1atdev/sd-danbooru-tags-upsampler
 @REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
-call %~dp0GitCloneOrPull.bat https://github.com/KohakuBlueleaf/z-a1111-sd-webui-dtg
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM 起動時に読込中から進まなくなる問題対策
+@REM call %~dp0GitCloneOrPull.bat https://github.com/KohakuBlueleaf/z-a1111-sd-webui-dtg
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call %~dp0GitCloneOrPull.bat https://github.com/blue-pen5805/sdweb-easy-generate-forever
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
