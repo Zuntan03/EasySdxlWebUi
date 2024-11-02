@@ -34,6 +34,10 @@ echo pip -qq install tensorflow_io
 pip -qq install tensorflow_io
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
+@REM ImportError: cannot import name 'cached_download' from 'huggingface_hub'
+echo pip install huggingface-hub==0.25.2
+pip install huggingface-hub==0.25.2
+
 copy /Y setup\Install-EasySdxlWebUi-a1111.bat ..\SdxlWebUi-Update-a1111.bat > NUL
 if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
